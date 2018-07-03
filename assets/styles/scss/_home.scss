@@ -1,0 +1,158 @@
+*{
+    font-family: 'Avenir';
+    font-weight: 400;
+    user-select: auto !important;
+}
+
+$blue: #0F294B;
+$pink: #D81C5C;
+
+#main-container{
+    padding: 0;
+    overflow-y: hidden;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+
+    .swiper-slide.content{
+        -webkit-box-shadow: 0px 0px 35px -1px rgba(0,0,0,0.09);
+        -moz-box-shadow: 0px 0px 35px -1px rgba(0,0,0,0.09);
+        box-shadow: 0px 0px 35px -1px rgba(0,0,0,0.09);
+    }
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    height: 100vh;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.menu {
+    min-width: 100px;
+    width: 100%;
+    max-width: 70vw;
+    background: #fff;
+    display: flex;
+    
+}
+
+.content {
+    width: 100%;
+}
+
+.menu-button {
+    position: absolute;
+    top: 180px; left: -4px;
+    z-index: 999;
+    cursor: pointer;
+    -webkit-transition: .3s;
+    transition: .3s;
+
+}
+
+
+// MENU
+
+#menu{
+    width: 100%;
+    padding: 0 3rem;
+    li{
+        color: $blue;
+        font: bold 7.1875rem/100% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        text-transform: uppercase;
+        list-style: none;
+        text-align: right;
+        -webkit-transition: .3s;
+        transition: .3s;
+        
+    }
+    li:hover{
+        color: $pink;
+    }
+}
+
+.glogo{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    z-index: 9999;
+}
+
+.address{
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    font: 700 0.9rem/100% 'Avenir', sans-serif;
+}
+
+#social{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    li{
+        font: 700 0.9rem/100% 'Avenir', sans-serif;
+        text-transform: uppercase;
+        list-style: none;
+        text-align: right;
+        -webkit-transition: .3s;
+        transition: .3s;
+        padding: 0 0.5rem;
+    }
+}
+
+.explore{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    font: 700 0.9rem/100% 'Avenir', sans-serif;
+    text-transform: uppercase;
+    img{
+        padding-left: 0.7rem;
+        position: relative;
+        top: -2px;
+    }
+}
+
+
+
+// 
+
+.home-slide-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: red;
+        /* Center slide text vertically */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20vw;
+    }
+    .main-slide{
+        width: 50vw;
+        background: #ffffff;
+    }
+}

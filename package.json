@@ -46,5 +46,8 @@
     "globals": {
       "jQuery": true
     }
+  },
+  "dependencies": {
+    "swiper": "^4.3.3"
   }
 }

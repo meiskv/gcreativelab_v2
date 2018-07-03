@@ -11,7 +11,7 @@ var gulp  = require('gulp'),
 // Modify these variables to match your project needs
 
 // Set local URL if using Browser-Sync
-const LOCAL_URL = 'http://jointswp-github.dev/';
+const LOCAL_URL = 'http://localhost:8888/DEV/gcreative/';
 
 // Set path to Foundation files
 const FOUNDATION = 'node_modules/foundation-sites';
@@ -20,7 +20,8 @@ const FOUNDATION = 'node_modules/foundation-sites';
 const SOURCE = {
 	scripts: [
 		// Lets grab what-input first
-	    'node_modules/what-input/dist/what-input.js',
+		// 'node_modules/what-input/dist/what-input.js',
+		'node_modules/swiper/dist/js/swiper.js',
 
 		// Foundation core - needed if you want to use any of the components below
 		FOUNDATION + '/dist/js/plugins/foundation.core.js',
@@ -93,7 +94,7 @@ gulp.task('scripts', function() {
 		.pipe(plugin.babel({
 			presets: ['es2015'],
 			compact: true,
-			ignore: ['what-input.js']
+			ignore: ['what-input.js','swiper.js']
 		}))
 		.pipe(CUSTOMFILTER)
 			.pipe(plugin.jshint(JSHINT_CONFIG))

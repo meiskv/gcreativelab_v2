@@ -29,7 +29,7 @@
 	    <?php } ?>
 
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css">
 		<?php wp_head(); ?>
 
 	</head>
@@ -47,6 +47,11 @@
 							
 					 <!-- This navs will be applied to the topbar, above all content 
 						  To see additional nav styles, visit the /parts directory -->
-					 <?php get_template_part( 'parts/nav', 'offcanvas-topbar' ); ?>
+
+					 <!-- START HERE -->
+
+					 <img class="glogo" src="<?php echo get_template_directory_uri(); ?>/assets/images/gcreative_logo.svg" width="80" height="93" alt="">
+
+					 <!-- ENDS HERE -->
 	 	
 				</header> <!-- end .header -->

@@ -11,7 +11,7 @@ var gulp  = require('gulp'),
 // Modify these variables to match your project needs
 
 // Set local URL if using Browser-Sync
-const LOCAL_URL = 'http://localhost:8888/DEV/gcreative/';
+const LOCAL_URL = 'http://localhost:8888/gcreativelab/';
 
 // Set path to Foundation files
 const FOUNDATION = 'node_modules/foundation-sites';
@@ -21,7 +21,11 @@ const SOURCE = {
 	scripts: [
 		// Lets grab what-input first
 		// 'node_modules/what-input/dist/what-input.js',
+		'node_modules/gsap/src/minified/TimelineMax.min.js',
+		'node_modules/gsap/src/minified/TweenMax.min.js',
 		'node_modules/swiper/dist/js/swiper.js',
+		'node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js',
+		'node_modules/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js',
 
 		// Foundation core - needed if you want to use any of the components below
 		FOUNDATION + '/dist/js/plugins/foundation.core.js',
@@ -94,7 +98,7 @@ gulp.task('scripts', function() {
 		.pipe(plugin.babel({
 			presets: ['es2015'],
 			compact: true,
-			ignore: ['what-input.js','swiper.js']
+			ignore: ['what-input.js','swiper.js','scrollmagic.js','debug.addIndicators.min.js']
 		}))
 		.pipe(CUSTOMFILTER)
 			.pipe(plugin.jshint(JSHINT_CONFIG))

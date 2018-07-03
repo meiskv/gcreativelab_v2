@@ -111,7 +111,6 @@ $pink: #D81C5C;
         text-transform: uppercase;
         list-style: none;
         text-align: right;
-        -webkit-transition: .3s;
         transition: .3s;
         padding: 0 0.5rem;
     }
@@ -155,4 +154,10 @@ $pink: #D81C5C;
         width: 50vw;
         background: #ffffff;
     }
+}
+
+
+.cs-expand{
+    width: 50vw;
+    transition: .3s;
 }

@@ -2,7 +2,19 @@
     font-family: 'Avenir';
     font-weight: 400;
     user-select: auto !important;
+    transition: 0.3s;
 }
+
+// Highlight
+::-moz-selection { /* Code for Firefox */
+    color: #fff;
+    background: #D81C5C;
+  }
+  
+  ::selection {
+    color: #fff;
+    background: #D81C5C;
+  }
 
 .wrapper{
     display: grid;
@@ -194,6 +206,8 @@ $pink: #D81C5C;
     
 }
 
+
+
 .content {
     width: 100%;
 }
@@ -222,9 +236,14 @@ $pink: #D81C5C;
         transition: .3s;
         
     }
+    .active>a{
+        background: #ffffff;
+        color: $pink;
+    }    
     a{
         color: $blue;
         font: bold 7.1875rem/80% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        transition: 0.3s;
     }
     li a:hover{
         color: $pink;

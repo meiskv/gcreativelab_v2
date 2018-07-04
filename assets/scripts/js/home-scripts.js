@@ -70,6 +70,7 @@ window.requestAnimationFrame(function() {
       direction: 'horizontal',
       slidesPerView: 'auto',
       mousewheel: true,
+      // centeredSlides: true, //MAKE EXPAND
       freeMode: true,
       freeModeFluid: true,
       freeModeMomentumVelocityRatio: 0.5,

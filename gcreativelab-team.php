@@ -15,14 +15,7 @@ get_header(); ?>
 				<div class="swiper-container">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide menu">
-							<ul id="menu">
-									<li><a href="http://localhost:8888/DEV/gcreative/about/">About</a></li>
-									<li><a href="http://localhost:8888/DEV/gcreative/services/">Services</a></li>
-									<li><a href="http://localhost:8888/DEV/gcreative/case/">Case Study</a></li>
-									<li><a href="http://localhost:8888/DEV/gcreative/team/">Team</a></li>
-									<li><a href="http://localhost:8888/DEV/gcreative/contact/">Contact</a></li>
-								
-							</ul>
+						<?php glab_menu(); ?>
 
 						<div class="address">214, BUILDING 4, DUBAI MEDAI CITY, PO BOX 24554, DUBAI, UAE</div>
 						

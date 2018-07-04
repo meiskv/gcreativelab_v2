@@ -10,29 +10,29 @@ window.requestAnimationFrame(function() {
 
     let controller = new ScrollMagic.Controller({vertical: false});
 
-    $('.home-cs-slide').each(function(){
+    // $('.home-cs-slide').each(function(){
 
-      // let csExpand = TweenMax.from($(this),0.3,{width: '50vw', pause:true})
-        let xCase = this;
-        let scene = new ScrollMagic.Scene({
-          triggerElement: this,
-          triggerHook: 0.7,
-          duration: 0,
-          // loglevel: 3,
-        })
-        // .setTween(csExpand)
-        .addTo(controller)
-        .addIndicators({
-          name: 'fade scene',
-        })
-        .on("enter", function (event) {
-          scene.setClassToggle(xCase,'cs-expand')
-          $(this).addClass('cs-expand');
-        })
-        .on("leave", function (event) {
-          $(this).removeClass('cs-expand');
-        })
-    });
+    //   // let csExpand = TweenMax.from($(this),0.3,{width: '50vw', pause:true})
+    //     let xCase = this;
+    //     let scene = new ScrollMagic.Scene({
+    //       triggerElement: this,
+    //       triggerHook: 0.7,
+    //       duration: 0,
+    //       // loglevel: 3,
+    //     })
+    //     // .setTween(csExpand)
+    //     .addTo(controller)
+    //     .addIndicators({
+    //       name: 'fade scene',
+    //     })
+    //     .on("enter", function (event) {
+    //       scene.setClassToggle(xCase,'cs-expand')
+    //       $(this).addClass('cs-expand');
+    //     })
+    //     .on("leave", function (event) {
+    //       $(this).removeClass('cs-expand');
+    //     })
+    // });
 
     var menuButton = document.querySelector('.menu-button');
     var swiper = new Swiper('.swiper-container', {

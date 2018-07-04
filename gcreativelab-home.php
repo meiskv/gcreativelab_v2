@@ -17,7 +17,7 @@ get_header(); ?>
 						<div class="swiper-slide menu">
 							
 								<?php glab_menu(); ?>
-							
+								
 
 						<div class="address">214, BUILDING 4, DUBAI MEDAI CITY, PO BOX 24554, DUBAI, UAE</div>
 						

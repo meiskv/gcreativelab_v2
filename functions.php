@@ -40,6 +40,8 @@ require_once(get_template_directory().'/functions/translation/translation.php');
 // Use this as a template for custom post types
 // require_once(get_template_directory().'/functions/custom-post-type.php');
 
+require_once(get_template_directory().'/functions/case-study.php');
+
 // Customize the WordPress login menu
 // require_once(get_template_directory().'/functions/login.php'); 
 

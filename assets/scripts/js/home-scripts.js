@@ -39,7 +39,7 @@ window.requestAnimationFrame(function() {
       slidesPerView: 'auto',
       initialSlide: 1,
       resistanceRatio: 0,
-      simulateTouch: false,      
+      simulateTouch: false,
       touchRatio: 0,
       freeMode: true,
       // mousewheel: true,

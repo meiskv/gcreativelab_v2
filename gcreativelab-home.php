@@ -15,14 +15,9 @@ get_header(); ?>
 				<div class="swiper-container">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide menu">
-
-							<ul id="menu">
-								<li>About</li>
-								<li>Services</li>
-								<li>Case Study</li>
-								<li>Team</li>
-								<li>Contact</li>
-							</ul>
+							
+								<?php glab_menu(); ?>
+							
 
 						<div class="address">214, BUILDING 4, DUBAI MEDAI CITY, PO BOX 24554, DUBAI, UAE</div>
 						

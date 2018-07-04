@@ -4,6 +4,70 @@
     user-select: auto !important;
 }
 
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    .left, .right{
+        height: 100%;
+        width: 100%;
+        display: flex;
+    }
+    // Left Styles Starts
+    .left .content__holder{
+        padding: 0 12rem;
+        align-self: flex-end;
+        margin-bottom: 10rem;
+        text-align: left;
+        position: relative;
+        z-index: 1;
+        .content__header, .content__subheader{
+            font: 3.9375rem/100% "Avenir","Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        }
+        .content__header{
+            font-weight: normal;
+        }
+        .content__subheader{
+            font-weight: bold;
+            color: #FCC210;
+        }
+        .content__description{
+            font: 1rem/100% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+            color: #0F294B;
+            margin: 1.5rem 0;
+        }
+        .content__btn button{
+            font: 1.25rem/100% "Avenir", sans-serif;
+            color: #ffffff;
+            font-weight: 900;
+            background: #FCC210;
+            padding: 1rem 1.3rem;
+        }
+        
+    }
+    .content__hero{
+        position: absolute;
+        font: 900 80vh/100% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        color: #FAFAFA;
+        z-index: 0;
+        align-self: center;
+        left: -30vh;
+    }
+    // Left Styles Ends
+
+    // --------------
+
+    // Right Styles Starts
+    .right{
+        justify-content: center;
+    }
+
+}
+
 $blue: #0F294B;
 $pink: #D81C5C;
 
@@ -17,9 +81,9 @@ $pink: #D81C5C;
     height: 100%;
 
     .swiper-slide.content{
-        -webkit-box-shadow: 0px 0px 35px -1px rgba(0,0,0,0.09);
-        -moz-box-shadow: 0px 0px 35px -1px rgba(0,0,0,0.09);
-        box-shadow: 0px 0px 35px -1px rgba(0,0,0,0.09);
+        // -webkit-box-shadow: 0px 0px 35px -1px rgba(0,0,0,0.09);
+        // -moz-box-shadow: 0px 0px 35px -1px rgba(0,0,0,0.09);
+        // box-shadow: 0px 0px 35px -1px rgba(0,0,0,0.09);
     }
 }
 .swiper-slide {
@@ -47,6 +111,11 @@ $pink: #D81C5C;
     max-width: 70vw;
     background: #fff;
     display: flex;
+    position: relative;
+    z-index: 2;
+    -webkit-box-shadow: 0px 0px 35px -1px rgba(0,0,0,0.09);
+    -moz-box-shadow: 0px 0px 35px -1px rgba(0,0,0,0.09);
+    box-shadow: 0px 0px 35px -1px rgba(0,0,0,0.09);
     
 }
 
@@ -71,8 +140,6 @@ $pink: #D81C5C;
     width: 100%;
     padding: 0 3rem;
     li{
-        color: $blue;
-        font: bold 7.1875rem/100% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
         text-transform: uppercase;
         list-style: none;
         text-align: right;
@@ -80,7 +147,11 @@ $pink: #D81C5C;
         transition: .3s;
         
     }
-    li:hover{
+    a{
+        color: $blue;
+        font: bold 7.1875rem/80% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    }
+    li a:hover{
         color: $pink;
     }
 }

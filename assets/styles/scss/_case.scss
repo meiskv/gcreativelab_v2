@@ -1,0 +1,223 @@
+.case-study .left .content__holder .content__subheader{
+    color: #00AAA0;
+}
+
+.case-study .left .content__holder .content__btn button{
+    background: #00AAA0;
+}
+
+.case-study{
+    grid-template-columns: 1fr;
+}
+
+.case-study .left{
+    align-content: center;
+    justify-content: center;
+}
+
+.case-study .left .content__holder{
+    width: 100%;
+}
+
+.case-study-slide-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        /* Center slide text vertically */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20vw;
+    }
+    .main-slide{
+        width: 50vw;
+        background: #ffffff;
+    }
+    .case-slide{
+        width: 100vw;
+    }
+
+    .case__holder{
+        display: grid;
+        grid-template-columns: 30vw 70vw;
+        grid-template-rows: 1fr;
+        height: 100%;
+        .case__left{
+            align-self: center;
+            text-align: left;
+            padding: 0 5rem;
+            .case__title{
+                h1{
+                    font: bold 1.75rem/80% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+                    color: $pink;
+                    padding: 1rem 0;
+                } 
+            }// Case Title Ends
+            .case__deliverables{
+                h4{
+                    font: normal 1.4375rem/80% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+                }
+            } // Case Deliverables Ends
+            .case__description{
+                p{
+                    font: 1rem/150% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+                    color: #0F294B;
+                    margin: 1.5rem 0;
+                }
+            } // Case Description Ends
+            .case__button a{
+                font: 900 0.75rem/150% "Avenir", AppleGothic, sans-serif;
+                color: $blue;
+                padding: 0.7rem 0rem;
+                border-bottom: 2px solid $pink;
+            }
+
+        } // Case Left Ends
+        .case__right{
+            width: 100%;
+            background: #598059;
+            img{
+                height: auto;
+                width: 100%;
+            }
+        } // Case Right Ends
+    }
+}
+
+
+
+// CASE INNER
+// ==================================
+
+.case-inner-container{
+    height: 100vh;
+}
+
+.case-inner-slide-container{
+    .main-slide{
+        background: rgb(255, 255, 255);
+        width: 50vw;
+        text-align: left;
+
+    .case__inner__holder{
+        width: 100%;
+        padding: 0 5rem;
+        .case__inner__description p{
+            font: normal 1rem/150% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+            color: $blue;
+        }
+        .case__deliverables{
+            display: flex;
+            div{
+                padding: 1.5rem 1rem;
+            }
+        } // Case Deliverables Ends
+    } // Case Holder Ends
+
+    ul{ margin: 0; padding: 0;}
+    li{
+        list-style: none;
+    }
+
+    } // Case Inner Main Slide Ends
+    .case__slide{
+        background: #ffffff;
+        // width: 100%;
+        width: auto;
+        text-align: left;
+        margin: 0 3rem;
+        .case__inner__slide__holder{
+            display: flex;
+            flex-direction: column;
+            max-width: 20vw;
+
+            .case__inner__slide__title h1{
+                font: 700 1.75rem/100% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+                color: $pink;
+                // margin: 0;padding: 0;
+            }
+            .case__inner__slide__subtitle h4{
+                font: 500 1.4375rem/100% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+                color: $blue;
+            }
+            .case__inner__slide__description{
+                font: 500 1rem/100% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+                color: $blue;
+            }
+        }
+    }
+    .case__pagination{
+        // width: auto;
+        width: 100%;
+        max-width: 30vw;
+        .case__inner__pagination__holder{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            height: 100%;
+            width: 100%;
+            
+            text-align: left;
+            .case__inner__top,.case__inner__btm{
+                color: #ffffff;
+                position: relative;
+                height: 100%;
+                display: flex;
+                position: relative;
+                
+                
+                .case__page__holder{
+                    width:100%;
+                    align-self: flex-end;
+                    position:relative;
+                    height: 20%;
+                    img{
+                        position: absolute;
+                        bottom: 3rem;
+                        right: 3rem;   
+                    }
+                }
+            }
+            .case__inner__top:hover .case__prev__title span{
+                color: #ffffff;
+            }
+            .case__inner__btm:hover .case__next__title span{
+                color: #ffffff;
+            }
+            .case__inner__top{
+                position: absolute;
+                top: 0;
+                width: 100%;
+                max-height: 50%;
+                background: $blue;
+                transition: .3s;
+            }
+            .case__inner__btm{
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                max-height: 50%;
+                background: $blue;
+                transition: .3s;
+            }
+        }
+        .case__prev, .case__next{
+        }
+        .case__prev__title, .case__next__title{
+            position: absolute;
+            bottom: 3rem;
+            left: 3rem;
+        }
+        .case__prev__title span, .case__next__title span{
+            font: 700 2.5625rem/100% "Century Gothic", CenturyGothic, sans-serif;
+            color: #D92360;
+            transition: .3s;
+        }
+        
+        
+    }
+}

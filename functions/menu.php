@@ -7,6 +7,20 @@ register_nav_menus(
 	)
 );
 
+function glab_menu() {
+    wp_nav_menu(array(
+       'container' => false,
+       'menu_id' => 'menu',                           // Remove nav container
+       'menu_class' => '',       // Adding custom nav class
+       'items_wrap' => '<ul id="%1$s" class="%2$s" data-responsive-menu="accordion medium-dropdown">%3$s</ul>',
+       'theme_location' => 'main-nav',        			// Where it's located in the theme
+       'depth' => 5,                                   // Limit the depth of the nav
+       'fallback_cb' => false,                         // Fallback function (see below)
+       'walker' => new Topbar_Menu_Walker()
+   ));
+} 
+
+
 // The Top Menu
 function joints_top_nav() {
 	 wp_nav_menu(array(
@@ -85,3 +99,13 @@ function required_active_nav_class( $classes, $item ) {
     return $classes;
 }
 add_filter( 'nav_menu_css_class', 'required_active_nav_class', 10, 2 );
+
+
+// Add Foundation active class to menu
+function required_active_nav_classx( $classes, $item ) {
+    if ( $item->current == 1 || $item->current_item_ancestor == true ) {
+        $classes[] = 'active';
+    }
+    return $classes;
+}
+add_filter( 'nav_menu_css_class', 'required_active_nav_classx', 10, 2 );

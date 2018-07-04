@@ -30,6 +30,8 @@
 
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css">
+		<script src='https://api.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.js'></script>
+		<link href='https://api.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.css' rel='stylesheet' />
 		<?php wp_head(); ?>
 
 	</head>
@@ -49,9 +51,9 @@
 						  To see additional nav styles, visit the /parts directory -->
 
 					 <!-- START HERE -->
-
-					 <img class="glogo" src="<?php echo get_template_directory_uri(); ?>/assets/images/gcreative_logo.svg" width="80" height="93" alt="">
-
+					<a href="<?php echo site_url();?>">
+					 	<img class="glogo" src="<?php echo get_template_directory_uri(); ?>/assets/images/gcreative_logo.svg" width="80" height="93" alt="">
+					 </a>
 					 <!-- ENDS HERE -->
 	 	
 				</header> <!-- end .header -->

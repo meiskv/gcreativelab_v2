@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: GCREATIVELAB HOME
+Template Name: GCREATIVELAB HOME OLD
 */
 
 get_header(); ?>
@@ -64,8 +64,7 @@ get_header(); ?>
 													  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/explore_arrow.svg" width="10" height="9" alt="">
 												</div>
 											</div>
-											<div class="swiper-slide swiper-slick">
-													<div class="home-slick">
+
 											<?php       
                                             $paged          = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
                                             $posts_per_page = 5;
@@ -90,17 +89,75 @@ get_header(); ?>
                                             ?>
 										
 
-											
-													<div><?php echo $number; ?></div>
-											
 												
+											<div class="swiper-slide swiper-cases">
+													<div class="case__home__holder">
+														<div class="case__home__img">
+															<img src="<?php echo get_field('client_feature_image')['url']; ?>" alt="">
+															<!-- <img src="http://localhost:8888/DEV/gcreative/uploads/2018/06/cover.jpg" alt=""> -->
+														</div>
+														<div class="case__home__category">
+															<h4>CASE STUDY</h4>
+															<p><?php echo the_field('description_excerpt'); ?></p>
+														</div>
+														<div class="case__home__meta">
+																<div class="case__home__date">
+																	<h4>June 26 - 2018</h4>
+																</div>
+																<div class="case__home__title"><h1><?php echo the_title(); ?></h1></div>
+																<div class="case__home__btn">
+																	<a href="<?php echo get_permalink(); ?>">READ MORE</a>
+																</div>
+														</div>
+													<!-- <div class="case__home__number">.0<?php echo $number; ?></div> -->
+													</div>
+												</div>
 												<?php endwhile; ?>
 											<?php endif; ?>
-											<div>4</div>
-											<div>5</div>
-											<div>6</div>
-										</div>
-										</div>
+											<div class="swiper-slide swiper-cases">
+													<div class="case__home__holder">
+														<div class="case__home__img">
+															<img src="<?php echo get_field('client_feature_image')['url']; ?>" alt="">
+															<!-- <img src="http://localhost:8888/DEV/gcreative/uploads/2018/06/cover.jpg" alt=""> -->
+														</div>
+														<div class="case__home__category">
+															<h4>CASE STUDY</h4>
+															<p><?php echo the_field('description_excerpt'); ?></p>
+														</div>
+														<div class="case__home__meta">
+																<div class="case__home__date">
+																	<h4>June 26 - 2018</h4>
+																</div>
+																<div class="case__home__title"><h1><?php echo the_title(); ?></h1></div>
+																<div class="case__home__btn">
+																	<a href="<?php echo get_permalink(); ?>">READ MORE</a>
+																</div>
+														</div>
+													<!-- <div class="case__home__number">.0<?php echo $number; ?></div> -->
+													</div>
+												</div>
+												<div class="swiper-slide swiper-cases">
+														<div class="case__home__holder">
+															<div class="case__home__img">
+																<img src="<?php echo get_field('client_feature_image')['url']; ?>" alt="">
+																<!-- <img src="http://localhost:8888/DEV/gcreative/uploads/2018/06/cover.jpg" alt=""> -->
+															</div>
+															<div class="case__home__category">
+																<h4>CASE STUDY</h4>
+																<p><?php echo the_field('description_excerpt'); ?></p>
+															</div>
+															<div class="case__home__meta">
+																	<div class="case__home__date">
+																		<h4>June 26 - 2018</h4>
+																	</div>
+																	<div class="case__home__title"><h1><?php echo the_title(); ?></h1></div>
+																	<div class="case__home__btn">
+																		<a href="<?php echo get_permalink(); ?>">READ MORE</a>
+																	</div>
+															</div>
+														<!-- <div class="case__home__number">.0<?php echo $number; ?></div> -->
+														</div>
+													</div>
 											</div>
 										</div>
 										<!-- Add Pagination -->

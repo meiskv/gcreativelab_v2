@@ -2,6 +2,49 @@
     color: #913F97;
 }
 
-.services .left .content__holder .content__btn button{
+.services .left .content__holder .content__btn a{
     background: #913F97;
 }
+
+.slick-right{
+    width: 50vw !important;
+    height:100%;
+    .slick-services{
+        width: 100%;
+        height: 100%;
+        height: 100vh;
+    }
+    .slick-services-holder{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        
+    }
+    .slick-services-list{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        text-align: center;
+        h1{
+            align-self: center;
+            margin: 2rem 0;
+            font: 300 1.625rem/100% "Avenir","Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+            text-transform: uppercase;
+            color: $blue;
+        }
+        img{
+            margin: 0 auto;
+        }
+    }
+    .slick-list{
+        height: 100%;
+    }
+}
+
+// communications
+// design
+// production
+// social-media
+// strategy

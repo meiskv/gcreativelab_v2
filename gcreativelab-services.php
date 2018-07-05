@@ -46,15 +46,48 @@ get_header(); ?>
                                                 </p>
                                             </div>
                                             <div class="content__btn">
-                                                <button>SEE OUR CASE STUDY</button>
+                                                <a href="http://localhost:8888/DEV/gcreative/case/">SEE OUR CASE STUDY</a>
                                             </div>
                                             
                                         </div>
                                         <div class="address">INFO@GRAYLING.COM</div>
-                                        <div class="content__hero">G</div>
+										<div class="content__hero">G</div>
+										
                                     </div> <!--  Left Ends -->
-                                    <div class="right">
-                                        <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about__hero.svg" height="600" width="600" alt=""> -->
+                                    <div class="right slick-right">
+											<div class="slick-services">
+												<div class="slick-services-holder">
+														<div class="slick-services-list">
+															<img src="<?php echo get_template_directory_uri(); ?>/assets/images/services-icn/strategy.svg" width="122" height="132" alt="">
+															<h1>Strategy</h1>
+														</div>
+												</div>
+												<div class="slick-services-holder">
+														<div class="slick-services-list">
+															<img src="<?php echo get_template_directory_uri(); ?>/assets/images/services-icn/design.svg" width="122" height="132" alt="">
+															<h1>Design</h1>
+														</div>
+												</div>
+												<div class="slick-services-holder">
+														<div class="slick-services-list">
+															<img src="<?php echo get_template_directory_uri(); ?>/assets/images/services-icn/production.svg" width="122" height="132" alt="">
+															<h1>Production</h1>
+														</div>
+												</div>
+												<div class="slick-services-holder">
+														<div class="slick-services-list">
+															<img src="<?php echo get_template_directory_uri(); ?>/assets/images/services-icn/social-media.svg" width="122" height="132" alt="">
+															<h1>Communications</h1>
+														</div>
+												</div>
+												<div class="slick-services-holder">
+														<div class="slick-services-list">
+															<img src="<?php echo get_template_directory_uri(); ?>/assets/images/services-icn/public-relation.svg" width="122" height="132" alt="">
+															<h1>Social Media</h1>
+														</div>
+												</div>
+												
+											</div>
                                     </div>
                                 </div>
 								<!--  -->

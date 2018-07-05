@@ -42,11 +42,11 @@ get_header(); ?>
                                             <div class="content__subheader">PASSIONATE</div>
                                             <div class="content__description">
                                                 <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac eleifend velit. In vestibulum laoreet orci vitae efficitur. Mauris faucibus tempor quam ut lacinia. Cras ultricies risus at nisi faucibus pulvinar. Praesent cursus tellus lobortis erat facilisis aliquet. Donec magna lectus, cursus non tellus vel, tristique pharetra ligula.
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac eleifend velit. In vestibulum laoreet orci vitae efficitur. Mauris faucibus tempor quam ut lacinia. Cras ultricies risus at nisi faucibus pulvinar.
                                                 </p>
                                             </div>
                                             <div class="content__btn">
-                                                <button>VISIT OUR CASE STUDY</button>
+                                                <a href="http://localhost:8888/DEV/gcreative/services/">VISIT OUR CASE STUDY</a>
                                             </div>
                                             
                                         </div>

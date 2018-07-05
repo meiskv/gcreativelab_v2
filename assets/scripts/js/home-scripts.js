@@ -70,7 +70,8 @@ window.requestAnimationFrame(function() {
       direction: 'horizontal',
       slidesPerView: 'auto',
       mousewheel: true,
-      // centeredSlides: true, //MAKE EXPAND
+      centeredSlides: true,
+      grabCursor: true,
       freeMode: true,
       freeModeFluid: true,
       freeModeMomentumVelocityRatio: 0.5,
@@ -79,6 +80,42 @@ window.requestAnimationFrame(function() {
         clickable: true,
       },
   });
+
+  var swiper2 = new Swiper('.team-container', {
+    direction: 'horizontal',
+    slidesPerView: 'auto',
+    mousewheel: true,
+    // centeredSlides: true,
+    grabCursor: true,
+    freeMode: true,
+    freeModeFluid: true,
+    freeModeMomentumVelocityRatio: 0.5,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+});
+
+  $('.slick-services').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1500,
+  });
+
+  $('.home-slick').slick({
+    // centerMode: true,
+    infinite: true,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3500,
+    pauseOnHover: false,
+    slidesToShow: 5,
+    cssEase: 'easeInOutExpo',    
+  });
+
+
+
 
 
 });

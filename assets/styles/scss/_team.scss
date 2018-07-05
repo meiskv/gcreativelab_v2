@@ -2,6 +2,91 @@
     color: #F4795C;
 }
 
-.team .left .content__holder .content__btn button{
+.team .left .content__holder .content__btn a{
     background: #F4795C;
+}
+
+.team .left{
+    width: 50vw;
+}
+
+.team-container{
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    .swiper-slick{
+        width: 100vw !important;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+
+        /* Center slide text vertically */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20vw;
+    }
+    .main-slide{
+        min-width: 50vw;
+        background: #ffffff;
+        -webkit-box-shadow: 0px 0px 35px -1px rgba(0,0,0,0) !important;
+        -moz-box-shadow: 0px 0px 35px -1px rgba(0,0,0,0) !important;
+        box-shadow: 0px 0px 35px -1px rgba(0,0,0,0) !important;
+    }
+}
+
+.team-container .swiper-slide{
+    text-align: center;
+    font-size: 18px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 20vw;
+}
+
+.swiper-team{
+    
+    .team__holder{
+        width: 100%;
+        height: 100%;
+        text-align: left;
+        position: relative;
+        -webkit-box-shadow: 0px 0px 35px -1px rgba(0,0,0,0.05) !important;
+        -moz-box-shadow: 0px 0px 35px -1px rgba(0,0,0,0.05) !important;
+        box-shadow: 0px 0px 35px -1px rgba(0,0,0,0.05) !important;
+        ul{
+            width:100%;
+        }
+        li{
+            list-style: none;
+            padding: 0 1rem;
+        }
+        .team__meta{
+            width: 100%;
+            position: absolute;
+            bottom: 1.5rem;
+            left: 2rem;
+            
+           .team__subheader h1{
+                font: 700 1rem/100% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+                text-transform: uppercase;
+                color: $blue;
+           }
+           .team__name h1{
+            font: 700 2.3125rem/100% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+            text-transform: uppercase;
+            color: #F4795C;
+            }
+            .team__email{
+                font: 300 1rem/100% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+                text-transform: uppercase;
+                color: $blue;
+            }
+        }
+    }
 }

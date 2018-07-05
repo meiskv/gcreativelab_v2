@@ -58,7 +58,7 @@ get_header(); ?>
                                                                         </p>
                                                                     </div>
                                                                     <div class="content__btn">
-                                                                        <button>VISIT OUR CASE STUDY</button>
+                                                                        <a href="http://localhost:8888/DEV/gcreative/case/">VISIT OUR CASE STUDY</a>
                                                                     </div>
                                                                     
                                                                 </div>

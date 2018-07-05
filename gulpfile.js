@@ -11,7 +11,7 @@ var gulp  = require('gulp'),
 // Modify these variables to match your project needs
 
 // Set local URL if using Browser-Sync
-const LOCAL_URL = 'http://localhost:8888/gcreativelab/';
+const LOCAL_URL = 'http://localhost:3000/DEV/gcreative';
 
 // Set path to Foundation files
 const FOUNDATION = 'node_modules/foundation-sites';
@@ -24,6 +24,7 @@ const SOURCE = {
 		'node_modules/gsap/src/minified/TimelineMax.min.js',
 		'node_modules/gsap/src/minified/TweenMax.min.js',
 		'node_modules/swiper/dist/js/swiper.js',
+		'node_modules/slick-carousel/slick/slick.js',
 		'node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js',
 		'node_modules/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js',
 

@@ -58,12 +58,12 @@ get_header(); ?>
                                                                         </p>
                                                                     </div>
                                                                     <div class="content__btn">
-                                                                        <a href="http://localhost:8888/DEV/gcreative/case/">VISIT OUR CASE STUDY</a>
+                                                                        <a href="http://www.gcreativelab.com/contact/">CONTACT US</a>
                                                                     </div>
                                                                     
                                                                 </div>
                                                                 <div class="address">INFO@GRAYLING.COM</div>
-                                                                <div class="explore">DISCOVER THE STUDIO
+                                                                <div class="explore">WHO WE'VE WORK FOR
                                                                       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/explore_arrow.svg" width="10" height="9" alt="">
                                                                 </div>
                                                                 <div class="content__hero">G</div>

@@ -53,7 +53,7 @@ get_header(); ?>
                                                 </ul>
                                             </div>
                                             <div class="content__btn">
-                                                <button>INFO.GCREATIVE@GRAYLING.COM</button>
+                                                <a href="mailto:INFO.GCREATIVE@GRAYLING.COM">INFO.GCREATIVE@GRAYLING.COM</a>
                                             </div>
                                             
                                         </div>

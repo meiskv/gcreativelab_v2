@@ -87,7 +87,7 @@ window.requestAnimationFrame(function() {
     mousewheel: true,
     // centeredSlides: true,
     grabCursor: true,
-    freeMode: true,
+    // freeMode: true,
     freeModeFluid: true,
     freeModeMomentumVelocityRatio: 0.5,
     pagination: {

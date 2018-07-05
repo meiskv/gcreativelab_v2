@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: GCREATIVELAB HOME OLD
+Template Name: GCREATIVELAB TEAM
 */
 
 get_header(); ?>

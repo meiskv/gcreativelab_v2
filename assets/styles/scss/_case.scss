@@ -20,7 +20,9 @@
 }
 
 .case__inner__logo{
-    margin: 1rem 0;
+    img{
+        margin: 1rem 0;
+    }
 }
 
 .case-study-slide-container {
@@ -113,6 +115,7 @@
         .case__inner__description p{
             font: normal 1rem/150% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
             color: $blue;
+            margin: 2rem 0;
         }
         .case__deliverables{
             display: flex;

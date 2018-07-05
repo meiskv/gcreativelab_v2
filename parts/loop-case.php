@@ -64,7 +64,7 @@ $next_post = get_next_post();
                             <div class="case__inner__holder">
 
                                 <div class="case__inner__logo">
-                                        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"  width="100%" style="max-width: 150px;"/>                                        
+                                        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"  width="100%" style="max-width: 250px;"/>                                        
                                 </div>
                                 <div class="case__inner_title">
                                     <h1></h1>

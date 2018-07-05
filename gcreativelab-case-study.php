@@ -109,12 +109,7 @@ get_header(); ?>
                                                                 <h4><?php the_field('short_deliverables');?></h4>
                                                             </div>
                                                             <div class="case__description">
-                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                                                        Cras ac eleifend velit. In vestibulum laoreet orci vitae 
-                                                                        efficitur. Mauris faucibus tempor quam ut lacinia. Cras 
-                                                                        ultricies risus at nisi faucibus pulvinar. Praesent cursus 
-                                                                        tellus lobortis erat facilisis aliquet. Donec magna lectus, 
-                                                                        cursus non tellus vel, tristique pharetra ligula.</p>
+                                                            <p><?php the_field('client_short_description'); ?></p>
                                                             </div>
                                                             <div class="case__button">
                                                                 <a href="<?php echo get_permalink(); ?>">LEARN MORE</a>

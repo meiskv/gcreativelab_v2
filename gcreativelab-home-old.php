@@ -114,50 +114,8 @@ get_header(); ?>
 												</div>
 												<?php endwhile; ?>
 											<?php endif; ?>
-											<div class="swiper-slide swiper-cases">
-													<div class="case__home__holder">
-														<div class="case__home__img">
-															<img src="<?php echo get_field('client_feature_image')['url']; ?>" alt="">
-															<!-- <img src="http://localhost:8888/DEV/gcreative/uploads/2018/06/cover.jpg" alt=""> -->
-														</div>
-														<div class="case__home__category">
-															<h4>CASE STUDY</h4>
-															<p><?php echo the_field('description_excerpt'); ?></p>
-														</div>
-														<div class="case__home__meta">
-																<div class="case__home__date">
-																	<h4>June 26 - 2018</h4>
-																</div>
-																<div class="case__home__title"><h1><?php echo the_title(); ?></h1></div>
-																<div class="case__home__btn">
-																	<a href="<?php echo get_permalink(); ?>">READ MORE</a>
-																</div>
-														</div>
-													<!-- <div class="case__home__number">.0<?php echo $number; ?></div> -->
-													</div>
-												</div>
-												<div class="swiper-slide swiper-cases">
-														<div class="case__home__holder">
-															<div class="case__home__img">
-																<img src="<?php echo get_field('client_feature_image')['url']; ?>" alt="">
-																<!-- <img src="http://localhost:8888/DEV/gcreative/uploads/2018/06/cover.jpg" alt=""> -->
-															</div>
-															<div class="case__home__category">
-																<h4>CASE STUDY</h4>
-																<p><?php echo the_field('description_excerpt'); ?></p>
-															</div>
-															<div class="case__home__meta">
-																	<div class="case__home__date">
-																		<h4>June 26 - 2018</h4>
-																	</div>
-																	<div class="case__home__title"><h1><?php echo the_title(); ?></h1></div>
-																	<div class="case__home__btn">
-																		<a href="<?php echo get_permalink(); ?>">READ MORE</a>
-																	</div>
-															</div>
-														<!-- <div class="case__home__number">.0<?php echo $number; ?></div> -->
-														</div>
-													</div>
+											
+												
 											</div>
 										</div>
 										<!-- Add Pagination -->

@@ -280,6 +280,8 @@ $pink: #D81C5C;
     .active>a{
         background: #ffffff;
         color: $pink;
+        pointer-events: none;
+        
     }    
     a{
         color: $blue;

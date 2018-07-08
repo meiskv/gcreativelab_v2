@@ -7,101 +7,90 @@
 // OPTIONAL - waits til next tick render to run code (prevents running in the middle of render tick)
 window.requestAnimationFrame(function() {
     console.clear();
+    
+
+    var Homepage = Barba.BaseView.extend({
+      namespace: 'homepage',
+      onEnter: function() {
+          // The new Container is ready and attached to the DOM.
+          console.log('home onEnter');
+      },
+      onEnterCompleted: function() {
+          // The Transition has just finished.
+          var menuButton = document.querySelector('.menu-button');
+          var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 'auto',
+            initialSlide: 1,
+            resistanceRatio: 0,
+            simulateTouch: false,
+            touchRatio: 0,
+            freeMode: true,
+            resizeReInit: true,
+            observer: true,
+            // mousewheel: true,
+            slideToClickedSlide: true,
+            on: {
+              init: function () {
+                var slider = this;
+                menuButton.addEventListener('click', function () {
+                  if (slider.activeIndex === 0) {
+                    slider.slideNext();
+                  } else {
+                    slider.slidePrev();
+                  }
+                }, true);
+              },
+              slideChange: function () {
+                var slider = this;
+                if (slider.activeIndex === 0) {
+                  menuButton.classList.add('cross');
+                } else {
+                  menuButton.classList.remove('cross');
+                }
+              },
+            }
+          });
+
+          swiper.update()
+
+          var swiper2 = new Swiper('.home-slide-container', {
+            direction: 'horizontal',
+            slidesPerView: 'auto',
+            mousewheel: true,
+            centeredSlides: true,
+            grabCursor: true,
+            freeMode: true,
+            freeModeFluid: true,
+            freeModeMomentumVelocityRatio: 0.5,
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+            },
+        });
+      },
+      onLeave: function() {
+          // A new Transition toward a new page has just started.
+      },
+      onLeaveCompleted: function() {
+          // The Container has just been removed from the DOM.
+      }
+    });
+    
+    // Don't forget to init the view!
+    Homepage.init();
+    Barba.Prefetch.init();
+    Barba.Pjax.start();
 
     let controller = new ScrollMagic.Controller({vertical: false});
 
-    // $('.home-cs-slide').each(function(){
+   
 
-    //   // let csExpand = TweenMax.from($(this),0.3,{width: '50vw', pause:true})
-    //     let xCase = this;
-    //     let scene = new ScrollMagic.Scene({
-    //       triggerElement: this,
-    //       triggerHook: 0.7,
-    //       duration: 0,
-    //       // loglevel: 3,
-    //     })
-    //     // .setTween(csExpand)
-    //     .addTo(controller)
-    //     .addIndicators({
-    //       name: 'fade scene',
-    //     })
-    //     .on("enter", function (event) {
-    //       scene.setClassToggle(xCase,'cs-expand')
-    //       $(this).addClass('cs-expand');
-    //     })
-    //     .on("leave", function (event) {
-    //       $(this).removeClass('cs-expand');
-    //     })
-    // });
 
-    var menuButton = document.querySelector('.menu-button');
-    var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 'auto',
-      initialSlide: 1,
-      resistanceRatio: 0,
-      simulateTouch: false,
-      touchRatio: 0,
-      freeMode: true,
-      // mousewheel: true,
-      slideToClickedSlide: true,
-      on: {
-        init: function () {
-          var slider = this;
-          menuButton.addEventListener('click', function () {
-            if (slider.activeIndex === 0) {
-              slider.slideNext();
-            } else {
-              slider.slidePrev();
-            }
-          }, true);
-        },
-        slideChange: function () {
-          var slider = this;
-          if (slider.activeIndex === 0) {
-            menuButton.classList.add('cross');
-          } else {
-            menuButton.classList.remove('cross');
-          }
-        },
-      }
-    });
+    
 
-    var swiper2 = new Swiper('.home-slide-container', {
-      direction: 'horizontal',
-      slidesPerView: 'auto',
-      mousewheel: true,
-      centeredSlides: true,
-      grabCursor: true,
-      freeMode: true,
-      freeModeFluid: true,
-      freeModeMomentumVelocityRatio: 0.5,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-  });
+  
 
-  var swiper2 = new Swiper('.team-container', {
-    direction: 'horizontal',
-    slidesPerView: 'auto',
-    mousewheel: true,
-    // centeredSlides: true,
-    grabCursor: true,
-    // freeMode: true,
-    freeModeFluid: true,
-    freeModeMomentumVelocityRatio: 0.5,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-});
-
-  $('.slick-services').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 1500,
-  });
+ 
 
   $('.home-slick').slick({
     // centerMode: true,

@@ -10,7 +10,8 @@ get_header(); ?>
 		<div class="inner-content grid-x grid-margin-x grid-padding-x">
 	
 		    <main id="main-container" class="main small-12 medium-12 large-12 cell" role="main">
-				
+			<div id="barba-wrapper">
+  				<div class="barba-container" data-namespace="teampage">
 				<!-- Swiper -->
 				<div class="swiper-container">
 					<div class="swiper-wrapper">
@@ -203,7 +204,8 @@ get_header(); ?>
 						</div>
 					</div>
 				</div>
-
+				</div>
+				</div>
 			</main> <!-- end #main -->
 		    
 		</div> <!-- end #inner-content -->

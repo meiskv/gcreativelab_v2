@@ -27,6 +27,7 @@ const SOURCE = {
 		'node_modules/slick-carousel/slick/slick.js',
 		'node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js',
 		'node_modules/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js',
+		// 'node_modules/barba.js/dist/barba.js',
 
 		// Foundation core - needed if you want to use any of the components below
 		FOUNDATION + '/dist/js/plugins/foundation.core.js',

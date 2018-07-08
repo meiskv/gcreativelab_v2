@@ -53,7 +53,12 @@
 			<div class="off-canvas-content" data-off-canvas-content>
 				
 				<header class="header" role="banner">
-							
+					<div class="transition">
+						<svg width="100%" height="100%">
+							<rect class="white" width="100%" height="100vh" style="fill:rgb(255,255,255);" />
+							<rect class="gray" width="100%" height="100vh" style="fill:rgb(248,248,248);" />
+						</svg>
+					</div>
 					 <!-- This navs will be applied to the topbar, above all content 
 						  To see additional nav styles, visit the /parts directory -->
 
@@ -61,6 +66,10 @@
 					<a href="<?php echo site_url();?>">
 					 	<img class="glogo" src="<?php echo get_template_directory_uri(); ?>/assets/images/gcreative_logo.svg" width="80" height="93" alt="">
 					 </a>
+
+
 					 <!-- ENDS HERE -->
+					
+					 
 	 	
 				</header> <!-- end .header -->

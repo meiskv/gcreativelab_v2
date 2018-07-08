@@ -55,7 +55,7 @@ get_header(); ?>
                                             
                                         </div>
                                         <div class="address">INFO@GRAYLING.COM</div>
-                                        <!-- <div class="content__hero">G</div> -->
+                                        <div class="content__hero">G</div>
                                     </div> <!--  Left Ends -->
                                 </div>
 								<!--  -->

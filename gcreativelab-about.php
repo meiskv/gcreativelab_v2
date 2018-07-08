@@ -31,7 +31,7 @@ get_header(); ?>
 						</ul>
 
 						</div>
-						<div class="swiper-slide content">
+						<div class="swiper-slide content content-about">
 							<div class="menu-button">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/menu.svg" width="42" height="84" alt="">
 							</div>

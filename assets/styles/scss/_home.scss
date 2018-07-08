@@ -2,7 +2,7 @@
     font-family: 'Avenir';
     font-weight: 400;
     user-select: auto !important;
-    transition: 0.3s;
+    // transition: 0.3s;
 }
 
 // Highlight
@@ -43,9 +43,9 @@
         .content__header{
             font-weight: normal;
         }
-        .content__subheader{
+        .content__subheader, .content__subheader div{
             font-weight: bold;
-            color: #FCC210;
+            // color: #FCC210;
         }
         .content__description{
             font: 1rem/100% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
@@ -419,5 +419,22 @@ $pink: #D81C5C;
     .slick-current{
         width: 40vw !important;
         transition: 1.7s;
+    }
+}
+
+
+// TRANSITION
+
+.transition{
+    svg{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -5;
+    }
+    .white,.gray{
+        // transform: translateX(100%);
     }
 }

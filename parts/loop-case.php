@@ -24,7 +24,8 @@ $next_post = get_next_post();
 
 ?>
 
-
+<div id="barba-wrapper">
+        <div class="barba-container" data-namespace="caseinnerpage">
 <!-- Swiper -->
 <div class="swiper-container">
 <div class="swiper-wrapper">
@@ -119,19 +120,19 @@ $next_post = get_next_post();
                     
 
                         <div class="swiper-slide case__slide">
-                            <img src="<?php echo $client_img['url']; ?>" width="100%" height="100%" alt="">
+                            <img src="<?php echo $client_img['url']; ?>" width="100%" height="100%" alt="" data-swiper-parallax="100">
                         </div>
 
                         <div class="swiper-slide case__slide">
                             <div class="case__inner__slide__holder">
                                 <div class="case__inner__slide__title">
-                                    <h1><?php echo get_field('01_title'); ?></h1>
+                                    <h1 data-swiper-parallax="-100"><?php echo get_field('01_title'); ?></h1>
                                 </div>
                                 <div class="case__inner__slide__subtitle">
-                                    <h4>Subtitle</h4>
+                                    <h4 data-swiper-parallax="-110">Subtitle</h4>
                                 </div>
                                 <div class="case__inner__slide__description">
-                                    <p><?php echo get_field('title_01_description'); ?></p>
+                                    <div data-swiper-parallax="-130"><?php echo get_field('title_01_description'); ?></div>
                                 </div>
                             </div>
                         </div>
@@ -143,19 +144,19 @@ $next_post = get_next_post();
                         <div class="swiper-slide case__slide">
                                 <div class="case__inner__slide__holder">
                                     <div class="case__inner__slide__title">
-                                        <h1><?php echo get_field('02_title'); ?></h1>
+                                        <h1 data-swiper-parallax="20"><?php echo get_field('02_title'); ?></h1>
                                     </div>
                                     <div class="case__inner__slide__subtitle">
-                                        <h4>Subtitle</h4>
+                                        <h4 data-swiper-parallax="40">Subtitle</h4>
                                     </div>
                                     <div class="case__inner__slide__description">
-                                        <p><?php echo get_field('title_02_description'); ?></p>
+                                        <div data-swiper-parallax="50"><?php echo get_field('title_02_description'); ?></div>
                                     </div>
                                 </div>
                             </div>
     
                         <div class="swiper-slide case__slide">
-                                <img src="<?php echo $client_img02['url']; ?>" width="100%" height="100%" alt="">
+                                <img data-swiper-parallax="300" src="<?php echo $client_img02['url']; ?>" width="100%" height="100%" alt="">
                         </div>
                             
                         <div class="swiper-slide case__slide">
@@ -234,4 +235,6 @@ $next_post = get_next_post();
             <!--  -->
     </div>
 </div>
-</div>
+</div> <!-- Swiper Ends -->
+        </div>
+        </div>

@@ -70,6 +70,7 @@ window.requestAnimationFrame(function() {
       },
       onLeave: function() {
           // A new Transition toward a new page has just started.
+          
       },
       onLeaveCompleted: function() {
           // The Container has just been removed from the DOM.
@@ -82,11 +83,54 @@ window.requestAnimationFrame(function() {
     Barba.Pjax.start();
 
     let controller = new ScrollMagic.Controller({vertical: false});
+  
 
-   
+    Barba.Dispatcher.on('initStateChange', function(currentStatus, oldStatus, container) {
+      
+        let pageTransition = new TimelineMax({onComplete: pageTransitionComplete, yoyo:true, repeat: 1});
+
+        let $ww = window.innerWidth;
+
+        pageTransition.set('.transition svg',{zIndex: -5});
+        pageTransition.set('.transition svg',{zIndex: 999});
+        pageTransition.set(['.white','.gray'],{x: $ww})
+        pageTransition.to('.white',0.7,{x: 0, force3D: true, ease:Expo.easeInOut});
+        pageTransition.to('.gray',0.7,{x: 0, force3D: true, delay: 0.2, ease:Expo.easeInOut},"-0.1");
 
 
+
+        function pageTransitionComplete(){
+            console.log('pageTransitionComplete');
+        }
+      
+    });
     
+
+    Barba.Dispatcher.on('transitionCompleted', function(currentStatus, oldStatus, container) {
+
+        var about = new TimelineMax({delay: 1});
+
+        // ABOUT ANIMATION STARTS
+        var $content__header = $('.content__header');
+        var $content__subheader = $('.content__subheader');
+        var $content__description = $('.content__description p');
+
+
+        var $content__headerST = new SplitText([$content__header], {type:"words"});
+        var $content__subheaderST = new SplitText([$content__subheader], {type:"words"});
+        var $content__descriptionST = new SplitText([$content__description], {type:"words"});
+
+        $content__headerST.split({type:"chars, words"})
+        $content__subheaderST.split({type:"chars, words"})
+        $content__descriptionST.split({type:"chars, words,lines"})
+
+        about.staggerFromTo($content__headerST.chars, 1.2, {y:80, autoAlpha:0},{y:0, autoAlpha:1,ease: Power4.easeInOut}, 0.03)
+        about.staggerFromTo($content__subheaderST.chars, 1.2, {y:80, autoAlpha:0},{y:0, autoAlpha:1,ease: Power4.easeInOut}, 0.03,'-=1')
+        about.staggerFromTo($content__descriptionST.words, 0.5, {y:50, autoAlpha:0},{y:0, autoAlpha:1,ease: Expo.easeInOut}, 0.01,'-=1')
+        
+      
+
+    });
 
   
 

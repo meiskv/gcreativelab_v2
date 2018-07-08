@@ -83,7 +83,6 @@
         
         caseinnerpage.init();
         Barba.Prefetch.init();
-        Barba.Pjax.start();
         
     
     

@@ -121,6 +121,7 @@ $next_post = get_next_post();
 
                         <div class="swiper-slide case__slide">
                             <img src="<?php echo $client_img['url']; ?>" width="100%" height="100%" alt="" data-swiper-parallax="100">
+                            
                         </div>
 
                         <div class="swiper-slide case__slide">

@@ -98,7 +98,7 @@
         
         contactpage.init();
         Barba.Prefetch.init();
-        Barba.Pjax.start();
+
         
     
     

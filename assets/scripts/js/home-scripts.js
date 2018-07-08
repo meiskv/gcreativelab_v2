@@ -28,7 +28,7 @@ window.requestAnimationFrame(function() {
             resizeReInit: true,
             observer: true,
             // mousewheel: true,
-            slideToClickedSlide: true,
+            slideToClickedSlide: false,
             on: {
               init: function () {
                 var slider = this;
@@ -66,6 +66,20 @@ window.requestAnimationFrame(function() {
               el: '.swiper-pagination',
               clickable: true,
             },
+            on: {
+              init: function () {
+                var slider = this;
+                  if (slider.activeIndex === 0) {
+                    let slideWrapper = $('.home-slide-container > .swiper-wrapper');
+
+                    TweenLite.to(slideWrapper,0.5,{x:177})
+
+                    slider.slideNext();
+                  } else {
+                    slider.slidePrev();
+                  }
+              }
+            }
         });
       },
       onLeave: function() {
@@ -108,25 +122,25 @@ window.requestAnimationFrame(function() {
 
     Barba.Dispatcher.on('transitionCompleted', function(currentStatus, oldStatus, container) {
 
-        var about = new TimelineMax({delay: 1});
+        // var about = new TimelineMax({delay: 1});
 
-        // ABOUT ANIMATION STARTS
-        var $content__header = $('.content__header');
-        var $content__subheader = $('.content__subheader');
-        var $content__description = $('.content__description p');
+        // // ABOUT ANIMATION STARTS
+        // var $content__header = $('.content__header');
+        // var $content__subheader = $('.content__subheader');
+        // var $content__description = $('.content__description p');
 
 
-        var $content__headerST = new SplitText([$content__header], {type:"words"});
-        var $content__subheaderST = new SplitText([$content__subheader], {type:"words"});
-        var $content__descriptionST = new SplitText([$content__description], {type:"words"});
+        // var $content__headerST = new SplitText([$content__header], {type:"words"});
+        // var $content__subheaderST = new SplitText([$content__subheader], {type:"words"});
+        // var $content__descriptionST = new SplitText([$content__description], {type:"words"});
 
-        $content__headerST.split({type:"chars, words"})
-        $content__subheaderST.split({type:"chars, words"})
-        $content__descriptionST.split({type:"chars, words,lines"})
+        // $content__headerST.split({type:"chars, words"})
+        // $content__subheaderST.split({type:"chars, words"})
+        // $content__descriptionST.split({type:"chars, words,lines"})
 
-        about.staggerFromTo($content__headerST.chars, 1.2, {y:80, autoAlpha:0},{y:0, autoAlpha:1,ease: Power4.easeInOut}, 0.03)
-        about.staggerFromTo($content__subheaderST.chars, 1.2, {y:80, autoAlpha:0},{y:0, autoAlpha:1,ease: Power4.easeInOut}, 0.03,'-=1')
-        about.staggerFromTo($content__descriptionST.words, 0.5, {y:50, autoAlpha:0},{y:0, autoAlpha:1,ease: Expo.easeInOut}, 0.01,'-=1')
+        // about.staggerFromTo($content__headerST.chars, 1.2, {y:80, autoAlpha:0},{y:0, autoAlpha:1,ease: Power4.easeInOut}, 0.03)
+        // about.staggerFromTo($content__subheaderST.chars, 1.2, {y:80, autoAlpha:0},{y:0, autoAlpha:1,ease: Power4.easeInOut}, 0.03,'-=1')
+        // about.staggerFromTo($content__descriptionST.words, 0.5, {y:50, autoAlpha:0},{y:0, autoAlpha:1,ease: Expo.easeInOut}, 0.01,'-=1')
         
       
 
@@ -148,6 +162,8 @@ window.requestAnimationFrame(function() {
   });
 
 
+
+ 
 
 
 

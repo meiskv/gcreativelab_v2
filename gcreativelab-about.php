@@ -43,11 +43,11 @@ get_header(); ?>
                                             <div class="content__subheader">PASSIONATE</div>
                                             <div class="content__description">
                                                 <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac eleifend velit. In vestibulum laoreet orci vitae efficitur. Mauris faucibus tempor quam ut lacinia. Cras ultricies risus at nisi faucibus pulvinar.
+                                                We are a part of Grayling Public Relations, a wholly owned subsidiary of Huntsworth PLC – a public relations focused group listed on the London Stock Exchange. This allows us to provide truly integrated strategic services, and worldwide reach with local expertise and knowledge, combined with unrivalled and diverse sector experience.
                                                 </p>
                                             </div>
                                             <div class="content__btn">
-                                                <a href="http://www.gcreativelab.com/case/">VISIT OUR CASE STUDY</a>
+                                                <a href="http://www.gcreativelab.com/services/">OUR SERVICES</a>
                                             </div>
                                             
                                         </div>

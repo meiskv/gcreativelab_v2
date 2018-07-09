@@ -39,8 +39,8 @@ get_header(); ?>
                                 <div class="wrapper contact">
                                     <div class="left"> <!--  Left Starts -->
                                         <div class="content__holder">
-                                            <div class="content__header">HOLA</div>
-                                            <div class="content__subheader">KEEP IN TOUCH</div>
+                                            <div class="content__header">WE ARE</div>
+                                            <div class="content__subheader">HERE</div>
                                             <div class="content__description">
                                                 <ul>
                                                     <li>

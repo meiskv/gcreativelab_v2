@@ -53,6 +53,22 @@ window.requestAnimationFrame(function() {
 
           swiper.update()
 
+          function getTransform(el) {
+            var results = $(el).css('-webkit-transform').match(/matrix(?:(3d)\(\d+(?:, \d+)*(?:, (\d+))(?:, (\d+))(?:, (\d+)), \d+\)|\(\d+(?:, \d+)*(?:, (\d+))(?:, (\d+))\))/)
+        
+            if(!results) return [0, 0, 0];
+            if(results[1] == '3d') return results.slice(2,5);
+        
+            results.push(0);
+            return results.slice(5, 8);
+        }
+
+        let slideWrapper = $('.home-slide-container > .swiper-wrapper');
+        let mainSlider = $('.home-slide-container > .main-slide');
+        let mainSliderr = document.getElementById("main-slide");
+
+          let currentPos;
+
           var swiper2 = new Swiper('.home-slide-container', {
             direction: 'horizontal',
             slidesPerView: 'auto',
@@ -70,27 +86,9 @@ window.requestAnimationFrame(function() {
               init: function () {
                 var slider = this;
                   if (slider.activeIndex === 0) {
-                    let slideWrapper = $('.home-slide-container > .swiper-wrapper');
-                    let mainSlider = $('.home-slide-container > .main-slide');
-                    let mainSliderr = document.getElementById("main-slide");
-                    // slideWrapper.offset().left - $(window).scrollLeft();
                     
-                    console.log(slideWrapper.offset().left - $(window).scrollLeft());
-                    console.log(slideWrapper.position().left);
-                    console.log(mainSlider.scrollLeft);
-                    console.log(mainSliderr._gsTransform);
-
-                    function getTransform(el) {
-                      var results = $(el).css('-webkit-transform').match(/matrix(?:(3d)\(\d+(?:, \d+)*(?:, (\d+))(?:, (\d+))(?:, (\d+)), \d+\)|\(\d+(?:, \d+)*(?:, (\d+))(?:, (\d+))\))/)
-                  
-                      if(!results) return [0, 0, 0];
-                      if(results[1] == '3d') return results.slice(2,5);
-                  
-                      results.push(0);
-                      return results.slice(5, 8);
-                  }
-
                   console.log(getTransform(slideWrapper)[0]);
+                  currentPos = getTransform(slideWrapper)[0];
                   
                   let finalPos = (getTransform(slideWrapper)[0]-slideWrapper.position().left);
 
@@ -100,6 +98,16 @@ window.requestAnimationFrame(function() {
                   } else {
                     slider.slidePrev();
                   }
+              },
+              sliderMove: function (){
+                
+                // if(currentPos<=300){
+                //    TweenLite.to(slideWrapper,0.5,{force3D:true,x: finalPos})
+                // }
+
+              },
+              resize: function(){
+                location.reload();
               }
             }
         });
@@ -183,6 +191,69 @@ window.requestAnimationFrame(function() {
     cssEase: 'easeInOutExpo',    
   });
 
+
+  var FadeTransition = Barba.BaseTransition.extend({
+    start: function() {
+      /**
+       * This function is automatically called as soon the Transition starts
+       * this.newContainerLoading is a Promise for the loading of the new container
+       * (Barba.js also comes with an handy Promise polyfill!)
+       */
+  
+      // As soon the loading is finished and the old page is faded out, let's fade the new page
+      Promise
+        .all([this.newContainerLoading, this.fadeOut()])
+        .then(this.fadeIn.bind(this));
+    },
+  
+    fadeOut: function() {
+      /**
+       * this.oldContainer is the HTMLElement of the old Container
+       */
+  
+      return $(this.oldContainer).animate({ opacity: 0 }).promise();
+    },
+  
+    fadeIn: function() {
+      /**
+       * this.newContainer is the HTMLElement of the new Container
+       * At this stage newContainer is on the DOM (inside our #barba-container and with visibility: hidden)
+       * Please note, newContainer is available just after newContainerLoading is resolved!
+       */
+  
+      var _this = this;
+      var $el = $(this.newContainer);
+  
+      $(this.oldContainer).hide();
+  
+      $el.css({
+        visibility : 'visible',
+        opacity : 0
+      });
+  
+      $el.animate({ opacity: 1 }, 400, function() {
+        /**
+         * Do not forget to call .done() as soon your transition is finished!
+         * .done() will automatically remove from the DOM the old Container
+         */
+  
+        _this.done();
+      });
+    }
+  });
+  
+  /**
+   * Next step, you have to tell Barba to use the new Transition
+   */
+  
+  Barba.Pjax.getTransition = function() {
+    /**
+     * Here you can use your own logic!
+     * For example you can use different Transition based on the current page or link...
+     */
+  
+    return FadeTransition;
+  };
 
 
  

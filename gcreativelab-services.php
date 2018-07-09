@@ -39,15 +39,18 @@ get_header(); ?>
                                 <div class="wrapper services">
                                     <div class="left"> <!--  Left Starts -->
                                         <div class="content__holder">
-                                            <div class="content__header">OUR CORE</div>
-                                            <div class="content__subheader">DISCIPLINES</div>
+                                            <div class="content__header">WE ARE</div>
+                                            <div class="content__subheader">VERSATILE</div>
                                             <div class="content__description">
                                                 <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac eleifend velit. In vestibulum laoreet orci vitae efficitur. Mauris faucibus tempor quam ut lacinia. Cras ultricies risus at nisi faucibus pulvinar. Praesent cursus tellus lobortis erat facilisis aliquet. Donec magna lectus, cursus non tellus vel, tristique pharetra ligula.
+														We are a fully incorporated public relations and communications agency offering 360° solutions led by strategy and insight, driven by our passion for design and strengthened by our love for storytelling.
+														
+														From advertising and creative design, brand development, and digital and social media expertise to media and public relations, crisis management and corporate communications, our comprehensive range of services are tailored to address the evolving needs of our diverse clients.
+														
                                                 </p>
                                             </div>
                                             <div class="content__btn">
-                                                <a href="http://www.gcreativelab.com/case/">SEE OUR CASE STUDY</a>
+                                                <a href="http://www.gcreativelab.com/case/">OUR WORK</a>
                                             </div>
                                             
                                         </div>

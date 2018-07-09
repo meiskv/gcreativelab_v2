@@ -31,7 +31,8 @@
     }
     // Left Styles Starts
     .left .content__holder{
-        padding: 0 12rem;
+        // padding: 0 12rem;
+        padding-left: 12rem;
         align-self: flex-end;
         margin-bottom: 10rem;
         text-align: left;
@@ -51,6 +52,7 @@
             font: 1rem/100% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
             color: #0F294B;
             margin: 1.5rem 0;
+            padding-right: 5rem;
         }
         .content__btn,.home__content__btn{
             display: inline-block;
@@ -125,13 +127,13 @@ $pink: #D81C5C;
         // align-self: flex-start;
         
         img{
-            height: 45vh;
+            height: 65vh;
             width: auto;
             object-fit: cover;
         }
     }
     .case__home__category{
-        padding: 2rem;
+        padding: 0 2rem;
     }
     .case__home__category h4{
         font: 700 1rem/100% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
@@ -139,32 +141,39 @@ $pink: #D81C5C;
     .case__home__category p{
         opacity: 0;
         font: 300 0.8rem/150% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-        margin-top: 3rem;
         transform: translateY(20px)
     }
-    .case__home__meta{
+    .case__home__btn{
         position: absolute;
-        left: 2rem;
         bottom: 2rem;
+        left: 2rem;
+
+    }
+    .case__home__btn a{
+        padding: 1rem 0;
+        font: 900 0.75rem/100% "Avenir", AppleGothic, sans-serif;
+        border-bottom: 3px solid $pink;
+        color: $blue;
+    }
+    .case__home__meta{
+        // position: absolute;
+        // left: 2rem;
+        // bottom: 2rem;
+        padding: 2rem;
         color: $blue;
         z-index: 2;
         .case__home__date h4{
-            font: 700 1rem/100% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-            color: $blue;
+            font: 500 1rem/100% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+            color: $pink;
         }
         .case__home__title{
-            margin-bottom: 3rem;
+            // margin-bottom: 3rem;
         }
         .case__home__title h1{
-            font: 500 1.25rem/250% "Avenir", AppleGothic, sans-serif;
+            font: 500 1.25rem/100% "Avenir", AppleGothic, sans-serif;
             color: $blue;
         }
-        .case__home__btn a{
-            padding: 1rem 0;
-            font: 900 0.75rem/100% "Avenir", AppleGothic, sans-serif;
-            border-bottom: 3px solid $pink;
-            color: $blue;
-        }
+        
     }
     .case__home__number{
         position: absolute;
@@ -209,7 +218,7 @@ $pink: #D81C5C;
 }
 
 .home-slide-container .swiper-wrapper > .swiper-slide-active .case__home__meta .case__home__title h1{
-    color: $pink;
+    // color: $pink;
     font-weight: bold;
     font-size: 1.5rem;
 }
@@ -304,7 +313,7 @@ $pink: #D81C5C;
     position: absolute;
     bottom: 2rem;
     left: 2rem;
-    font: 700 0.9rem/100% 'Avenir', sans-serif;
+    font: 500 0.9rem/100% 'Avenir', sans-serif;
 }
 
 #social{

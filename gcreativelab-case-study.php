@@ -55,7 +55,7 @@ get_header(); ?>
                                                                     <div class="content__subheader">OUR WORK</div>
                                                                     <div class="content__description">
                                                                         <p>
-                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac eleifend velit. In vestibulum laoreet orci vitae efficitur. Mauris faucibus tempor quam ut lacinia. Cras ultricies risus at nisi faucibus pulvinar. Praesent cursus tellus lobortis erat facilisis aliquet. Donec magna lectus, cursus non tellus vel, tristique pharetra ligula.
+                                                                        With clients across diverse sectors including aerospace, education, energy, healthcare, finance, hospitality, real estate, renewables, sports, leisure, and technology – we’ll let our work do all the talking. After all, actions speak louder than words.
                                                                         </p>
                                                                     </div>
                                                                     <div class="content__btn">

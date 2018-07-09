@@ -47,11 +47,19 @@ get_header(); ?>
 									<div class="wrapper team">
 											<div class="left"> <!--  Left Starts -->
 												<div class="content__holder">
-													<div class="content__header">OUR</div>
-													<div class="content__subheader">TEAM</div>
+													<div class="content__header">WE ARE</div>
+													<div class="content__subheader">GCREATIVE</div>
 													<div class="content__description">
 														<p>
-														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac eleifend velit. In vestibulum laoreet orci vitae efficitur. Mauris faucibus tempor quam ut lacinia. Cras ultricies risus at nisi faucibus pulvinar. Praesent cursus tellus lobortis erat facilisis aliquet. Donec magna lectus, cursus non tellus vel, tristique pharetra ligula.
+														We believe that brands that stand out come from people that don’t fit in. 
+
+														Young and restless.
+														Hungry and passionate.
+														Insomniacs and coffee addicts.
+														Wordsmiths and visual storytellers.
+														Rebels and trendsetters.
+
+														People like us.
 														</p>
 													</div>
 													<div class="content__btn">

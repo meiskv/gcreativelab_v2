@@ -1,6 +1,4 @@
-(function( $ ) {
-
-   
+(function( $ ) {   
 
 // wait until window is loaded - all images, styles-sheets, fonts, links, and other media assets
   
@@ -111,6 +109,20 @@ window.requestAnimationFrame(function() {
               }
             }
         });
+
+
+        var gpreload = new TimelineMax({repeat: -1, delay: 1});
+        
+        gpreload.to(".header_animation", 0.6, {text:"DIFFERENT",ease:Expo.easeInOut,delay: 0.3})
+        .to(".header_animation", 0.6, {text:"ENTHUSIASTIC",ease:Expo.easeInOut})
+        .to(".header_animation", 0.6, {text:"PASSIONATE",ease:Expo.easeInOut})
+        .to(".header_animation", 0.6, {text:"CONNECTED",ease:Expo.easeInOut})
+        .to(".header_animation", 0.6, {text:"VERSATILE",ease:Expo.easeInOut})
+        .to(".header_animation", 0.6, {text:"EXPRESSIVE",ease:Expo.easeInOut})
+        .to(".header_animation", 0.6, {text:"INNOVATIVE",ease:Expo.easeInOut})
+        .to(".header_animation", 0.6, {text:"BOLD",ease:Expo.easeInOut});
+
+
       },
       onLeave: function() {
           // A new Transition toward a new page has just started.
@@ -255,7 +267,7 @@ window.requestAnimationFrame(function() {
     return FadeTransition;
   };
 
-
+ 
  
 
 

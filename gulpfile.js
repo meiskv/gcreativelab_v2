@@ -28,6 +28,7 @@ const SOURCE = {
 		'node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js',
 		'node_modules/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js',
 		'node_modules/bodymovin/build//player/bodymovin.js',
+		'node_modules/gsap/src/uncompressed/plugins/TextPlugin.js',
 		'node_modules/gsap/src/uncompressed/bonus/SplitText.js',
 		// 'node_modules/barba.js/dist/barba.js',
 

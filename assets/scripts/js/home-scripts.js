@@ -71,10 +71,32 @@ window.requestAnimationFrame(function() {
                 var slider = this;
                   if (slider.activeIndex === 0) {
                     let slideWrapper = $('.home-slide-container > .swiper-wrapper');
+                    let mainSlider = $('.home-slide-container > .main-slide');
+                    let mainSliderr = document.getElementById("main-slide");
+                    // slideWrapper.offset().left - $(window).scrollLeft();
+                    
+                    console.log(slideWrapper.offset().left - $(window).scrollLeft());
+                    console.log(slideWrapper.position().left);
+                    console.log(mainSlider.scrollLeft);
+                    console.log(mainSliderr._gsTransform);
 
-                    TweenLite.to(slideWrapper,0.5,{x:177})
+                    function getTransform(el) {
+                      var results = $(el).css('-webkit-transform').match(/matrix(?:(3d)\(\d+(?:, \d+)*(?:, (\d+))(?:, (\d+))(?:, (\d+)), \d+\)|\(\d+(?:, \d+)*(?:, (\d+))(?:, (\d+))\))/)
+                  
+                      if(!results) return [0, 0, 0];
+                      if(results[1] == '3d') return results.slice(2,5);
+                  
+                      results.push(0);
+                      return results.slice(5, 8);
+                  }
 
-                    slider.slideNext();
+                  console.log(getTransform(slideWrapper)[0]);
+                  
+                  let finalPos = (getTransform(slideWrapper)[0]-slideWrapper.position().left);
+
+                    TweenLite.to(slideWrapper,0.5,{force3D:true,x: finalPos})
+
+                    // slider.slideNext();
                   } else {
                     slider.slidePrev();
                   }

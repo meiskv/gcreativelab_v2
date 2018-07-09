@@ -40,7 +40,7 @@ get_header(); ?>
 								<!--  -->
 								<div class="home-slide-container">
 										<div class="swiper-wrapper">
-											<div class="swiper-slide main-slide">
+											<div class="swiper-slide main-slide" id="main-slide">
 												
 												<!--  -->
 									<div class="wrapper home">

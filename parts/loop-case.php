@@ -82,31 +82,31 @@ $next_post = get_next_post();
                                             <?php foreach( $deliverables as $deliverable ): ?>
                                                 <?php if($deliverable == 'strategy') :  ?>
                                                     <div>
-                                                        <img class="dev-ico" src="<?php echo get_template_directory_uri(); ?>/assets/images/services-icn/strategy.svg" width="45" alt="">
+                                                        <img class="dev-ico" src="<?php echo get_template_directory_uri(); ?>/assets/images/case-icn/strategy.svg" width="45" alt="">
                                                         <!-- <h1 class="dev-icn-title"><?php echo $deliverable; ?></h1> -->
                                                     </div>
                                                 <?php endif; ?>
                                                 <?php if($deliverable == 'design') :  ?>
                                                     <div>
-                                                        <img class="dev-ico" src="<?php echo get_template_directory_uri(); ?>/assets/images/services-icn/design.svg" width="45" alt="">
+                                                        <img class="dev-ico" src="<?php echo get_template_directory_uri(); ?>/assets/images/case-icn/design.svg" width="45" alt="">
                                                         <!-- <h1 class="dev-icn-title"><?php echo $deliverable; ?></h1> -->
                                                     </div>
                                                 <?php endif; ?>
                                                 <?php if($deliverable == 'production') :  ?>
                                                     <div>
-                                                        <img class="dev-ico" src="<?php echo get_template_directory_uri(); ?>/assets/images/services-icn/production.svg" width="45" alt="">
+                                                        <img class="dev-ico" src="<?php echo get_template_directory_uri(); ?>/assets/images/case-icn/production.svg" width="45" alt="">
                                                         <!-- <h1 class="dev-icn-title"><?php echo $deliverable; ?></h1> -->
                                                     </div>
                                                 <?php endif; ?>
                                                 <?php if($deliverable == 'social') :  ?>
                                                     <div>
-                                                        <img class="dev-ico" src="<?php echo get_template_directory_uri(); ?>/assets/images/services-icn/social-media.svg" width="45" alt="">
+                                                        <img class="dev-ico" src="<?php echo get_template_directory_uri(); ?>/assets/images/case-icn/social-media.svg" width="45" alt="">
                                                         <!-- <h1 class="dev-icn-title"><?php echo $deliverable; ?></h1> -->
                                                     </div>
                                                 <?php endif; ?>
                                                 <?php if($deliverable == 'communications') :  ?>
                                                     <div>
-                                                        <img class="dev-ico" src="<?php echo get_template_directory_uri(); ?>/assets/images/services-icn/communications.svg" width="45" alt="">
+                                                        <img class="dev-ico" src="<?php echo get_template_directory_uri(); ?>/assets/images/case-icn/communications.svg" width="45" alt="">
                                                         <!-- <h1 class="dev-icn-title"><?php echo $deliverable; ?></h1> -->
                                                     </div>
                                                 <?php endif; ?>                               

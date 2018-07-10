@@ -33,7 +33,7 @@ get_header(); ?>
 						</ul>
 
 						</div>
-						<div class="swiper-slide content home__holder">
+						<div class="swiper-slide content">
 						<div class="left-overlay"></div>
 							<div class="menu-button">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/menu.svg" width="42" height="84" alt="">
@@ -46,7 +46,7 @@ get_header(); ?>
 												<!--  -->
 									<div class="wrapper home">
                                     <div class="left"> <!--  Left Starts -->
-                                        <div class="content__holder">
+                                        <div class="content__holder home__holder">
                                             <div class="home__content__header">WE ARE</div>
 											<div class="home__content__header header_animation">BOLD</div>
                                             <div class="home__content__btn">

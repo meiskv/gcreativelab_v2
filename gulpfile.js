@@ -30,6 +30,7 @@ const SOURCE = {
 		'node_modules/bodymovin/build//player/bodymovin.js',
 		'node_modules/gsap/src/uncompressed/plugins/TextPlugin.js',
 		'node_modules/gsap/src/uncompressed/bonus/SplitText.js',
+		'node_modules/lodash/lodash.min.js',
 		// 'node_modules/barba.js/dist/barba.js',
 
 		// Foundation core - needed if you want to use any of the components below

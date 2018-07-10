@@ -52,6 +52,7 @@
     "bodymovin": "^4.13.0",
     "gsap": "^2.0.1",
     "jquery-parallax.js": "^1.5.0",
+    "lodash": "^4.17.10",
     "rellax": "^1.6.2",
     "scrollmagic": "^2.0.5",
     "slick-carousel": "^1.8.1",

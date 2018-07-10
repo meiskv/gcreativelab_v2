@@ -365,6 +365,10 @@ $pink: #D81C5C;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
+    .swiper-wrapper{
+        position: relative;
+        z-index: 2;
+    }
     .swiper-slick{
         width: 100vw !important;
     }
@@ -393,6 +397,7 @@ $pink: #D81C5C;
 .home-slick{
     width: 100%;
     height:100%;
+    
     .slick-track{
         height: 100vh;
     }
@@ -453,4 +458,13 @@ $pink: #D81C5C;
     .white,.gray{
         // transform: translateX(100%);
     }
+}
+
+.home__backBtn{
+    position: absolute;
+    z-index: 1;
+    bottom: 2rem;
+    right: 2rem;
+    font: 900 1.625rem/100% "Avenir","Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    color: $pink;
 }

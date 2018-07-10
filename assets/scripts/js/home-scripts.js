@@ -65,10 +65,7 @@ window.requestAnimationFrame(function() {
         let mainSlider = $('.home-slide-container > .main-slide');
         let mainSliderr = document.getElementById("main-slide");
 
-          let currentPos;
           let finalSliderMove;
-          let getLeft;
-          let final2nd;
 
           var swiper2 = new Swiper('.home-slide-container', {
             direction: 'horizontal',
@@ -85,19 +82,16 @@ window.requestAnimationFrame(function() {
             },
             on: {
               init: function () {
+
+                TweenLite.set('.home__backBtn',{autoAlpha: 0})
+                
                 var slider = this;
                   if (slider.activeIndex === 0) {
                     
-                  // console.log(getTransform(slideWrapper)[0]);
-                  currentPos = getTransform(slideWrapper)[0];
-                  
-                    let finalSliderMove = (getTransform(slideWrapper)[0]-slideWrapper.position().left);
 
-                    getLeft = slideWrapper.position().left;
+                    finalSliderMove = slider.getTranslate()-slideWrapper.position().left+100;
 
-                    final2nd = slider.getTranslate()-slideWrapper.position().left+100;
-
-                    TweenLite.to(slideWrapper,0.5,{force3D:true,x: final2nd})
+                    TweenLite.to(slideWrapper,0.5,{force3D:true,x: finalSliderMove})
 
                     slider.slideNext();
                   } else {
@@ -106,17 +100,10 @@ window.requestAnimationFrame(function() {
               },
               slideChangeTransitionEnd: function (){
                 let transEndSlider = this;
-                console.clear();
-                  // console.log(slideWrapper.position().left);
 
-                console.log(transEndSlider.getTranslate()+" Main");
-                // console.log(slideWrapper.position().left+" Left");
+                if(transEndSlider.getTranslate()-50>=finalSliderMove){
 
-                let transFinal = slideWrapper.position().left;
-                console.log(final2nd);
-                if(transEndSlider.getTranslate()-50>=final2nd){
-                  console.log('go up please');
-                   TweenLite.to(slideWrapper, 1.5,{force3D:true,x: final2nd,ease:Back.easeInOut})
+                   TweenLite.to(slideWrapper, 1.5,{force3D:true,x: finalSliderMove,ease:Back.easeInOut})
                    transEndSlider.slideTo(1);
                    
                 }
@@ -124,6 +111,35 @@ window.requestAnimationFrame(function() {
               },
               resize: function(){
                 location.reload();
+              },
+              slideChange: function(){
+                let slideChangeEndSlider = this;
+
+                function fixedSlide(e){
+                  
+                  if(e.deltaY<=0){
+                    if(slideChangeEndSlider.getTranslate()-50>=finalSliderMove){
+                      
+                            TweenLite.to(slideWrapper, 3,{force3D:true,x: finalSliderMove,ease:Expo.easeInOut})
+                            slideChangeEndSlider.slideTo(1);
+                            
+                        }
+                  }
+                }
+
+                
+                if(window.addEventListener("wheel", _.debounce(fixedSlide,500))){
+
+                  }
+              },
+              reachEnd: function(){
+                let reachThis = this;
+                TweenLite.to('.home__backBtn',0.5,{autoAlpha: 1})
+
+                $('.home__backBtn').click(function(){
+                  TweenLite.to(slideWrapper, 3,{force3D:true,x: finalSliderMove,ease:Expo.easeInOut})
+                  reachThis.slideTo(1);
+                });
               }
             }
         });

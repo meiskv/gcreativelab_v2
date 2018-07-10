@@ -52,7 +52,6 @@
 			<?php get_template_part( 'parts/content', 'offcanvas' ); ?>
 			
 			<div class="off-canvas-content" data-off-canvas-content>
-				
 				<header class="header" role="banner">
 					<div class="transition">
 						<svg width="100%" height="100%">

@@ -274,7 +274,7 @@ $pink: #D81C5C;
 
 .menu-button {
     position: absolute;
-    top: 180px; left: -4px;
+    top: 180px; left: -5px;
     z-index: 999;
     cursor: pointer;
     -webkit-transition: .3s;
@@ -470,4 +470,15 @@ $pink: #D81C5C;
     right: 2rem;
     font: 900 1.625rem/100% "Avenir","Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     color: $pink;
+}
+
+.left-overlay{
+    position: absolute;
+    background: #ffffff;
+    top: 0;
+    z-index: -1;
+    opacity: 0.95;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }

@@ -67,7 +67,7 @@ get_header(); ?>
                                                                 <div class="explore">WHO WE'VE WORK FOR
                                                                       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/explore_arrow.svg" width="10" height="9" alt="">
                                                                 </div>
-                                                                <div class="content__hero">G</div>
+                                                                <div class="content__hero movin__g">G</div>
                                                             </div> <!--  Left Ends -->
                                                             </div>
 												<!-- Main Slide Content -->

@@ -52,7 +52,7 @@ get_header(); ?>
                                             
                                         </div>
                                         <div class="address">INFO@GRAYLING.COM</div>
-                                        <div class="content__hero">G</div>
+                                        <div class="content__hero movin__g">G</div>
                                     </div> <!--  Left Ends -->
                                     <div class="right">
                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about__hero.svg" height="600" width="600" alt="">

@@ -1,4 +1,4 @@
-.about__holder,.services__holder,.case__study__holder,.team__holder,.contact__holder{
+.home__holder,.about__holder,.services__holder,.case__study__holder,.team__holder,.contact__holder{
     @include breakpoint(large down) { 
         padding-left: 4rem !important;
     }

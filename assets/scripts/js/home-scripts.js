@@ -179,7 +179,9 @@ window.requestAnimationFrame(function() {
   
 
     Barba.Dispatcher.on('initStateChange', function(currentStatus, oldStatus, container) {
-      
+
+
+        
         let pageTransition = new TimelineMax({onComplete: pageTransitionComplete, yoyo:true, repeat: 1});
 
         let $ww = window.innerWidth;

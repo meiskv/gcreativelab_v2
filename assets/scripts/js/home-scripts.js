@@ -66,6 +66,9 @@ window.requestAnimationFrame(function() {
         let mainSliderr = document.getElementById("main-slide");
 
           let currentPos;
+          let finalSliderMove;
+          let getLeft;
+          let final2nd;
 
           var swiper2 = new Swiper('.home-slide-container', {
             direction: 'horizontal',
@@ -85,23 +88,38 @@ window.requestAnimationFrame(function() {
                 var slider = this;
                   if (slider.activeIndex === 0) {
                     
-                  console.log(getTransform(slideWrapper)[0]);
+                  // console.log(getTransform(slideWrapper)[0]);
                   currentPos = getTransform(slideWrapper)[0];
                   
-                  let finalPos = (getTransform(slideWrapper)[0]-slideWrapper.position().left);
+                    let finalSliderMove = (getTransform(slideWrapper)[0]-slideWrapper.position().left);
 
-                    TweenLite.to(slideWrapper,0.5,{force3D:true,x: finalPos})
+                    getLeft = slideWrapper.position().left;
 
-                    // slider.slideNext();
+                    final2nd = slider.getTranslate()-slideWrapper.position().left+100;
+
+                    TweenLite.to(slideWrapper,0.5,{force3D:true,x: final2nd})
+
+                    slider.slideNext();
                   } else {
                     slider.slidePrev();
                   }
               },
-              sliderMove: function (){
-                
-                // if(currentPos<=300){
-                //    TweenLite.to(slideWrapper,0.5,{force3D:true,x: finalPos})
-                // }
+              slideChangeTransitionEnd: function (){
+                let transEndSlider = this;
+                console.clear();
+                  // console.log(slideWrapper.position().left);
+
+                console.log(transEndSlider.getTranslate()+" Main");
+                // console.log(slideWrapper.position().left+" Left");
+
+                let transFinal = slideWrapper.position().left;
+                console.log(final2nd);
+                if(transEndSlider.getTranslate()-50>=final2nd){
+                  console.log('go up please');
+                   TweenLite.to(slideWrapper, 1.5,{force3D:true,x: final2nd,ease:Back.easeInOut})
+                   transEndSlider.slideTo(1);
+                   
+                }
 
               },
               resize: function(){

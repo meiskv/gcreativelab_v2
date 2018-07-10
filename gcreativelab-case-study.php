@@ -54,9 +54,12 @@ get_header(); ?>
                                                                     <div class="content__header">WE ARE</div>
                                                                     <div class="content__subheader">OUR WORK</div>
                                                                     <div class="content__description">
-                                                                        <p>
-                                                                        With clients across diverse sectors including aerospace, education, energy, healthcare, finance, hospitality, real estate, renewables, sports, leisure, and technology – we’ll let our work do all the talking. After all, actions speak louder than words.
-                                                                        </p>
+                                                            
+                                                                        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+                                                                        <?php the_content(); ?>
+                                                                            
+                                                                        <?php endwhile; endif; ?>
                                                                     </div>
                                                                     <div class="content__btn">
                                                                         <a href="http://www.gcreativelab.com/contact/">CONTACT US</a>

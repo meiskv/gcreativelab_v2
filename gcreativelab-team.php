@@ -50,17 +50,11 @@ get_header(); ?>
 													<div class="content__header">WE ARE</div>
 													<div class="content__subheader">GCREATIVE</div>
 													<div class="content__description">
-														<p>
-														We believe that brands that stand out come from people that don’t fit in. 
-
-														Young and restless.
-														Hungry and passionate.
-														Insomniacs and coffee addicts.
-														Wordsmiths and visual storytellers.
-														Rebels and trendsetters.
-
-														People like us.
-														</p>
+													<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+													
+													<?php the_content(); ?>
+														
+													<?php endwhile; endif; ?>
 													</div>
 													<div class="content__btn">
 														<a href="#">JOIN OUR TEAM</a>

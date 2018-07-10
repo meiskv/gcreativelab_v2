@@ -64,7 +64,7 @@
                         // ABOUT ANIMATION STARTS
                 var $content__header = $('.content__header');
                 var $content__subheader = $('.content__subheader');
-                var $content__description = $('.content__description p');
+                var $content__description = $('.content__description div');
             
             
                 var $content__headerST = new SplitText([$content__header], {type:"words"});

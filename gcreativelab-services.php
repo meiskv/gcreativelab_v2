@@ -42,12 +42,15 @@ get_header(); ?>
                                             <div class="content__header">WE ARE</div>
                                             <div class="content__subheader">VERSATILE</div>
                                             <div class="content__description">
-                                                <p>
-														We are a fully incorporated public relations and communications agency offering 360° solutions led by strategy and insight, driven by our passion for design and strengthened by our love for storytelling.
-														
-														From advertising and creative design, brand development, and digital and social media expertise to media and public relations, crisis management and corporate communications, our comprehensive range of services are tailored to address the evolving needs of our diverse clients.
-														
-                                                </p>
+												
+												<div class="content__description">
+                                                
+												<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+												<?php the_content(); ?>
+													
+												<?php endwhile; endif; ?>	
+                                            </div>
                                             </div>
                                             <div class="content__btn">
                                                 <a href="http://www.gcreativelab.com/case/">OUR WORK</a>

@@ -42,9 +42,12 @@ get_header(); ?>
                                             <div class="content__header">WE ARE</div>
                                             <div class="content__subheader">PASSIONATE</div>
                                             <div class="content__description">
-                                                <p>
-                                                We are a part of Grayling Public Relations, a wholly owned subsidiary of Huntsworth PLC – a public relations focused group listed on the London Stock Exchange. This allows us to provide truly integrated strategic services, and worldwide reach with local expertise and knowledge, combined with unrivalled and diverse sector experience.
-                                                </p>
+                                                
+												<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+												<?php the_content(); ?>
+													
+												<?php endwhile; endif; ?>	
                                             </div>
                                             <div class="content__btn">
                                                 <a href="http://www.gcreativelab.com/services/">OUR SERVICES</a>

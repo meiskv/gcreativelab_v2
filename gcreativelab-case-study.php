@@ -50,7 +50,7 @@ get_header(); ?>
 											<div class="swiper-slide main-slide">
                                                     <div class="wrapper case-study">
                                                             <div class="left"> <!--  Left Starts -->
-                                                                <div class="content__holder">
+                                                                <div class="content__holder case__study__holder">
                                                                     <div class="content__header">WE ARE</div>
                                                                     <div class="content__subheader">OUR WORK</div>
                                                                     <div class="content__description">

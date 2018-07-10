@@ -49,7 +49,7 @@ get_header(); ?>
                                             <div class="home__content__header">WE ARE</div>
 											<div class="home__content__header header_animation">BOLD</div>
                                             <div class="home__content__btn">
-                                                <a href="http://localhost:8888/DEV/gcreative/case/">VISIT OUR CASE STUDY</a>
+                                                <a href="http://localhost:8888/DEV/gcreative/case/">OUR CASE STUDY</a>
                                             </div>
                                             
                                         </div>

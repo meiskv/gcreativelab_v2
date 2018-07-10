@@ -1,0 +1,5 @@
+.team-container .swiper-slide{
+    @include breakpoint(large down) { 
+        width: 25vw;
+    }
+}

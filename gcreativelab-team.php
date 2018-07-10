@@ -46,7 +46,7 @@ get_header(); ?>
 												<!--  -->
 									<div class="wrapper team">
 											<div class="left"> <!--  Left Starts -->
-												<div class="content__holder">
+												<div class="content__holder team__holder">
 													<div class="content__header">WE ARE</div>
 													<div class="content__subheader">GCREATIVE</div>
 													<div class="content__description">

@@ -38,7 +38,7 @@ get_header(); ?>
 								<!--  -->
                                 <div class="wrapper services">
                                     <div class="left"> <!--  Left Starts -->
-                                        <div class="content__holder">
+                                        <div class="content__holder services__holder">
                                             <div class="content__header">WE ARE</div>
                                             <div class="content__subheader">VERSATILE</div>
                                             <div class="content__description">

@@ -1,0 +1,25 @@
+.case-study-slide-container .case__holder .case__left .case__description p{
+    @include breakpoint(large down) { 
+        font: 0.8rem/150% Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    }
+}
+
+.case-study-slide-container .case__holder .case__left .case__deliverables h4{
+    @include breakpoint(large down) { 
+        font: normal 1rem/150% Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    }
+}
+
+.case-study-slide-container .case__holder .case__left .case__title h1{
+    @include breakpoint(large down) { 
+        font: 700 1.5rem/100% Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    }
+}
+
+.case-study-slide-container .case__holder .case__left{   
+    @include breakpoint(large down) { 
+        align-self: flex-end;
+        position: relative;
+        bottom: 2rem;
+    }
+}

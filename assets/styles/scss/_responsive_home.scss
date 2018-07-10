@@ -1,0 +1,84 @@
+.about__holder,.services__holder,.case__study__holder,.team__holder,.contact__holder{
+    @include breakpoint(large down) { 
+        padding-left: 4rem !important;
+    }
+}
+
+.wrapper .left .content__holder .content__header, .wrapper .left .content__holder .content__subheader{
+    @include breakpoint(large down) { 
+        font: 700 2.5375rem/110% "Avenir", AppleGothic, sans-serif;
+    }
+}
+
+.wrapper .left .content__holder .content__description {
+    @include breakpoint(large down) { 
+        font: 0.9rem/100% Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    }
+}
+
+.wrapper .left .content__holder .content__btn{
+    @include breakpoint(large down) { 
+        margin-top: 0;
+      }
+}
+
+.wrapper .left .content__holder .content__btn a {
+    @include breakpoint(large down) { 
+        font: 700 1rem/100% Avenir,sans-serif;
+        padding: 0.5rem 0.8rem;
+      }
+}
+
+.left .content__holder{
+    @include breakpoint(large down) { 
+        margin-bottom: 6rem !important;
+      }
+}
+
+.address{
+    @include breakpoint(large down) { 
+        position: absolute;
+        bottom: 2rem;
+        left: 1rem;
+        font: 500 0.7rem/100% 'Avenir', sans-serif;
+    }
+}
+
+
+.home{
+
+    .home__content__header{
+        @include breakpoint(large down) { 
+            font: 700 2.5375rem/110% "Avenir", AppleGothic, sans-serif;
+          }
+    }
+    .home__content__btn a{
+        
+        
+        @include breakpoint(large down) { 
+            margin-top: 0.5rem;
+            padding: 0.3rem 0;
+            font: 900 1rem/100% "Avenir", AppleGothic, sans-serif;
+        }
+    }
+   
+}
+
+.explore{
+    
+    @include breakpoint(large down) { 
+        font: 700 0.7rem/100% 'Avenir', sans-serif;
+    }
+}
+
+.case__home__holder .case__home__category p{
+    @include breakpoint(large down) { 
+        font: 300 0.8rem/150% Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    }
+}
+
+.case__home__holder .case__home__img img{
+    @include breakpoint(large down) { 
+        height: 45vh;
+    }
+}

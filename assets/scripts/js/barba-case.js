@@ -4,14 +4,11 @@
       
     // OPTIONAL - waits til next tick render to run code (prevents running in the middle of render tick)
     window.requestAnimationFrame(function() {
-        console.clear();
-        
     
         var casepage = Barba.BaseView.extend({
           namespace: 'casepage',
           onEnter: function() {
               // The new Container is ready and attached to the DOM.
-              console.log('casepage onEnter');
           },
           onEnterCompleted: function() {
               // The Transition has just finished.

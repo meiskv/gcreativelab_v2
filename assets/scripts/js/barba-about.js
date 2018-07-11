@@ -1,18 +1,14 @@
-
-
 (function( $ ) {
     
     // wait until window is loaded - all images, styles-sheets, fonts, links, and other media assets
     // import { TimelineMax } from "gsap";
     // OPTIONAL - waits til next tick render to run code (prevents running in the middle of render tick)
     
-    console.clear();
         
 var Aboutpage = Barba.BaseView.extend({
 namespace: 'aboutpage',
 onEnter: function() {
     // The new Container is ready and attached to the DOM.
-    console.log('about onEnter');
 
     const xasd = new TimelineMax({onComplete: completeX});
     

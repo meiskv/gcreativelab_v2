@@ -147,8 +147,9 @@ window.requestAnimationFrame(function() {
                 TweenLite.to('.home__backBtn',0.5,{autoAlpha: 1})
 
                 $('.home__backBtn').click(function(){
-                  TweenLite.to(slideWrapper, 3,{force3D:true,x: finalSliderMove,ease:Expo.easeInOut})
-                  reachThis.slideTo(1);
+                  // TweenLite.to(slideWrapper, 3,{force3D:true,x: finalSliderMove,ease:Expo.easeInOut})
+                  // reachThis.slideTo(1);
+                  window.location.href = "http://www.gcreativelab.com/case/";
                 });
               }
             }

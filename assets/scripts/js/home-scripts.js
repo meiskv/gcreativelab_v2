@@ -155,7 +155,6 @@ window.requestAnimationFrame(function() {
             }
         });
 
-
         var gpreload = new TimelineMax({repeat: -1, delay: 1});
         
         gpreload.to(".header_animation", 0.6, {text:"DIFFERENT",ease:Expo.easeInOut,delay: 0.3})

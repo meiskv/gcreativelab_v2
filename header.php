@@ -45,6 +45,8 @@
 	</head>
 			
 	<body <?php body_class(); ?>>
+	<p style="position: absolute; opacity: 0;">GCreative is a Dubai-based branding, creative advertising and communications agency offering 360° solutions led by strategy, insight, and a love for storytelling.
+</p>
 
 		<div class="off-canvas-wrapper">
 			

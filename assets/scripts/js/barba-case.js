@@ -46,6 +46,10 @@
                       menuButton.classList.remove('cross');
                     }
                   },
+                  resize: function(){
+                    let resizeThis = this;
+                    location.reload();
+                }
                 }
               });
       

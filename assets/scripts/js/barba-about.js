@@ -58,6 +58,9 @@ onEnterCompleted: function() {
             menuButton.classList.remove('cross');
         }
         },
+        resize: function(){
+            location.reload();
+        },
     }
     });
 

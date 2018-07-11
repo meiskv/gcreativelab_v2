@@ -16,7 +16,7 @@
           onEnterCompleted: function() {
               // The Transition has just finished.
               var menuButton = document.querySelector('.menu-button');
-              var swiper = new Swiper('.swiper-container', {
+              var swiper = new Swiper('.case-container', {
                 slidesPerView: 'auto',
                 initialSlide: 1,
                 resistanceRatio: 0,
@@ -46,6 +46,10 @@
                       menuButton.classList.remove('cross');
                     }
                   },
+                  resize: function(){
+                      let resizeThis = this;
+                      location.reload();
+                  }
                 }
               });
       
@@ -53,19 +57,16 @@
       
 
               var caseInner = new Swiper('.case-inner-slide-container', {
-                direction: 'horizontal',
+                // direction: 'horizontal',
                 slidesPerView: 'auto',
                 mousewheel: true,
                 freeMode: true,
-                infinite: true,
+                // infinite: true,
                 mousewheelSensitivity: 0.02,
                 freeModeFluid: true,
                 parallax: true,
                 freeModeMomentumVelocityRatio: 0.5,
-                pagination: {
-                  el: '.swiper-pagination',
-                  clickable: true,
-                },
+               
             });
             
             

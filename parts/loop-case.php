@@ -27,16 +27,10 @@ $next_post = get_next_post();
 <div id="barba-wrapper">
         <div class="barba-container" data-namespace="caseinnerpage">
 <!-- Swiper -->
-<div class="swiper-container">
+<div class="case-container">
 <div class="swiper-wrapper">
     <div class="swiper-slide menu">
-        <ul id="menu">
-                <li><a href="http://localhost:8888/DEV/gcreative/about/">About</a></li>
-                <li><a href="http://localhost:8888/DEV/gcreative/services/">Services</a></li>
-                <li><a href="http://localhost:8888/DEV/gcreative/case/">Case Study</a></li>
-                <li><a href="http://localhost:8888/DEV/gcreative/team/">Team</a></li>
-                <li><a href="http://localhost:8888/DEV/gcreative/contact/">Contact</a></li>
-        </ul>
+    <?php glab_menu(); ?>
 
     <div class="address">214, BUILDING 4, DUBAI MEDAI CITY, PO BOX 24554, DUBAI, UAE</div>
     
@@ -119,48 +113,48 @@ $next_post = get_next_post();
                         
                     
 
-                        <div class="swiper-slide case__slide">
-                            <img src="<?php echo $client_img['url']; ?>" width="100%" height="100%" alt="" data-swiper-parallax="100">
+                        <div class="swiper-slide second-slide case__slide">
+                            <img src="<?php echo $client_img['url']; ?>" width="100%" height="100%" alt="">
                             
                         </div>
 
-                        <div class="swiper-slide case__slide">
+                        <div class="swiper-slide case__slide case__slide__description__holder">
                             <div class="case__inner__slide__holder">
                                 <div class="case__inner__slide__title">
-                                    <h1 data-swiper-parallax="-100"><?php echo get_field('01_title'); ?></h1>
+                                    <h1><?php echo get_field('01_title'); ?></h1>
                                 </div>
                                 <div class="case__inner__slide__subtitle">
-                                    <h4 data-swiper-parallax="-110">Subtitle</h4>
+                                    <h4>Subtitle</h4>
                                 </div>
                                 <div class="case__inner__slide__description">
-                                    <div data-swiper-parallax="-130"><?php echo get_field('title_01_description'); ?></div>
+                                    <div><?php echo get_field('title_01_description'); ?></div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="swiper-slide case__slide">
+                        <div class="swiper-slide case__slide case__slide__img__holder">
                                 <img src="<?php echo $client_img01['url']; ?>" width="100%" height="100%" alt="">
                         </div>
 
-                        <div class="swiper-slide case__slide">
+                        <div class="swiper-slide case__slide case__slide__description__holder">
                                 <div class="case__inner__slide__holder">
                                     <div class="case__inner__slide__title">
-                                        <h1 data-swiper-parallax="20"><?php echo get_field('02_title'); ?></h1>
+                                        <h1><?php echo get_field('02_title'); ?></h1>
                                     </div>
                                     <div class="case__inner__slide__subtitle">
-                                        <h4 data-swiper-parallax="40">Subtitle</h4>
+                                        <h4>Subtitle</h4>
                                     </div>
                                     <div class="case__inner__slide__description">
-                                        <div data-swiper-parallax="50"><?php echo get_field('title_02_description'); ?></div>
+                                        <div><?php echo get_field('title_02_description'); ?></div>
                                     </div>
                                 </div>
                             </div>
     
-                        <div class="swiper-slide case__slide">
-                                <img data-swiper-parallax="300" src="<?php echo $client_img02['url']; ?>" width="100%" height="100%" alt="">
+                        <div class="swiper-slide case__slide case__slide__img__holder">
+                                <img src="<?php echo $client_img02['url']; ?>" width="100%" height="100%" alt="">
                         </div>
                             
-                        <div class="swiper-slide case__slide">
+                        <div class="swiper-slide case__slide case__slide__description__holder">
                                 <div class="case__inner__slide__holder">
                                     <div class="case__inner__slide__title">
                                         <h1>Specs</h1>

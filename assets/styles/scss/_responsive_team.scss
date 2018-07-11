@@ -3,3 +3,24 @@
         width: 25vw;
     }
 }
+
+.swiper-team .team__holder .team__meta{
+
+    .team__name h1{
+        @include breakpoint(large down) { 
+            font: 700 1.3125rem/100% Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+            margin: 0rem;
+        }
+    }
+    .team__subheader h1{
+        @include breakpoint(large down) { 
+            font: 700 0.8rem/100% Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+        }
+    }
+    
+    .team__email{
+        @include breakpoint(large down) { 
+            font: 300 0.7rem/100% Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+        }
+    }
+}

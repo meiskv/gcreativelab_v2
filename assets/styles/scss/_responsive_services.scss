@@ -1,0 +1,12 @@
+.slick-services-list{
+    img{
+        @include breakpoint(large down) { 
+            width: 50px;
+        }
+    }
+    h1{
+        @include breakpoint(large down) { 
+            font: 300 1.1rem/100% Avenir,Century Gothic,CenturyGothic,AppleGothic,sans-serif !important;
+        }
+    }
+}

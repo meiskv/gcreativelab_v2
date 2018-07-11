@@ -114,7 +114,7 @@ get_header(); ?>
                                                                 <h4><?php the_field('short_deliverables');?></h4>
                                                             </div>
                                                             <div class="case__description">
-                                                            <p><?php the_field('client_short_description'); ?></p>
+                                                            <p><?php the_field('description_excerpt'); ?></p>
                                                             </div>
                                                             <div class="case__button">
                                                                 <a href="<?php echo get_permalink(); ?>">LEARN MORE</a>

@@ -39,7 +39,7 @@
 		<script src='https://api.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.js'></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js"></script>
 		
-
+		<meta name="google-site-verification" content="lYXIOiYe0u1r-Qs--jY_syt1cTUt9FOk4n1HE3JljUA" />
 		<?php wp_head(); ?>
 
 	</head>

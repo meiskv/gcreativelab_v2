@@ -130,17 +130,20 @@
         list-style: none;
     }
 
-    } // Case Inner Main Slide Ends
+    } 
+    // Case Inner Main Slide Ends
     .case__slide{
         background: #ffffff00;
         // width: 100%;
-        width: auto;
+        // width: auto;
+        height: 100vh;
         text-align: left;
-        margin: 0 3rem;
+        
         .case__inner__slide__holder{
             display: flex;
             flex-direction: column;
             max-width: 20vw;
+            margin: 0 3rem;
 
             .case__inner__slide__title h1{
                 font: 700 1.75rem/100% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
@@ -227,4 +230,29 @@
         
         
     }
+}
+
+.case__slide__description__holder{
+    max-width: 40vw;
+}
+
+.swiper-slide .case__slide img{
+    // max-width: 70%;
+}
+
+.case-inner-slide-container{
+    .second-slide{
+        width: auto;
+        img{
+            max-width: 100%;
+        }
+    }
+
+    .swiper-slide{
+        // width: unset;
+    }
+}
+
+.case__slide__img__holder{
+    max-width: 50vw;
 }

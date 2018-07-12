@@ -9,6 +9,7 @@
           namespace: 'caseinnerpage',
           onEnter: function() {
               // The new Container is ready and attached to the DOM.
+              console.log('caseinner-now')
           },
           onEnterCompleted: function() {
               // The Transition has just finished.
@@ -54,9 +55,9 @@
       
 
               var caseInner = new Swiper('.case-inner-slide-container', {
-                // direction: 'horizontal',
+                direction: 'horizontal',
                 slidesPerView: 'auto',
-                mousewheel: true,
+                // mousewheel: true,
                 freeMode: true,
                 // infinite: true,
                 mousewheelSensitivity: 0.02,
@@ -66,7 +67,55 @@
                
             });
             
+            let caseWrapper = document.querySelector('.case-inner-slide-container');
+            let caseWrapperScroll = $('.case-inner-slide-container > .swiper-wrapper');
+            let scrollTime = 1.3;
+            let scrollDistance = 500;
+            var scrollCount = 1;
             
+            function pullBack (){
+              
+              // let finalVal = $(caseWrapperScroll).scrollLeft() - (scrollDistance * scrollCount);
+              // console.log(finalVal2)
+              
+
+              let finalVal2 = Math.min(Math.max(parseInt($(caseWrapperScroll).scrollLeft() - (scrollDistance * scrollCount)), -caseInner.snapGrid[6]), 0);;
+              // console.log(finalVal2)
+              TweenMax.to(caseWrapperScroll,scrollTime,{
+                x: finalVal2,
+                force3D: true,
+                ease: Power1.easeOut,
+              })
+            }
+
+         
+            
+
+            caseWrapper.addEventListener('wheel', function(e){
+
+              // scrollCount = Math.min(Math.max(parseInt(1), 0), 200);
+
+              if(e.wheelDelta<0){
+                if(caseInner.getTranslate()>=-caseInner.snapGrid[6]){
+                  scrollCount++;
+                  pullBack();
+                  console.log(scrollCount);
+                }
+                  
+                
+              }else if(e.wheelDelta>0){
+                if(caseInner.getTranslate()<=0){
+                    if(scrollCount>0){
+                      scrollCount--;
+                      pullBack();
+                    } 
+                }
+              }
+
+            });
+
+          
+
              
           },
           onLeave: function() {

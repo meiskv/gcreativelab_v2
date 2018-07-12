@@ -30,6 +30,7 @@ const SOURCE = {
 		'node_modules/bodymovin/build//player/bodymovin.js',
 		'node_modules/gsap/src/uncompressed/plugins/TextPlugin.js',
 		'node_modules/gsap/src/uncompressed/bonus/SplitText.js',
+		'node_modules/gsap/src/uncompressed/plugins/ScrollToPlugin.js',
 		'node_modules/lodash/lodash.min.js',
 		// 'node_modules/barba.js/dist/barba.js',
 
@@ -100,7 +101,7 @@ gulp.task('scripts', function() {
             gutil.log(gutil.colors.red(error.message));
             this.emit('end');
         }))
-		// .pipe(plugin.sourcemaps.init())
+		.pipe(plugin.sourcemaps.init())   // ETO
 		.pipe(plugin.babel({
 			presets: ['es2015'],
 			compact: true,
@@ -134,7 +135,7 @@ gulp.task('styles', function() {
 		    cascade: false
 		}))
 		.pipe(plugin.cssnano())
-		// .pipe(plugin.sourcemaps.write('.'))
+		.pipe(plugin.sourcemaps.write('.'))    // ETO
 		.pipe(gulp.dest(ASSETS.styles))
 		.pipe(browserSync.reload({
           stream: true

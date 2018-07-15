@@ -20,7 +20,14 @@ get_header(); ?>
 								<?php glab_menu(); ?>
 								
 
-						<div class="address">214, BUILDING 4, DUBAI MEDAI CITY, PO BOX 24554, DUBAI, UAE</div>
+						<div class="home__address">
+							<h5>Contact:</h5>
+							<div class="three__column__address">
+								<div>OFFICE 214, BUILDING 4, DUBAI MEDIA CITY, PO BOX 24554, DUBAI, UAE</div>
+								<div><a href="mailto:info@grayling.com">info@grayling.com</a>+971 02 XXX XXXX</div>
+								<div>For job and Intern inquiries please write <a href="mailto:positions@grayling.com">positions@grayling.com</a></div>
+							</div>
+						</div>
 						
 						<ul id="social">
 							<li>FACEBOOK</li>
@@ -36,7 +43,7 @@ get_header(); ?>
 						<div class="swiper-slide content">
 						<div class="left-overlay"></div>
 							<div class="menu-button">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/menu.svg" width="42" height="84" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/menu-lines.svg" width="18" height="15" alt="">
 							</div>
 								<!--  -->
 								<!-- <div class="home-slide-container"> -->
@@ -62,13 +69,12 @@ get_header(); ?>
 													</div>
 													
 												</div>
-												<div class="address">INFO@GRAYLING.COM</div>
+												<div class="address">©2018<i style="color: #D81C5C;">.</i> GCREATIVELAB<i style="color: #D81C5C;">.</i> LEGAL</div>
 												<div class="content__hero movin__g">G</div>
 											</div> <!--  Left Ends -->
                                 </div>
 								<!--  -->
 												<!-- Main Slide Content -->
-												<div class="address">INFO@GRAYLING.COM</div>
 												<div class="explore">DISCOVER THE TEAM
 													  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/explore_arrow.svg" width="10" height="9" alt="">
 												</div>

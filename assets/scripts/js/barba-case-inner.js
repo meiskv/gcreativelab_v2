@@ -40,8 +40,12 @@
                     var slider = this;
                     if (slider.activeIndex === 0) {
                       menuButton.classList.add('cross');
+                      let src = 'http://localhost:8888/DEV/gcreative/wp-content/themes/gcreativelab/assets/images/gcreative_logo_white.svg';
+                      $('.glogo').attr('src', src);
                     } else {
                       menuButton.classList.remove('cross');
+                      let src = 'http://localhost:8888/DEV/gcreative/wp-content/themes/gcreativelab/assets/images/gcreative_logo.svg';
+                      $('.glogo').attr('src', src);
                     }
                   },
                   resize: function(){

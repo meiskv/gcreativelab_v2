@@ -52,7 +52,14 @@ $queryFirst = new WP_Query( $argsFirstPost );
     <div class="swiper-slide menu">
     <?php glab_menu(); ?>
 
-    <div class="address">214, BUILDING 4, DUBAI MEDAI CITY, PO BOX 24554, DUBAI, UAE</div>
+    <div class="home__address">
+							<h5>Contact:</h5>
+							<div class="three__column__address">
+								<div>OFFICE 214, BUILDING 4, DUBAI MEDIA CITY, PO BOX 24554, DUBAI, UAE</div>
+								<div><a href="mailto:info@grayling.com">info@grayling.com</a>+971 02 XXX XXXX</div>
+								<div>For job and Intern inquiries please write <a href="mailto:positions@grayling.com">positions@grayling.com</a></div>
+							</div>
+						</div>
     
     <ul id="social">
         <li>FACEBOOK</li>
@@ -67,7 +74,7 @@ $queryFirst = new WP_Query( $argsFirstPost );
     </div>
     <div class="swiper-slide content">
         <div class="menu-button">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/menu.svg" width="42" height="84" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/menu-lines.svg" width="18" height="15" alt="">
         </div>
             <!--  -->
             
@@ -279,8 +286,8 @@ $queryFirst = new WP_Query( $argsFirstPost );
                                             <span><?php echo $next_post->post_title; ?></span>
                                         </div>
                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination_down.svg" height="62" width="62" alt="">
+                                    </a>
                                         </div>
-                                   </a>
                                    <?php }else{
                                        
                                     // The Loop

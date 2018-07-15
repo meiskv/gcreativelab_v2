@@ -8,6 +8,7 @@
 $args = array(
 	'post_type' => 'case-study',
 );
+
 $query = new WP_Query( $args );
 $getBackgroundImage = get_field('first_slide_background_image');
 $caseBg = " url(".$getBackgroundImage['url'].") no-repeat fixed center;"."background-size: cover;";
@@ -21,6 +22,25 @@ $client_img02 = get_field('02_image');
 
 $prev_post = get_previous_post();
 $next_post = get_next_post();
+
+$argsLastPost = array(
+    'post_type' => 'case-study',
+    'posts_per_page' => 1,
+    'order'     => 'ASC',
+    
+);
+
+$argsFirstPost = array(
+    'post_type' => 'case-study',
+    'posts_per_page' => 1,
+    'order'     => 'DESC',    
+);
+
+$queryLast = new WP_Query( $argsLastPost );
+$queryFirst = new WP_Query( $argsFirstPost );
+
+
+
 
 ?>
 
@@ -192,8 +212,53 @@ $next_post = get_next_post();
                                         </div>
                                    </a>
 
-                                   <?php }
-                                   
+                                   <?php }else{
+                                    
+                                       
+                                       // The Loop
+                                       if ( $queryFirst->have_posts() ) {
+                                        $last_thumb = get_the_post_thumbnail_url( $prev_post->ID,'full');
+                                        if ( $queryFirst->have_posts() ) {
+                                            $queryFirst->the_post();
+
+                                            if ( has_post_thumbnail() ) {
+                                                $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large' );
+                                                if ( ! empty( $large_image_url[0] ) ) {
+                                            
+                                                }
+                                            }
+                                            
+                                            ?>
+                                            
+                                            <a href="<?php echo get_permalink($queryFirst->ID); ?>" class="case__inner__top" style="background: url('<?php echo $large_image_url[0]; ?>') no-repeat center center;
+                                                background-size: cover;
+                                                -webkit-background-size: cover;
+                                                -moz-background-size: cover; 
+                                                -o-background-size: cover;" >
+                                                    <div class="case__page__holder">
+                                                        <div class="case__prev__title">
+                                                              
+                                                            <div class="case__prev">PREVIOUS CASE STUDY</div>
+                                                            <span><?php echo get_the_title(); ?></span>
+                                                        </div>
+                                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination_up.svg" height="62" width="62" alt="">
+                                                    </div>
+                                            </a>
+
+                                            <?php
+                                        }
+
+                                        /* Restore original Post Data */
+                                        wp_reset_postdata();
+                                    }
+
+                                    ?>
+                                    
+                                    
+
+                                   <?php } ?>
+
+                                   <?php
                                    if(!empty($next_post)) {
 
                                     $next_thumb = get_the_post_thumbnail_url( $next_post->ID,'full');
@@ -216,7 +281,49 @@ $next_post = get_next_post();
                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination_down.svg" height="62" width="62" alt="">
                                         </div>
                                    </a>
-                                   <?php } ?>
+                                   <?php }else{
+                                       
+                                    // The Loop
+                                    if ( $queryLast->have_posts() ) {
+                                        $last_thumb = get_the_post_thumbnail_url( $prev_post->ID,'full');
+                                        if ( $queryLast->have_posts() ) {
+                                            $queryLast->the_post();
+
+                                            if ( has_post_thumbnail() ) {
+                                                $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large' );
+                                                if ( ! empty( $large_image_url[0] ) ) {
+                                            
+                                                }
+                                            }
+                                            
+                                            ?>
+                                            
+                                            <a href="<?php echo get_permalink($queryLast->ID); ?>" class="case__inner__btm" style="background: url('<?php echo $large_image_url[0]; ?>') no-repeat center center;
+                                                background-size: cover;
+                                                -webkit-background-size: cover;
+                                                -moz-background-size: cover; 
+                                                -o-background-size: cover;" >
+                                                    <div class="case__page__holder">
+                                                        <div class="case__prev__title">
+                                                              
+                                                            <div class="case__prev">PREVIOUS CASE STUDY</div>
+                                                            <span><?php echo get_the_title(); ?></span>
+                                                        </div>
+                                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination_down.svg" height="62" width="62" alt="">
+                                                    </div>
+                                            </a>
+
+                                            <?php
+                                        }
+
+                                        /* Restore original Post Data */
+                                        wp_reset_postdata();
+                                    }   
+                                       
+                                       
+                                    ?>
+                                    
+                                    <?php } ?>
                                </div>
                         </div>
                         

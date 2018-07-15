@@ -47,24 +47,23 @@ onEnterCompleted: function() {
         }, true);
         },
         slideChange: function () {
-            var slider = this;
-            if (slider.activeIndex === 0) {
-              menuButton.classList.add('cross');
-              let src = 'http://localhost:8888/DEV/gcreative/wp-content/themes/gcreativelab/assets/images/gcreative_logo_white.svg';
-              $('.glogo').attr('src', src);
-            } else {
-              menuButton.classList.remove('cross');
-              let src = 'http://localhost:8888/DEV/gcreative/wp-content/themes/gcreativelab/assets/images/gcreative_logo.svg';
-              $('.glogo').attr('src', src);
-            }
-          },
+                    var slider = this;
+                    if (slider.activeIndex === 0) {
+                      menuButton.classList.add('cross');
+                      let src = 'http://localhost:8888/DEV/gcreative/wp-content/themes/gcreativelab/assets/images/gcreative_logo_white.svg';
+                      $('.glogo').attr('src', src);
+                    } else {
+                      menuButton.classList.remove('cross');
+                      let src = 'http://localhost:8888/DEV/gcreative/wp-content/themes/gcreativelab/assets/images/gcreative_logo.svg';
+                      $('.glogo').attr('src', src);
+                    }
+                  },
         resize: function(){
             location.reload();
         },
     }
     });
 
-    swiper.update()
 
 
     var $content = new TimelineMax({delay: 0.5});
@@ -87,6 +86,18 @@ onEnterCompleted: function() {
     $content.staggerFromTo($content__subheaderST.chars, 1.2, {y:80, autoAlpha:0},{y:0, autoAlpha:1,ease: Power4.easeInOut}, 0.03,'-=1')
     $content.staggerFromTo($content__descriptionST.words, 0.5, {y:50, autoAlpha:0},{y:0, autoAlpha:1,ease: Expo.easeInOut}, 0.01,'-=1')
 
+
+    var aboutSlider = new Swiper('.about-container', {
+        direction: 'horizontal',
+        slidesPerView: 'auto',
+        mousewheel: true,
+        freeMode: true,
+        infinite: true,
+        mousewheelSensitivity: 0.02,
+        freeModeFluid: true,
+        freeModeMomentumVelocityRatio: 0.5,
+        
+        });
         
 },
 onLeave: function() {

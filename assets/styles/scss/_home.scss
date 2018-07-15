@@ -20,7 +20,7 @@ body{
     background: #D81C5C;
   }
 
-.wrapper{
+.wrapper, .about-wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -36,14 +36,14 @@ body{
     // Left Styles Starts
     .left .content__holder{
         // padding: 0 12rem;
-        padding-left: 12rem;
+        padding-left: 7.3rem;
         align-self: flex-end;
         margin-bottom: 10rem;
         text-align: left;
         position: relative;
         z-index: 1;
         .content__header, .content__subheader{
-            font: 3.9375rem/100% "Avenir","Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+            font: 900 3.3375rem/100% "Avenir","Century Gothic", CenturyGothic, AppleGothic, sans-serif;
         }
         .content__header{
             font-weight: normal;
@@ -54,7 +54,7 @@ body{
         }
         .content__description{
             font: 1rem/100% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-            color: #0F294B;
+            color: #5D5D5D;
             margin: 1.5rem 0;
             padding-right: 5rem;
         }
@@ -106,16 +106,18 @@ $pink: #D81C5C;
 
 .home{
     .left{
-        width: 100%
+        width: 100%;
+        min-width: 40vw;
     }
     .home__content__header{
-        font: 700 3.9375rem/110% "Avenir", AppleGothic, sans-serif;
+        font: 900 3.3375rem/110% "Avenir", AppleGothic, sans-serif;
         text-transform: uppercase;
         color: $blue;
     }
     .header_animation{
         color: $pink;
         font-weight: 900;
+        font-style: normal;
     }
     .home__content__btn a{
         margin-top: 0.5rem;
@@ -124,6 +126,7 @@ $pink: #D81C5C;
         border-bottom: 3px solid $pink;
         color: $blue;
     }
+    
 }
 
 .case__home__holder{
@@ -540,4 +543,9 @@ $pink: #D81C5C;
     left: 0;
     bottom: 0;
     right: 0;
+}
+
+.home__content__header_home{
+    font: 200 3.3375rem/110% "Avenir", AppleGothic, sans-serif;
+    color: $blue;
 }

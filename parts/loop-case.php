@@ -313,7 +313,7 @@ $queryFirst = new WP_Query( $argsFirstPost );
                                                     <div class="case__page__holder">
                                                         <div class="case__prev__title">
                                                               
-                                                            <div class="case__prev">PREVIOUS CASE STUDY</div>
+                                                            <div class="case__prev">NEXT CASE STUDY</div>
                                                             <span><?php echo get_the_title(); ?></span>
                                                         </div>
                                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination_down.svg" height="62" width="62" alt="">

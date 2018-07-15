@@ -54,10 +54,18 @@ get_header(); ?>
 									<div class="wrapper home">
                                     <div class="left"> <!--  Left Starts -->
                                         <div class="content__holder home__holder">
-                                            <div class="home__content__header">WE ARE</div>
-											<div class="home__content__header header_animation">BOLD</div>
+                                            <div class="home__content__header_home">Hello.</div>
+											<div class="home__content__header">WE ARE <i class="header_animation">BOLD</i></div>
+											<div class="content__description">
+                                                
+												<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+												<?php the_content(); ?>
+													
+												<?php endwhile; endif; ?>	
+                                            </div>
                                             <div class="home__content__btn">
-                                                <a href="http://localhost:8888/DEV/gcreative/case/">OUR CASE STUDY</a>
+												
                                             </div>
                                             
                                         </div>

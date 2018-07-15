@@ -112,7 +112,7 @@
 
     .case__inner__holder{
         width: 100%;
-        padding: 0 5rem;
+        padding: 0 7rem;
         .case__inner__description p{
             font: normal 1rem/150% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
             color: $blue;
@@ -144,7 +144,7 @@
             display: flex;
             flex-direction: column;
             max-width: 20vw;
-            margin: 0 3rem;
+            margin: 0 6rem;
 
             .case__inner__slide__title h1{
                 font: 700 1.75rem/100% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
@@ -186,11 +186,7 @@
                     align-self: flex-end;
                     position:relative;
                     height: 20%;
-                    img{
-                        position: absolute;
-                        bottom: 3rem;
-                        right: 3rem;   
-                    }
+                    
                 }
             }
             .case__inner__top:hover .case__prev__title span{
@@ -215,6 +211,12 @@
                 background: $blue;
                 transition: .3s;
             }
+        }
+
+        img{
+            position: absolute;
+            bottom: 3rem;
+            right: 3rem;   
         }
         .case__prev, .case__next{
         }

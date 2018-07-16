@@ -64,9 +64,9 @@ get_header(); ?>
 														
 													<?php endwhile; endif; ?>	
 												</div>
-												<div class="content__btn">
+												<!-- <div class="content__btn">
 													<a href="http://www.gcreativelab.com/services/">OUR SERVICES</a>
-												</div>
+												</div> -->
 												
 											</div>
 											<div class="address">©2018<i style="color: #D81C5C;">.</i> GCREATIVELAB<i style="color: #D81C5C;">.</i> LEGAL</div>
@@ -105,6 +105,21 @@ get_header(); ?>
 								<div class="swiper-slide slide-about">
 										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-exact-map.svg" height="1080" width="2100" alt="">
 								</div>
+
+								<div class="swiper-slide page__pagination">
+										<div class="page__pagination">
+											<a href="#xx" class="btn__top">
+												<span>OUR SERVICES</span>
+												<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination_up.svg" height="62" width="62" alt="">
+											</a>
+											<a href="#" class="btn__btm">
+													<span>OUR WORK</span>
+												<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination_down.svg" height="62" width="62" alt="">
+											</a>
+										</div>
+								</div>
+
+								<!-- Inner Slide End -->
 							</div>
 						</div>
 

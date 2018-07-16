@@ -43,6 +43,51 @@
     }
 }
 
+.services__container{
+    width: 100%;
+    height: 100%;
+    .wrapper{
+        grid-template-columns: 1fr;
+    }
+    .main__slide{
+        max-width: 50vw;
+    }
+    .swiper__slide__services{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 20vw;
+        text-align: center;
+        justify-content: flex-start;
+        position: relative;
+        top: 10vh;
+        .services__holder{
+            position: relative;
+            padding: 0 2rem;
+            h4{
+                text-align: left;
+                width: 100%;
+                font: 2.625rem/150% "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+                color: #5D5D5D;
+            }
+            p{
+                font: 1rem/150% "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+                color: #5d5d5d;
+                margin: 1.5rem 0;
+                text-align: left;
+                
+            }
+            img{
+                padding: 4rem 0;
+            }
+        }
+    }
+    .full__mountain{
+        width: auto;
+    }
+  
+}
+
 // communications
 // design
 // production

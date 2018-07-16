@@ -1,18 +1,17 @@
 (function( $ ) {
-    
- 
+     
     if($('.movin__g')){
 
-    
     $(window).mousemove(function(e){
-        var amountMovedX = (e.pageX * -1 / 15);
-        var amountMovedY = (e.pageY * -1 / 15);
+        var amountMovedX = (e.pageX * -1 / 5);
+        var amountMovedY = (e.pageY * -1 / 5);
         var elem = document.querySelector('.movin__g');
         // $(this).css('background-position', amountMovedX + 'px ' + amountMovedY + 'px');
         TweenLite.to(elem,0.5,{x: amountMovedX,y: amountMovedY})
     });
 
     $(window).mousemove(function(e){
+
         var amountMovedX = (e.pageX * -1 / 15);
         var amountMovedY = (e.pageY * -1 / 15);
         var elem0 = document.querySelector('#P0');
@@ -32,15 +31,15 @@
         TweenLite.to(cloud02,1.5,{x: amountMovedX})
         TweenLite.to(cloud03,1.5,{x: -amountMovedX})
 
-
-        TweenLite.to(elem0,3.3,{x: -amountMovedX})
-        TweenLite.to(elem1,3.0,{x: amountMovedX})
-        TweenLite.to(elem2,2.5,{x: -amountMovedX})
-        TweenLite.to(elem3,2.0,{x: amountMovedX})
-        TweenLite.to(elem4,1.5,{x: -amountMovedX})
-        TweenLite.to(elem5,1,{x: amountMovedX})
-        TweenLite.to(elem6,0.5,{x: -amountMovedX})
+        TweenLite.to(elem0,2.9,{x: -amountMovedX})
+        TweenLite.to(elem1,1.7,{x: amountMovedX})
+        TweenLite.to(elem2,1.5,{x: -amountMovedX})
+        TweenLite.to(elem3,1.2,{x: amountMovedX})
+        TweenLite.to(elem4,0.9,{x: -amountMovedX})
+        TweenLite.to(elem5,0.6,{x: amountMovedX})
+        TweenLite.to(elem6,0.3,{x: -amountMovedX})
         TweenLite.to(elem7,0,{x: amountMovedX})
+
     });
 
     }

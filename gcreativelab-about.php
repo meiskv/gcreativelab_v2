@@ -72,27 +72,38 @@ get_header(); ?>
 											<div class="address">©2018<i style="color: #D81C5C;">.</i> GCREATIVELAB<i style="color: #D81C5C;">.</i> LEGAL</div>
 											<div class="content__hero movin__g">G</div>
 										</div> <!--  Left Ends -->
+										<div class="explore">KNOW MORE ABOUT GRAYLING
+												<img src="<?php echo get_template_directory_uri(); ?>/assets/images/explore_arrow.svg" width="10" height="9" alt="">
+										  </div>
 									</div>
 								</div>
-								<div class="swiper-slide slide-about">
+								<div class="swiper-slide about__slide__fifty">
 										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-hero.svg" height="600" width="600" alt="">
 								</div>
-								<div class="swiper-slide slide-about">
+								<div class="swiper-slide about__slide__fifty__left">
 										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-connected-icon.svg" height="95" width="95" alt="">
-										<div class="home__content__header_home">WE ARE</div>
-										<div class="content__subheader">CONNECTED</div>
-										<div class="content__description">
+										<div class="home__content__header_home">We are</div>
+										<div class="about__content__subheader">CONNECTED</div>
+										<div class="about__content__description">
+												We are a part of Grayling Public Relations, a wholly owned subsidiary of Huntsworth PLC – a public relations focused group listed on the London Stock Exchange. This allows us to provide truly integrated strategic services, and worldwide reach with local expertise and knowledge, combined with unrivalled and diverse sector experience.	
+										</div>
+								</div>
+								<div class="swiper-slide about__width__auto">
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-map.svg" height="933" width="1546" alt="">
+								</div>
+								<div class="swiper-slide about__slide__fifty about__huntsworth">
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-huntsworth.svg" height="625" width="870" alt="">
+								</div>
+								<div class="swiper-slide about__slide__fifty__left">
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-reputation-icon.svg" height="95" width="95" alt="">
+										<div class="home__content__header_home">We build</div>
+										<div class="about__content__subheader">DESIGN REPUTATION</div>
+										<div class="about__content__description">
 												We are a part of Grayling Public Relations, a wholly owned subsidiary of Huntsworth PLC – a public relations focused group listed on the London Stock Exchange. This allows us to provide truly integrated strategic services, and worldwide reach with local expertise and knowledge, combined with unrivalled and diverse sector experience.	
 										</div>
 								</div>
 								<div class="swiper-slide slide-about">
-										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-map.svg" height="100%" width="1900" alt="">
-								</div>
-								<div class="swiper-slide slide-about">
-										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-huntsworth.svg" height="600" width="600" alt="">
-								</div>
-								<div class="swiper-slide slide-about">
-										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-exact-map.svg" height="100%" width="2100" alt="">
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-exact-map.svg" height="1080" width="2100" alt="">
 								</div>
 							</div>
 						</div>

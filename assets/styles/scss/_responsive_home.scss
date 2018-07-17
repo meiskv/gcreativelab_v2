@@ -1,12 +1,12 @@
 .home__holder{
     @include breakpoint(large down) { 
-        padding-left: 1rem !important;
+        padding-left: 4rem !important;
     }
 }
 
 .about__holder,.services__holder,.case__study__holder,.team__holder,.contact__holder{
     @include breakpoint(large down) { 
-        padding-left: 4rem !important;
+        padding-left: 7rem !important;
     }
 }
 
@@ -45,7 +45,7 @@
     @include breakpoint(large down) { 
         position: absolute;
         bottom: 2rem;
-        left: 1rem;
+        left: 4rem;
         font: 500 0.7rem/100% 'Avenir', sans-serif;
     }
 }
@@ -74,6 +74,7 @@
     
     @include breakpoint(large down) { 
         font: 700 0.7rem/100% 'Avenir', sans-serif;
+
     }
 }
 
@@ -88,3 +89,37 @@
         height: 45vh;
     }
 }
+
+
+.wrapper .left .content__holder .content__header, .wrapper .left .content__holder .content__subheader{
+    @include breakpoint(large down) { 
+        font: 700 2.5375rem/110% "Avenir", AppleGothic, sans-serif;
+    }
+}
+
+
+.about-wrapper, .services, .case-study, .team{
+    .address{
+        @include breakpoint(large down) {
+            position: absolute;
+            bottom: 2rem;
+            left: 7rem;
+            font: 500 0.7rem/100% 'Avenir', sans-serif;
+        }
+}
+}
+
+.about-wrapper{
+    .explorer{
+        @include breakpoint(large down) {
+            bottom: 0;
+        }
+    }
+}
+
+.about-explore{
+    
+        bottom: 0 !important;
+    
+}
+

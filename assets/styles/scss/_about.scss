@@ -37,12 +37,22 @@
 
     .about__slide__fifty__left{
         text-align: left;
-        max-width: 30vw;
+        max-width: 400px;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 3rem;
+    }
+    .about__slide__fifty__left_1{
+        text-align: left;
+        max-width: 700px;
         flex-direction: column;
         align-items: flex-start;
     }
     .about__huntsworth{
         margin: 0 5rem;
+    }
+    .about__whole_map{
+        width: 100%;
     }
 
     .about__width__auto{
@@ -50,7 +60,7 @@
     }
 
     .slide-about{
-        // width: auto;
+        width: auto;
         img{
             // height: 100% !important;
         }
@@ -65,5 +75,40 @@
         font: 900 3.3375rem/100% "Avenir","Century Gothic", CenturyGothic, AppleGothic, sans-serif;
         color: $blue;
     }
+    
 }
 
+
+
+#Layer_1{
+    .st0{enable-background:new    ;}
+    .st1{fill:#38A7A0;}
+    .st2{fill:#80448E;}
+    .st3{fill:#57A0D3;}
+    .st4{fill:#E3A424;}
+    .st5{fill:#635FA6;}
+    .st6{fill:#513059;}
+    .st7{fill:#FFFFFF;}
+    .st8{fill:#304078;}
+    .st9{fill:#4A7628;}
+    .st10{fill:#3AA6A0;}
+    .st11{fill:#589FD2;}
+    .st12{fill:#E1A225;}
+}
+#exactMapSvg{
+    .st0{display:none;}
+    .st1{clip-path:url(#SVGID_2_);}
+    .st2{fill:#E1A225;}
+    .st3{fill:#635FA6;}
+    .st4{fill:#513059;}
+    .st5{fill:#FFFFFF;}
+    .st6{fill:#304078;}
+    .st7{fill:#589FD2;}
+    .st8{fill:#204B66;}
+    .st9{fill:#5D5D5D;}
+    .st10{fill:#D41367;}
+    .st11{fill:#12284B;}
+    .st12{clip-path:url(#SVGID_4_);fill:#D41367;}
+    .st13{clip-path:url(#SVGID_4_);fill:#12284B;}
+    .st14{fill:#0F294B;}
+}

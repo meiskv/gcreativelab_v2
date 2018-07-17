@@ -56,19 +56,21 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        max-width: 20vw;
+        max-width: 500px;
         text-align: center;
-        justify-content: flex-start;
+        justify-content: center;
         position: relative;
-        top: 20vh;
+        
         .services__holder{
             position: relative;
             padding: 0 2rem;
+            border-left: 1px solid #d5d5d5;
             h4{
                 text-align: left;
                 width: 100%;
                 font: 2.625rem/150% "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
                 color: #5D5D5D;
+                
             }
             p{
                 font: 1rem/150% "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
@@ -82,7 +84,10 @@
             }
         }
     }
+
+    
     .full__mountain{
+        // border-left: 1px solid #d5d5d5;
         width: auto;
     }
   

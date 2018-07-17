@@ -106,7 +106,7 @@ get_header(); ?>
 											  </div>
 
 											  <div class="swiper-slide swiper__slide__services">
-													<div class="services__holder">
+													<div class="services__holder"  style="border-right: 1px solid #d5d5d5;">
 													<img src="<?php echo get_template_directory_uri(); ?>/assets/images/services-icn/social-media.svg" height="95" width="95" alt="">
 													<h4>Social Media</h4>
 													<p>I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now. When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner </p>
@@ -10894,10 +10894,16 @@ get_header(); ?>
 														<a href="#xx" class="btn__top">
 															<span>OUR TEAM</span>
 															<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination_up.svg" height="62" width="62" alt="">
+															<div class="bg__arrow">
+																	<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination-icn/arrow-03.svg" height="316" width="316" alt="">
+															</div>
 														</a>
 														<a href="#" class="btn__btm">
 																<span>WE ARE...</span>
 															<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination_down.svg" height="62" width="62" alt="">
+															<div class="bg__arrow">
+																	<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination-icn/arrow-04.svg" height="316" width="316" alt="">
+															</div>
 														</a>
 													</div>
 											   </div>

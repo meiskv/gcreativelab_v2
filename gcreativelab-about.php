@@ -70,15 +70,17 @@ get_header(); ?>
 												
 											</div>
 											<div class="address">©2018<i style="color: #D81C5C;">.</i> GCREATIVELAB<i style="color: #D81C5C;">.</i> LEGAL</div>
+											<div class="explore about-explore">KNOW MORE ABOUT GRAYLING
+													<img src="<?php echo get_template_directory_uri(); ?>/assets/images/explore_arrow.svg" width="10" height="9" alt="">
+											  </div>
 											<div class="content__hero movin__g">G</div>
 										</div> <!--  Left Ends -->
-										<div class="explore">KNOW MORE ABOUT GRAYLING
-												<img src="<?php echo get_template_directory_uri(); ?>/assets/images/explore_arrow.svg" width="10" height="9" alt="">
-										  </div>
+										
 									</div>
+									
 								</div>
 								<div class="swiper-slide about__slide__fifty">
-										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-hero.svg" height="600" width="600" alt="">
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-hero.svg" style="height:80%;" width="600" alt="">
 								</div>
 								<div class="swiper-slide about__slide__fifty__left">
 										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-connected-icon.svg" height="95" width="95" alt="">
@@ -88,13 +90,14 @@ get_header(); ?>
 												We are a part of Grayling Public Relations, a wholly owned subsidiary of Huntsworth PLC – a public relations focused group listed on the London Stock Exchange. This allows us to provide truly integrated strategic services, and worldwide reach with local expertise and knowledge, combined with unrivalled and diverse sector experience.	
 										</div>
 								</div>
-								<div class="swiper-slide about__width__auto">
-										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-map.svg" height="933" width="1546" alt="">
+								<div class="swiper-slide about__whole_map">
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-map.svg" style="height:100%;" width="100%" alt="">
+										<!-- <?php get_template_part( 'parts/svg', 'globalmap' ); ?> -->
 								</div>
 								<div class="swiper-slide about__slide__fifty about__huntsworth">
-										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-huntsworth.svg" height="625" width="870" alt="">
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-huntsworth.svg" style="height:90%;" width="100%" alt="">
 								</div>
-								<div class="swiper-slide about__slide__fifty__left">
+								<div class="swiper-slide about__slide__fifty__left_1">
 										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-reputation-icon.svg" height="95" width="95" alt="">
 										<div class="home__content__header_home">We build</div>
 										<div class="about__content__subheader">DESIGN REPUTATION</div>
@@ -103,18 +106,27 @@ get_header(); ?>
 										</div>
 								</div>
 								<div class="swiper-slide slide-about">
-										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-exact-map.svg" height="1080" width="2100" alt="">
+
+										<?php get_template_part( 'parts/svg', 'exactmap' ); ?>								
 								</div>
 
 								<div class="swiper-slide page__pagination">
 										<div class="page__pagination">
-											<a href="#xx" class="btn__top">
+											<a href="<?php posts_nav_link(); ?>" class="btn__top">
+												
 												<span>OUR SERVICES</span>
 												<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination_up.svg" height="62" width="62" alt="">
+												<div class="bg__arrow">
+														<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination-icn/arrow-01.svg" height="316" width="316" alt="">
+												</div>
 											</a>
 											<a href="#" class="btn__btm">
+													
 													<span>OUR WORK</span>
 												<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination_down.svg" height="62" width="62" alt="">
+												<div class="bg__arrow">
+														<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination-icn/arrow-02.svg" height="316" width="316" alt="">
+												</div>
 											</a>
 										</div>
 								</div>

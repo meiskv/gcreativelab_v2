@@ -1,0 +1,5 @@
+.content__description{
+    @include breakpoint(xxlarge down) { 
+        font: 300 0.8rem/100% Avenir,Century Gothic,CenturyGothic,AppleGothic,sans-serif !important;
+    }
+}

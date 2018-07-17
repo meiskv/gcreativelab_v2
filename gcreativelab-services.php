@@ -10909,44 +10909,6 @@ get_header(); ?>
 											   </div>
 											</div>
 										  </div>
-									
-
-                                    <!-- <div class="right slick-right">
-											<div class="slick-services">
-												<div class="slick-services-holder">
-														<div class="slick-services-list">
-															<img src="<?php echo get_template_directory_uri(); ?>/assets/images/services-icn/strategy.svg" width="122" height="132" alt="">
-															<h1>Strategy</h1>
-														</div>
-												</div>
-												<div class="slick-services-holder">
-														<div class="slick-services-list">
-															<img src="<?php echo get_template_directory_uri(); ?>/assets/images/services-icn/design.svg" width="122" height="132" alt="">
-															<h1>Design</h1>
-														</div>
-												</div>
-												<div class="slick-services-holder">
-														<div class="slick-services-list">
-															<img src="<?php echo get_template_directory_uri(); ?>/assets/images/services-icn/production.svg" width="122" height="132" alt="">
-															<h1>Production</h1>
-														</div>
-												</div>
-												<div class="slick-services-holder">
-														<div class="slick-services-list">
-															<img src="<?php echo get_template_directory_uri(); ?>/assets/images/services-icn/social-media.svg" width="122" height="132" alt="">
-															<h1>Communications</h1>
-														</div>
-												</div>
-												<div class="slick-services-holder">
-														<div class="slick-services-list">
-															<img src="<?php echo get_template_directory_uri(); ?>/assets/images/services-icn/public-relation.svg" width="122" height="132" alt="">
-															<h1>Social Media</h1>
-														</div>
-												</div>
-												
-											</div>
-                                    </div> -->
-
 								<!--  -->
 						</div>
 					</div>

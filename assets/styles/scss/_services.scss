@@ -58,9 +58,9 @@
         width: 100%;
         max-width: 500px;
         text-align: center;
-        justify-content: center;
+        justify-content: flex-start;
         position: relative;
-        
+        top: 10vh;
         .services__holder{
             position: relative;
             padding: 0 2rem;

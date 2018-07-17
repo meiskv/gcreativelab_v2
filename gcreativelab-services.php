@@ -10891,14 +10891,14 @@ get_header(); ?>
 
 											   <div class="swiper-slide page__pagination">
 													<div class="page__pagination">
-														<a href="#xx" class="btn__top">
+														<a href="http://www.gcreativelab.com/team/" class="btn__top">
 															<span>OUR TEAM</span>
 															<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination_up.svg" height="62" width="62" alt="">
 															<div class="bg__arrow">
 																	<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination-icn/arrow-03.svg" height="316" width="316" alt="">
 															</div>
 														</a>
-														<a href="#" class="btn__btm">
+														<a href="/" class="btn__btm">
 																<span>WE ARE...</span>
 															<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination_down.svg" height="62" width="62" alt="">
 															<div class="bg__arrow">

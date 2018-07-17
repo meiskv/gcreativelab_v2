@@ -55,7 +55,7 @@ get_header(); ?>
 										<div class="left"> <!--  Left Starts -->
 											<div class="content__holder about__holder">
 												<div class="content__header">WE ARE</div>
-												<div class="content__subheader">PASSIONATE</div>
+												<div class="content__subheader">GCreative</div>
 												<div class="content__description">
 													
 													<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -112,7 +112,7 @@ get_header(); ?>
 
 								<div class="swiper-slide page__pagination">
 										<div class="page__pagination">
-											<a href="<?php posts_nav_link(); ?>" class="btn__top">
+											<a href="http://www.gcreativelab.com/services/" class="btn__top">
 												
 												<span>OUR SERVICES</span>
 												<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination_up.svg" height="62" width="62" alt="">
@@ -120,7 +120,7 @@ get_header(); ?>
 														<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination-icn/arrow-01.svg" height="316" width="316" alt="">
 												</div>
 											</a>
-											<a href="#" class="btn__btm">
+											<a href="http://www.gcreativelab.com/case/" class="btn__btm">
 													
 													<span>OUR WORK</span>
 												<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination_down.svg" height="62" width="62" alt="">

@@ -572,12 +572,22 @@ $pink: #D81C5C;
             color: #D92360;
             font: 700 2.5625rem/150% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
             padding: 2rem;
+            position: relative;
+            z-index: 999;
+            @include breakpoint(medium down) {
+                font: 700 1.5rem/150% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+            }
+            @include breakpoint(xlarge down) {
+                font: 700 2rem/150% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+            }
+            
         }
         img{
             position: absolute;
             bottom: 2rem;
             right: 2rem;
             padding: 0;
+            
         }
         .bg__arrow{
             position: absolute;
@@ -593,6 +603,9 @@ $pink: #D81C5C;
                 bottom: unset;
                 right: unset;
                 padding: unset;
+                @include breakpoint(medium down) {width: 40%;}
+                @include breakpoint(xlarge down) {width: 40%;}
+                @include breakpoint(xxlarge down) {width: 40%;}
             }
         }
     }

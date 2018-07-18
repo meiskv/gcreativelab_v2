@@ -42,12 +42,18 @@ window.requestAnimationFrame(function() {
                   let src = 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v2/assets/images/gcreative_logo_white.svg';
                   $('.glogo').attr('src', src);
 
+                  let menuIcon = 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v2/assets/images/menu-close.svg';
+                  $('.glogo').attr('src', menuIcon);
+
                   TweenMax.staggerFromTo('#menu li a', 0.1,{x: '-140',autoAlpha:0},{x: '0',autoAlpha:1, ease:Power4.easeInOut}, 0.1);
 
                 } else {
                   menuButton.classList.remove('cross');
                   let src = 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v2/assets/images/gcreative_logo.svg';
                   $('.glogo').attr('src', src);
+
+                  let menuIcon = 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v2/assets/images/menu-lines.svg';
+                  $('.glogo').attr('src', menuIcon);
                 }
               },
               resize: function(){ 

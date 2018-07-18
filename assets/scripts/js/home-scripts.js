@@ -47,6 +47,10 @@ window.requestAnimationFrame(function() {
                   $('.glogo').attr('src', src);
                 }
               },
+              resize: function(){ 
+                console.log('resizing');
+                window.location.href = window.location.href;                
+              },
             }
           });
 
@@ -113,10 +117,6 @@ window.requestAnimationFrame(function() {
               },
               resize: function(){
 
-                // if(window.innerWidth){
-                //   // console.log(window.innerWidth);
-                //   winCurrentWidth = 100;
-                // }
 
                 location.reload();
               },

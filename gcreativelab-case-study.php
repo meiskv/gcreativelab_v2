@@ -78,7 +78,8 @@ get_header(); ?>
 												
                                             </div>
                                             
-                                            <?php       
+                                            <?php
+                                            
                                             $paged          = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
                                             $posts_per_page = 10;
                                             $args = array(

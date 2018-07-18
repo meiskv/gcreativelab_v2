@@ -147,48 +147,60 @@ $queryFirst = new WP_Query( $argsFirstPost );
 
                         <div class="swiper-slide case__slide case__slide__description__holder">
                             <div class="case__inner__slide__holder">
-                                <div class="case__inner__slide__title">
+                                <!-- <div class="case__inner__slide__title">
                                     <h1><?php echo get_field('01_title'); ?></h1>
                                 </div>
                                 <div class="case__inner__slide__subtitle">
                                     <h4>Subtitle</h4>
-                                </div>
+                                </div> -->
                                 <div class="case__inner__slide__description">
-                                    <div><?php echo get_field('title_01_description'); ?></div>
+                                    <?php echo get_field('title_01_description'); ?>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="swiper-slide case__slide case__slide__img__holder">
-                                <img src="<?php echo $client_img01['url']; ?>" width="100%" height="100%" alt="">
+                        <div class="swiper-slide case__slide">
+                                <img src="<?php echo $client_img01['url']; ?>" height="auto" alt="">
+
+                                <!-- <div class="case__right" style="background: url(<?php echo $client_img01['url']; ?>) no-repeat center center;
+                                        background-size: contain;
+                                        -webkit-background-size: contain;
+                                        -moz-background-size: contain; 
+                                        -o-background-size: contain;
+                                        height: 100%;
+                                        width: 100%;
+                                        ">
+                                </div> -->
+
                         </div>
 
                         <div class="swiper-slide case__slide case__slide__description__holder">
                                 <div class="case__inner__slide__holder">
-                                    <div class="case__inner__slide__title">
+                                    <!-- <div class="case__inner__slide__title">
                                         <h1><?php echo get_field('02_title'); ?></h1>
                                     </div>
                                     <div class="case__inner__slide__subtitle">
                                         <h4>Subtitle</h4>
-                                    </div>
+                                    </div> -->
                                     <div class="case__inner__slide__description">
-                                        <div><?php echo get_field('title_02_description'); ?></div>
+                                        <?php echo get_field('title_02_description'); ?>
                                     </div>
                                 </div>
                             </div>
     
-                        <div class="swiper-slide case__slide case__slide__img__holder">
-                                <img src="<?php echo $client_img02['url']; ?>" width="100%" height="100%" alt="">
+                        <div class="swiper-slide case__slide">
+                                
+                                <img src="<?php echo $client_img02['url']; ?>" height="auto" alt="">
                         </div>
                             
                         <div class="swiper-slide case__slide case__slide__description__holder">
                                 <div class="case__inner__slide__holder">
-                                    <div class="case__inner__slide__title">
+                                    <!-- <div class="case__inner__slide__title">
                                         <h1>Specs</h1>
                                     </div>
                                     <div class="case__inner__slide__subtitle">
                                         <h4>Subtitle</h4>
-                                    </div>
+                                    </div> -->
                                     <div class="case__inner__slide__description">
                                         <p><?php echo get_field('full_project_deliverables'); ?></p>
                                     </div>

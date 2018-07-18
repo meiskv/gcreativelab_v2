@@ -50,7 +50,7 @@
                   },
                   resize: function(){
                       let resizeThis = this;
-                      location.reload();
+                      // location.reload();
                   }
                 }
               });

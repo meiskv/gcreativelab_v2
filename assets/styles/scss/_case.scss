@@ -135,16 +135,17 @@
     // Case Inner Main Slide Ends
     .case__slide{
         background: #ffffff00;
-        // width: 100%;
-        // width: auto;
+        width: auto;
         height: 100vh;
         text-align: left;
         
         .case__inner__slide__holder{
             display: flex;
             flex-direction: column;
-            max-width: 20vw;
-            margin: 0 6rem;
+            justify-content: flex-start;
+            align-content: flex-start;
+            height: 100%;
+            width: 100%;
 
             .case__inner__slide__title h1{
                 font: 700 1.75rem/100% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
@@ -157,7 +158,8 @@
             }
             .case__inner__slide__description{
                 font: 500 1rem/100% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-                color: $blue;
+                color: #5D5D5D;
+                margin: 2rem;
             }
         }
     }
@@ -236,11 +238,12 @@
 }
 
 .case__slide__description__holder{
-    max-width: 40vw;
+    max-width: 400px;
 }
 
 .swiper-slide .case__slide img{
-    // max-width: 70%;
+    height: 100%;
+    width: auto;
 }
 
 .case-inner-slide-container{

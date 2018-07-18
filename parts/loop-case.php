@@ -74,7 +74,7 @@ $queryFirst = new WP_Query( $argsFirstPost );
     </div>
     <div class="swiper-slide content">
         <div class="menu-button">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/menu-lines.svg" width="18" height="15" alt="">
+            <img class="menu-icn" src="<?php echo get_template_directory_uri(); ?>/assets/images/menu-lines.svg" width="18" height="15" alt="">
         </div>
             <!--  -->
             

@@ -43,7 +43,7 @@ get_header(); ?>
 						<div class="swiper-slide content">
 						<div class="left-overlay"></div>
 							<div class="menu-button">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/menu-lines.svg" width="18" height="15" alt="">
+								<img class="menu-icn" src="<?php echo get_template_directory_uri(); ?>/assets/images/menu-lines.svg" width="18" height="15" alt="">
 							</div>
 								<!--  -->
 								<div class="home-slide-container">

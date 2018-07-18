@@ -42,8 +42,8 @@ window.requestAnimationFrame(function() {
                   let src = 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v2/assets/images/gcreative_logo_white.svg';
                   $('.glogo').attr('src', src);
 
-                  let menuIcon = 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v2/assets/images/menu-close.svg';
-                  $('.glogo').attr('src', menuIcon);
+                  let menuIcon = 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v2/assets/images/menu_close.svg';
+                  $('.menu-icn').attr('src', menuIcon);
 
                   TweenMax.staggerFromTo('#menu li a', 0.1,{x: '-140',autoAlpha:0},{x: '0',autoAlpha:1, ease:Power4.easeInOut}, 0.1);
 
@@ -53,7 +53,7 @@ window.requestAnimationFrame(function() {
                   $('.glogo').attr('src', src);
 
                   let menuIcon = 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v2/assets/images/menu-lines.svg';
-                  $('.glogo').attr('src', menuIcon);
+                  $('.menu-icn').attr('src', menuIcon);
                 }
               },
               resize: function(){ 

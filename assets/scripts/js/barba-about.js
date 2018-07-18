@@ -47,18 +47,26 @@ onEnterCompleted: function() {
         }, true);
         },
         slideChange: function () {
-                    var slider = this;
-                    if (slider.activeIndex === 0) {
-                      menuButton.classList.add('cross');
-                      let src = 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v2/assets/images/gcreative_logo_white.svg';
-                      $('.glogo').attr('src', src);
-                      TweenMax.staggerFromTo('#menu li a', 0.1,{x: '-140',autoAlpha:0},{x: '0',autoAlpha:1, ease:Power4.easeInOut}, 0.1);
-                    } else {
-                      menuButton.classList.remove('cross');
-                      let src = 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v2/assets/images/gcreative_logo.svg';
-                      $('.glogo').attr('src', src);
-                    }
-                  },
+            var slider = this;
+            if (slider.activeIndex === 0) {
+              menuButton.classList.add('cross');
+              let src = 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v2/assets/images/gcreative_logo_white.svg';
+              $('.glogo').attr('src', src);
+
+              let menuIcon = 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v2/assets/images/menu_close.svg';
+              $('.menu-icn').attr('src', menuIcon);
+
+              TweenMax.staggerFromTo('#menu li a', 0.1,{x: '-140',autoAlpha:0},{x: '0',autoAlpha:1, ease:Power4.easeInOut}, 0.1);
+
+            } else {
+              menuButton.classList.remove('cross');
+              let src = 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v2/assets/images/gcreative_logo.svg';
+              $('.glogo').attr('src', src);
+
+              let menuIcon = 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v2/assets/images/menu-lines.svg';
+              $('.menu-icn').attr('src', menuIcon);
+            }
+          },
         resize: function(){
             window.location.href = window.location.href;
         },

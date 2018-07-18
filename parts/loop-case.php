@@ -92,7 +92,7 @@ $queryFirst = new WP_Query( $argsFirstPost );
                                     <h1></h1>
                                 </div>
                                 <div class="case__inner__description">
-                                    <p><?php the_field('client_short_description'); ?></p>
+                                    <?php the_field('client_short_description'); ?>
                                 </div>
                                 <div class="case__deliverables">
                                         <?php
@@ -134,8 +134,9 @@ $queryFirst = new WP_Query( $argsFirstPost );
                                             <?php endforeach; ?>
                                         <?php endif; ?>
                                 </div>
+                                <div class="address-case">©2018<i style="color: #D81C5C;">.</i> GCREATIVELAB</div>
                             </div>
-
+                            
                         </div>
                         
                     

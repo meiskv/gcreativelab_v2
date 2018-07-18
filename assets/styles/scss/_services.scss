@@ -60,11 +60,26 @@
         text-align: center;
         justify-content: flex-start;
         position: relative;
-        top: 10vh;
+        // top: 10vh;
         .services__holder{
             position: relative;
             padding: 0 2rem;
             border-left: 1px solid #d5d5d5;
+            margin: 2rem 0rem;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            .center-srvc{
+                position: relative;
+                top: 25%;
+                @include breakpoint(xlarge down) {
+                    top: 10%;
+                }
+                @include breakpoint(xxlarge down) {
+                    top: 15%;
+                }
+            }
             h4{
                 text-align: left;
                 width: 100%;
@@ -81,6 +96,7 @@
             }
             img{
                 padding: 4rem 0;
+                align-self: center;
             }
         }
     }

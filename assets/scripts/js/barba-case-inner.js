@@ -40,11 +40,12 @@
                     var slider = this;
                     if (slider.activeIndex === 0) {
                       menuButton.classList.add('cross');
-                      let src = 'http://localhost:8888/DEV/gcreative/wp-content/themes/gcreativelab/assets/images/gcreative_logo_white.svg';
+                      let src = 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v2/assets/images/gcreative_logo_white.svg';
                       $('.glogo').attr('src', src);
+                      TweenMax.staggerFromTo('#menu li a', 0.1,{x: '-140',autoAlpha:0},{x: '0',autoAlpha:1, ease:Power4.easeInOut}, 0.1);
                     } else {
                       menuButton.classList.remove('cross');
-                      let src = 'http://localhost:8888/DEV/gcreative/wp-content/themes/gcreativelab/assets/images/gcreative_logo.svg';
+                      let src = 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v2/assets/images/gcreative_logo.svg';
                       $('.glogo').attr('src', src);
                     }
                   },

@@ -127,7 +127,7 @@ get_header(); ?>
 															<div class="team__name">
 																<h1>Sajid Shafique</h1>
 															</div>
-															<a href="#" class="team__email">arian.hashemi@grayling.com</a>
+															<a href="#" class="team__email">sajid.shafique@grayling.com</a>
 														</div>
 													</div>
 											</div>
@@ -151,7 +151,7 @@ get_header(); ?>
 															<div class="team__name">
 																<h1>Sarah Rassasse</h1>
 															</div>
-															<a href="#" class="team__email">arian.hashemi@grayling.com</a>
+															<a href="#" class="team__email">sarah.rassasse@grayling.com</a>
 														</div>
 													</div>
 											</div>
@@ -175,7 +175,7 @@ get_header(); ?>
 															<div class="team__name">
 																<h1>Amal Alatrash</h1>
 															</div>
-															<a href="#" class="team__email">arian.hashemi@grayling.com</a>
+															<a href="#" class="team__email">amal.alatrash@grayling.com</a>
 														</div>
 													</div>
 											</div>
@@ -199,11 +199,125 @@ get_header(); ?>
 															<div class="team__name">
 																<h1>Bakir Daour</h1>
 															</div>
-															<a href="#" class="team__email">arian.hashemi@grayling.com</a>
+															<a href="#" class="team__email">bakir.daour@grayling.com</a>
 														</div>
 													</div>
 											</div>
-											
+											<div class="swiper-slide swiper-team">
+													<div class="team__holder" style="background: url(<?php echo get_template_directory_uri(); ?>/assets/images/team-dana.jpg) no-repeat center center;
+															background-size: cover;
+															-webkit-background-size: cover;
+															-moz-background-size: cover; 
+															-o-background-size: cover;">
+														<!-- <ul>
+															<li>fb</li>
+															<li>tw</li>
+															<li>ig</li>
+															<li>ld</li>
+														</ul> -->
+														<div class="team__meta">
+															<div class="team__subheader">
+																<h1>Account Executive</h1>
+															</div>
+															<div class="team__name">
+																<h1>Dana Malek</h1>
+															</div>
+															<a href="#" class="team__email">dana.malek@grayling.com</a>
+														</div>
+													</div>
+											</div>
+											<div class="swiper-slide swiper-team">
+													<div class="team__holder" style="background: url(<?php echo get_template_directory_uri(); ?>/assets/images/team-mary.jpg) no-repeat center center;
+															background-size: cover;
+															-webkit-background-size: cover;
+															-moz-background-size: cover; 
+															-o-background-size: cover;">
+														<!-- <ul>
+															<li>fb</li>
+															<li>tw</li>
+															<li>ig</li>
+															<li>ld</li>
+														</ul> -->
+														<div class="team__meta">
+															<div class="team__subheader">
+																<h1>Graphic Designer</h1>
+															</div>
+															<div class="team__name">
+																<h1>Mary Hechanova</h1>
+															</div>
+															<a href="#" class="team__email">mary.hechanova@grayling.com</a>
+														</div>
+													</div>
+											</div>
+											<div class="swiper-slide swiper-team">
+													<div class="team__holder" style="background: url(<?php echo get_template_directory_uri(); ?>/assets/images/team-omar.jpg) no-repeat center center;
+															background-size: cover;
+															-webkit-background-size: cover;
+															-moz-background-size: cover; 
+															-o-background-size: cover;">
+														<!-- <ul>
+															<li>fb</li>
+															<li>tw</li>
+															<li>ig</li>
+															<li>ld</li>
+														</ul> -->
+														<div class="team__meta">
+															<div class="team__subheader">
+																<h1>Graphic Designer</h1>
+															</div>
+															<div class="team__name">
+																<h1>Omar Hammad</h1>
+															</div>
+															<a href="#" class="team__email">omar.hammad@grayling.com</a>
+														</div>
+													</div>
+											</div>
+											<div class="swiper-slide swiper-team">
+													<div class="team__holder" style="background: url(<?php echo get_template_directory_uri(); ?>/assets/images/team-khadijha.jpg) no-repeat center center;
+															background-size: cover;
+															-webkit-background-size: cover;
+															-moz-background-size: cover; 
+															-o-background-size: cover;">
+														<!-- <ul>
+															<li>fb</li>
+															<li>tw</li>
+															<li>ig</li>
+															<li>ld</li>
+														</ul> -->
+														<div class="team__meta">
+															<div class="team__subheader">
+																<h1>Copywriter</h1>
+															</div>
+															<div class="team__name">
+																<h1>Khadija</h1>
+															</div>
+															<a href="#" class="team__email">khadija.hakimudi@grayling.com</a>
+														</div>
+													</div>
+											</div>
+											<div class="swiper-slide swiper-team">
+													<div class="team__holder" style="background: url(<?php echo get_template_directory_uri(); ?>/assets/images/team-mikhail.jpg) no-repeat center center;
+															background-size: cover;
+															-webkit-background-size: cover;
+															-moz-background-size: cover; 
+															-o-background-size: cover;">
+														<!-- <ul>
+															<li>fb</li>
+															<li>tw</li>
+															<li>ig</li>
+															<li>ld</li>
+														</ul> -->
+														<div class="team__meta">
+															<div class="team__subheader">
+																<h1>Digital Designer</h1>
+															</div>
+															<div class="team__name">
+																<h1>Mikhail Villamor</h1>
+															</div>
+															<a href="#" class="team__email">mikhail.villamor@grayling.com</a>
+														</div>
+													</div>
+											</div>
 											</div>
 										</div>
 										<!-- Add Pagination -->

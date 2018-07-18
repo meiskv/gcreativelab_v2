@@ -41,6 +41,9 @@ window.requestAnimationFrame(function() {
                   menuButton.classList.add('cross');
                   let src = 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v2/assets/images/gcreative_logo_white.svg';
                   $('.glogo').attr('src', src);
+
+                  TweenMax.staggerFromTo('#menu li a', 0.1,{x: '-140',autoAlpha:0},{x: '0',autoAlpha:1, ease:Power4.easeInOut}, 0.1);
+
                 } else {
                   menuButton.classList.remove('cross');
                   let src = 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v2/assets/images/gcreative_logo.svg';
@@ -49,7 +52,7 @@ window.requestAnimationFrame(function() {
               },
               resize: function(){ 
                 console.log('resizing');
-                window.location.href = window.location.href;                
+                window.location.href = window.location.href;            
               },
             }
           });

@@ -68,7 +68,7 @@ get_header(); ?>
 																	</div> -->
 																	
 																</div>
-																<div class="address">©2018<i style="color: #D81C5C;">.</i> GCREATIVELAB<i style="color: #D81C5C;">.</i> LEGAL</div>
+																<!-- <div class="address">©2018<i style="color: #D81C5C;">.</i> GCREATIVELAB<i style="color: #D81C5C;">.</i> LEGAL</div> -->
 																<div class="content__hero movin__g">G</div>
 																
 															</div> <!--  Left Ends -->

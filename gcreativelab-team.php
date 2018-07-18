@@ -69,15 +69,15 @@ get_header(); ?>
 													</div>
 													
 												</div>
-												<div class="address">©2018<i style="color: #D81C5C;">.</i> GCREATIVELAB<i style="color: #D81C5C;">.</i> LEGAL</div>
+												<!-- <div class="address">©2018<i style="color: #D81C5C;">.</i> GCREATIVELAB<i style="color: #D81C5C;">.</i> LEGAL</div> -->
 												<div class="content__hero movin__g">G</div>
 											</div> <!--  Left Ends -->
                                 </div>
 								<!--  -->
 												<!-- Main Slide Content -->
-												<div class="explore">DISCOVER THE TEAM
+												<!-- <div class="explore">DISCOVER THE TEAM
 													  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/explore_arrow.svg" width="10" height="9" alt="">
-												</div>
+												</div> -->
 											</div>
 
 											

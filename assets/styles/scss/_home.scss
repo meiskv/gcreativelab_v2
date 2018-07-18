@@ -37,8 +37,8 @@ body{
     .left .content__holder{
         // padding: 0 12rem;
         padding-left: 6rem;
-        align-self: flex-end;
-        margin-bottom: 10rem;
+        align-self: center;
+        // margin-bottom: 10rem;
         text-align: left;
         position: relative;
         z-index: 1;
@@ -55,7 +55,9 @@ body{
         .content__description{
             font: 1rem/100% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
             color: #5D5D5D;
-            margin: 1.5rem 0;
+            margin-top: 1.5rem;
+            margin-left: 0;
+            margin-right: 0;
             padding-right: 5rem;
             max-width: 600px;
         }

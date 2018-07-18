@@ -80,19 +80,19 @@ get_header(); ?>
                                             
                                             <?php       
                                             $paged          = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
-                                            // $posts_per_page = 5;
+                                            $posts_per_page = 10;
                                             $args = array(
                                                 'post_type'         => 'case-study',
-                                                // 'posts_per_page'    => $posts_per_page,
+                                                'posts_per_page'    => $posts_per_page,
                                                 'paged'             => $paged,
                                                 'order'             => 'ASC',
                                             );
-                                            $custom_query = new WP_Query( $args ); 
+                                            $custom_query_case = new WP_Query( $args ); 
                                             $number = 0;
                                             ?>
 
-                                            <?php if ( $custom_query->have_posts() ) : ?>
-                                            <?php while ( $custom_query->have_posts() ): $custom_query->the_post(); global $post; $post_meta = get_post_meta($post->ID); ?>
+                                            <?php if ( $custom_query_case->have_posts() ) : ?>
+                                            <?php while ( $custom_query_case->have_posts() ): $custom_query_case->the_post(); global $post; $post_meta = get_post_meta($post->ID); ?>
                                             <?php
                                                 $image = get_field('client_logo');
                                                 $size = 'large';

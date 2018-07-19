@@ -101,7 +101,7 @@ gulp.task('scripts', function() {
             gutil.log(gutil.colors.red(error.message));
             this.emit('end');
         }))
-		.pipe(plugin.sourcemaps.init())   // ETO
+		// .pipe(plugin.sourcemaps.init())   // ETO
 		.pipe(plugin.babel({
 			presets: ['es2015'],
 			compact: true,
@@ -135,7 +135,7 @@ gulp.task('styles', function() {
 		    cascade: false
 		}))
 		.pipe(plugin.cssnano())
-		.pipe(plugin.sourcemaps.write('.'))    // ETO
+		// .pipe(plugin.sourcemaps.write('.'))    // ETO
 		.pipe(gulp.dest(ASSETS.styles))
 		.pipe(browserSync.reload({
           stream: true

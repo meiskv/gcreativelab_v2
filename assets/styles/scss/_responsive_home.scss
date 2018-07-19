@@ -1,12 +1,12 @@
 .home__holder{
     @include breakpoint(large down) { 
-        padding-left: 4rem !important;
+        // padding-left: 4rem !important;
     }
 }
 
 .about__holder,.case__study__holder,.team__holder,.contact__holder{
     @include breakpoint(large down) { 
-        padding-left: 7rem !important;
+        // padding-left: 7rem !important;
     }
 }
 
@@ -37,7 +37,7 @@
 
 .left .content__holder{
     @include breakpoint(large down) { 
-        margin-bottom: 6rem !important;
+        // margin-bottom: 6rem !important;
       }
 }
 

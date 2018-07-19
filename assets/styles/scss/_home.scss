@@ -35,22 +35,43 @@ body{
     }
     // Left Styles Starts
     .left .content__holder{
-        // padding: 0 12rem;
         padding-left: 6rem;
         align-self: center;
-        // margin-bottom: 10rem;
         text-align: left;
         position: relative;
         z-index: 1;
+        @include breakpoint(large only) {
+            padding-left: 3rem;
+        }
+
+        @include breakpoint(four only) {
+            padding-left: 4.2rem;
+        }
+
+        @include breakpoint(six only) {
+            padding-left: 5rem;
+        }
+        
+        @include breakpoint(nine only) {
+            padding-left: 5.7rem;
+        }
+
+        @include breakpoint(two only) {
+            padding-left: 7.5rem;
+        }
+        @include breakpoint(twoeight only) {
+            padding-left: 8.3rem;
+        }
         .content__header, .content__subheader{
             font: 900 3.3375rem/100% "Avenir","Century Gothic", CenturyGothic, AppleGothic, sans-serif;
         }
         .content__header{
             font-weight: normal;
+            color: #0F294B;
         }
         .content__subheader, .content__subheader div{
             font-weight: bold;
-            // color: #FCC210;
+            color: #0F294B;
         }
         .content__description{
             font: 1rem/100% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
@@ -333,7 +354,7 @@ $pink: #D81C5C;
         color: #ffffff;
         font: 300 3.125rem/80% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
         transition: 0.3s;
-        padding: 1rem 0;
+        padding: 0.5rem 0;
     }
     li a:hover{
         color: $pink;
@@ -343,7 +364,7 @@ $pink: #D81C5C;
 .glogo{
     position: absolute;
     top: 4rem;
-    left: 7rem;
+    left: 6.5rem;
     z-index: 9999;
 }
 
@@ -610,7 +631,7 @@ $pink: #D81C5C;
                 padding: unset;
                 @include breakpoint(medium down) {width: 40%;}
                 @include breakpoint(xlarge down) {width: 40%;}
-                @include breakpoint(xxlarge down) {width: 40%;}
+                @include breakpoint(four down) {width: 40%;}
             }
         }
     }

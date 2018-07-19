@@ -54,7 +54,7 @@ get_header(); ?>
 												<!--  -->
 									<div class="wrapper team">
 											<div class="left"> <!--  Left Starts -->
-												<div class="content__holder team__holder">
+												<div class="team__holder">
 													<div class="content__header">WE ARE</div>
 													<div class="content__subheader">GCREATIVE</div>
 													<div class="content__description">
@@ -64,9 +64,9 @@ get_header(); ?>
 														
 													<?php endwhile; endif; ?>
 													</div>
-													<div class="content__btn">
+													<!-- <div class="content__btn">
 														<a href="#">JOIN OUR TEAM</a>
-													</div>
+													</div> -->
 													
 												</div>
 												<!-- <div class="address">©2018<i style="color: #D81C5C;">.</i> GCREATIVELAB<i style="color: #D81C5C;">.</i> LEGAL</div> -->

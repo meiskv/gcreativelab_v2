@@ -54,8 +54,8 @@ get_header(); ?>
 									<div class="about-wrapper">
 										<div class="left"> <!--  Left Starts -->
 											<div class="content__holder about__holder">
-												<div class="content__header">WE ARE</div>
-												<div class="content__subheader">Connected</div>
+												<div class="content__header">We are</div>
+												<div class="content__subheader">CONNECTED</div>
 												<div class="content__description">
 													
 													<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -91,7 +91,7 @@ get_header(); ?>
 										</div>
 								</div> -->
 								<div class="swiper-slide about__slide__fifty about__huntsworth">
-										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-huntsworth.svg" style="height:90%;" width="100%" alt="">
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-huntsworth.svg" style="height:100%;" width="100%" alt="">
 								</div>
 								<div class="swiper-slide about__slide__fifty__left_1">
 										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-reputation-icon.svg" height="95" width="95" alt="">

@@ -35,6 +35,70 @@
         -moz-box-shadow: 0px 0px 35px -1px rgba(0,0,0,0) !important;
         box-shadow: 0px 0px 35px -1px rgba(0,0,0,0) !important;
     }
+
+    .team__holder{
+        padding-left: 6rem;
+        align-self: center;
+        text-align: left;
+        position: relative;
+        z-index: 1;
+        @include breakpoint(large only) {
+            padding-left: 6.5rem;
+        }
+
+        @include breakpoint(four only) {
+            padding-left: 6.5rem;
+        }
+
+        @include breakpoint(six only) {
+            padding-left: 6.5rem;
+        }
+        
+        @include breakpoint(nine only) {
+            padding-left: 6.5rem;
+        }
+
+        @include breakpoint(two only) {
+            padding-left: 6.5rem;
+        }
+        @include breakpoint(twoeight only) {
+            padding-left: 8.3rem;
+        }
+        .content__header, .content__subheader{
+            font: 900 3.3375rem/100% "Avenir","Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        }
+        .content__header{
+            font-weight: normal;
+            color: #0F294B;
+        }
+        .content__subheader, .content__subheader div{
+            font-weight: bold;
+            color: #0F294B;
+        }
+        .content__description{
+            font: 1rem/100% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+            color: #5D5D5D;
+            margin-top: 1.5rem;
+            margin-left: 0;
+            margin-right: 0;
+            padding-right: 5rem;
+            max-width: 600px;
+        }
+        .content__description div{
+            line-height: 1.6;
+        }
+        .content__btn,.home__content__btn{
+            display: inline-block;
+            margin-top: 2rem;
+        }
+        .content__btn a{
+            font: 1.25rem/100% "Avenir", sans-serif;
+            color: #ffffff;
+            font-weight: 900;
+            background: #FCC210;
+            padding: 1rem 1.3rem;
+        }
+    }
 }
 
 .team-container .swiper-slide{

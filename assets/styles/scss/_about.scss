@@ -28,6 +28,31 @@
         .left{
             width: 50vw;
         }
+
+        .about__holder{
+            @include breakpoint(large only) {
+                padding-left: 6.5rem;
+            }
+    
+            @include breakpoint(four only) {
+                padding-left: 6.5rem;
+            }
+    
+            @include breakpoint(six only) {
+                padding-left: 6.5rem;
+            }
+            
+            @include breakpoint(nine only) {
+                padding-left: 6.5rem;
+            }
+    
+            @include breakpoint(two only) {
+                padding-left: 6.5rem;
+            }
+            @include breakpoint(twoeight only) {
+                padding-left: 7.3rem;
+            }
+        }
         
     }
     

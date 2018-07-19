@@ -49,8 +49,8 @@ get_header(); ?>
 											  <div class="swiper-slide main__slide">
 													<div class="wrapper services">
 															<div class="left"> <!--  Left Starts -->
-																<div class="content__holder services__holder">
-																	<div class="content__header">WE ARE</div>
+																<div class="services__holder_content">
+																	<div class="content__header">We are</div>
 																	<div class="content__subheader">VERSATILE</div>
 																	<div class="content__description">
 																		

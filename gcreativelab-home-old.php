@@ -54,8 +54,8 @@ get_header(); ?>
 									<div class="wrapper home">
                                     <div class="left"> <!--  Left Starts -->
                                         <div class="content__holder home__holder">
-                                            <div class="home__content__header_home">Hello.</div>
-											<div class="home__content__header">WE ARE <i class="header_animation">BOLD</i></div>
+                                            <div class="home__content__header_home">We are</div>
+											<div class="home__content__header"><i class="header_animation">BOLD</i></div>
 											<div class="content__description">
                                                 
 												<?php if (have_posts()) : while (have_posts()) : the_post(); ?>

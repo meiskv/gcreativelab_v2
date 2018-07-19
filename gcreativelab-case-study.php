@@ -62,9 +62,9 @@ get_header(); ?>
                                                                             
                                                                         <?php endwhile; endif; ?>
                                                                     </div>
-                                                                    <div class="content__btn">
+                                                                    <!-- <div class="content__btn">
                                                                         <a href="http://www.gcreativelab.com/contact/">CONTACT US</a>
-                                                                    </div>
+                                                                    </div> -->
                                                                     
                                                                 </div>
                                                                 <!-- <div class="address">©2018<i style="color: #D81C5C;">.</i> GCREATIVELAB<i style="color: #D81C5C;">.</i> LEGAL</div>

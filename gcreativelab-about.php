@@ -55,7 +55,7 @@ get_header(); ?>
 										<div class="left"> <!--  Left Starts -->
 											<div class="content__holder about__holder">
 												<div class="content__header">WE ARE</div>
-												<div class="content__subheader">GCreative</div>
+												<div class="content__subheader">Connected</div>
 												<div class="content__description">
 													
 													<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -79,21 +79,17 @@ get_header(); ?>
 									</div>
 									
 								</div>
-								<div class="swiper-slide about__slide__fifty">
-										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-hero.svg" style="height:80%;" width="600" alt="">
+								<div class="swiper-slide about__whole_map">
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-map.svg" style="height:100%;" width="100%" alt="">
 								</div>
-								<div class="swiper-slide about__slide__fifty__left">
+								<!-- <div class="swiper-slide about__slide__fifty__left">
 										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-connected-icon.svg" height="95" width="95" alt="">
 										<div class="home__content__header_home">We are</div>
 										<div class="about__content__subheader">CONNECTED</div>
 										<div class="about__content__description">
 												We are a part of Grayling Public Relations, a wholly owned subsidiary of Huntsworth PLC – a public relations focused group listed on the London Stock Exchange. This allows us to provide truly integrated strategic services, and worldwide reach with local expertise and knowledge, combined with unrivalled and diverse sector experience.	
 										</div>
-								</div>
-								<div class="swiper-slide about__whole_map">
-										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-map.svg" style="height:100%;" width="100%" alt="">
-										<!-- <?php get_template_part( 'parts/svg', 'globalmap' ); ?> -->
-								</div>
+								</div> -->
 								<div class="swiper-slide about__slide__fifty about__huntsworth">
 										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-huntsworth.svg" style="height:90%;" width="100%" alt="">
 								</div>
@@ -112,7 +108,7 @@ get_header(); ?>
 
 								<div class="swiper-slide page__pagination">
 										<div class="page__pagination">
-											<a href="http://www.gcreativelab.com/services/" class="btn__top">
+											<a href="http://www.gcreativelab.com/services/" class="btn__top btn__pagination__services">
 												
 												<span>OUR SERVICES</span>
 												<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination_up.svg" height="62" width="62" alt="">
@@ -120,7 +116,7 @@ get_header(); ?>
 														<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination-icn/arrow-01.svg" height="316" width="316" alt="">
 												</div>
 											</a>
-											<a href="http://www.gcreativelab.com/case/" class="btn__btm">
+											<a href="http://www.gcreativelab.com/case/" class="btn__btm btn__pagination__work">
 													
 													<span>OUR WORK</span>
 												<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pagination_down.svg" height="62" width="62" alt="">

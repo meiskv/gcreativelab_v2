@@ -275,15 +275,44 @@ window.requestAnimationFrame(function() {
         visibility : 'visible',
         opacity : 0
       });
+
+      function onImagesLoaded(container, event) {
+        var images = container.getElementsByTagName("img");
+        var loaded = images.length;
+        for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+                loaded--;
+            }
+            else {
+                images[i].addEventListener("load", function() {
+                    loaded--;
+                    if (loaded == 0) {
+                        event();
+                    }
+                });
+            }
+            if (loaded == 0) {
+                event();
+            }
+        }
+    }
+    
+    var container = document.getElementById("barba-wrapper");
+    
+    onImagesLoaded(container, function() {
+        console.log("All the images have loaded");
+        $el.animate({ opacity: 1 }, 400, function() {
+          /**
+           * Do not forget to call .done() as soon your transition is finished!
+           * .done() will automatically remove from the DOM the old Container
+           */
+          console.log('done');
+    
+          _this.done();
+        });
+    });
   
-      $el.animate({ opacity: 1 }, 400, function() {
-        /**
-         * Do not forget to call .done() as soon your transition is finished!
-         * .done() will automatically remove from the DOM the old Container
-         */
-  
-        _this.done();
-      });
+      
     }
   });
   

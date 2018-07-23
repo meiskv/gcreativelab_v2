@@ -109,7 +109,7 @@ get_header(); ?>
 											<div class="swiper-slide swiper-cases">
 													<div class="case__home__holder">
 														<div class="case__home__img">
-															<img src="<?php echo get_field('client_feature_image')['url']; ?>" alt="">
+															<img src="<?php echo get_field('home_slide_cover')['url']; ?>" alt="">
 															<!-- <img src="http://localhost:8888/DEV/gcreative/uploads/2018/06/cover.jpg" alt=""> -->
 														</div>
 														

@@ -127,7 +127,7 @@ get_header(); ?>
                                                         <!-- /////////////// -->
 
                                                         <!-- CASE STARTS ENDS -->
-                                                        <div class="case__right" style="background: url(<?php echo get_field('home_slide_cover')['url']; ?>) no-repeat center center;
+                                                        <div class="case__right" style="background: url(<?php echo get_field('work_cover')['url']; ?>) no-repeat center center;
                                                                 background-size: cover;
                                                                 -webkit-background-size: cover;
                                                                 -moz-background-size: cover; 

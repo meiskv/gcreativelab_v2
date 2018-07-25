@@ -58,7 +58,8 @@
                   },
                   resize: function(){
                     let resizeThis = this;
-                    location.reload();
+                    // location.reload();
+                    window.location.href = window.location.href;
                 }
                 }
               });

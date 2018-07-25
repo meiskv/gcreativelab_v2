@@ -651,3 +651,12 @@ $pink: #D81C5C;
         border-top: 1px solid #c5c5c5;
     }
 }
+
+#logo__holder_loaded,#logo__holder_loading{
+    width: 103px;
+    height: 115px;
+    position: absolute;
+    top: 2rem;
+    left: 5rem;
+    z-index: 999;
+}

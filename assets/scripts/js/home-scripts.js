@@ -12,6 +12,36 @@ window.requestAnimationFrame(function() {
       },
       onEnterCompleted: function() {
           // The Transition has just finished.
+
+          var logoLoaded = {
+            container: document.getElementById('logo__holder_loaded'),
+            renderer: 'svg',
+            loop: false,
+            // yoyo: true,
+            autoplay: true,
+            // path: 'http://localhost:8888/DEV/gcreative/wp-content/themes/gcreativelab/assets/images/bodymovin/logo_loaded.json'
+            path: 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v2/assets/images/bodymovin/logo_loaded.json'
+          };
+          var animLogoLoaded;
+          
+          animLogoLoaded = bodymovin.loadAnimation(logoLoaded);
+
+          var logoLoading = {
+            container: document.getElementById('logo__holder_loading'),
+            renderer: 'svg',
+            loop: false,
+            // yoyo: true,
+            autoplay: true,
+            path: 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v2/assets/images/bodymovin/logo_loading.json'
+          };
+          var animLogoLoading;
+          
+          animLogoLoading = bodymovin.loadAnimation(logoLoading);
+
+          
+
+
+
           var menuButton = document.querySelector('.menu-button');
           var swiper = new Swiper('.swiper-container', {
             slidesPerView: 'auto',
@@ -276,6 +306,8 @@ window.requestAnimationFrame(function() {
         opacity : 0
       });
 
+      document.getElementById("logo__holder_loaded").setAttribute("id","logo__holder_loading");
+      
       function onImagesLoaded(container, event) {
         var images = container.getElementsByTagName("img");
         var loaded = images.length;
@@ -307,6 +339,7 @@ window.requestAnimationFrame(function() {
            * .done() will automatically remove from the DOM the old Container
            */
           console.log('done');
+          document.getElementById("logo__holder_loading").setAttribute("id","logo__holder_loaded");
     
           _this.done();
         });

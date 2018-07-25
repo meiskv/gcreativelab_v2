@@ -66,7 +66,8 @@
 
 					 <!-- START HERE -->
 					<a href="<?php echo site_url();?>">
-					 	<img class="glogo" src="<?php echo get_template_directory_uri(); ?>/assets/images/gcreative_logo.svg" width="80" height="93" alt="">
+					 	<!-- <img class="glogo" src="<?php echo get_template_directory_uri(); ?>/assets/images/gcreative_logo.svg" width="80" height="93" alt=""> -->
+						 <div id="logo__holder_loaded"></div>
 					 </a>
 
 

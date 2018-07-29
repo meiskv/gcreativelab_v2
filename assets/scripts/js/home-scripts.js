@@ -58,11 +58,18 @@ window.requestAnimationFrame(function() {
               init: function () {
                 var slider = this;
                 menuButton.addEventListener('click', function () {
+                  
+
+                  let $wwCh = window.innerWidth;
+                  
+                  
                   if (slider.activeIndex === 0) {
                     slider.slideNext();
                   } else {
                     slider.slidePrev();
                   }
+                  
+
                 }, true);
               },
               slideChange: function () {
@@ -125,33 +132,55 @@ window.requestAnimationFrame(function() {
               el: '.swiper-pagination',
               clickable: true,
             },
+            // Responsive breakpoints
+            breakpoints: {
+              // when window width is <= 320px
+              320: {
+                slidesPerView: 'auto',
+              },
+              // when window width is <= 480px
+              480: {
+                slidesPerView: 'auto',
+              },
+              // when window width is <= 640px
+              640: {
+                slidesPerView: 'auto',
+              }
+            },
             on: {
               init: function () {
 
                 TweenLite.set('.home__backBtn',{autoAlpha: 0})
                 
                 var slider = this;
+                let $wwCh = window.innerWidth;
+                                
+
                   if (slider.activeIndex === 0) {
-                    
-
+                   
                     finalSliderMove = slider.getTranslate()-slideWrapper.position().left+winCurrentWidth;
-
+                    
                     TweenLite.to(slideWrapper,0.5,{force3D:true,x: finalSliderMove})
 
                     slider.slideNext();
                   } else {
                     slider.slidePrev();
                   }
+              
+
               },
               slideChangeTransitionEnd: function (){
                 let transEndSlider = this;
 
+                let $wwCh = window.innerWidth;
+                console.log(transEndSlider);
+                
+                  
                 if(transEndSlider.getTranslate()-50>=finalSliderMove){
-
                    TweenLite.to(slideWrapper, 1.5,{force3D:true,x: finalSliderMove,ease:Back.easeInOut})
                    transEndSlider.slideTo(1);
-                   
                 }
+              
 
               },
               resize: function(){
@@ -161,7 +190,10 @@ window.requestAnimationFrame(function() {
               },
               slideChange: function(){
                 let slideChangeEndSlider = this;
+                let $wwCh = window.innerWidth;
 
+
+                
                 function fixedSlide(e){
                   
                   if(e.deltaY<=0){
@@ -169,15 +201,17 @@ window.requestAnimationFrame(function() {
                       
                             TweenLite.to(slideWrapper, 3,{force3D:true,x: finalSliderMove,ease:Expo.easeInOut})
                             slideChangeEndSlider.slideTo(1);
-                            
+                            console.log(finalSliderMove);
                         }
                   }
                 }
+                if(window.addEventListener("wheel", _.debounce(fixedSlide,500))){
+                  
+                      }
+              
+          
 
                 
-                if(window.addEventListener("wheel", _.debounce(fixedSlide,500))){
-
-                  }
               },
               reachEnd: function(){
                 let reachThis = this;
@@ -204,7 +238,7 @@ window.requestAnimationFrame(function() {
         .to(".header_animation", 0.6, {text:"BOLD",ease:Expo.easeInOut});
 
 
-      },
+      }, // Home onComplete Barba Ends
       onLeave: function() {
           // A new Transition toward a new page has just started.
           

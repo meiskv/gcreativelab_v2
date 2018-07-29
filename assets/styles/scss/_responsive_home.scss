@@ -17,7 +17,7 @@
 }
 
 .wrapper .left .content__holder .content__description {
-    @include breakpoint(large down) { 
+    @include breakpoint(large down) {
         font: 0.9rem/100% Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     }
 }
@@ -56,7 +56,10 @@
     .home__content__header{
         @include breakpoint(large down) { 
             font: 700 2.5375rem/110% "Avenir", AppleGothic, sans-serif;
-          }
+        }
+        @include breakpoint(small down) { 
+            font: 700 2.2rem/110% Avenir,AppleGothic,sans-serif;
+        }
     }
     .home__content__btn a{
         

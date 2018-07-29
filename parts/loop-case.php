@@ -86,7 +86,7 @@ $queryFirst = new WP_Query( $argsFirstPost );
                             <div class="case__inner__holder">
 
                                 <div class="case__inner__logo">
-                                        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"  width="100%" style="max-width: 250px;"/>                                        
+                                        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"  style="max-width: 250px; max-height: 150px;"/>
                                 </div>
                                 <div class="case__inner_title">
                                     <h1></h1>

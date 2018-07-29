@@ -2,12 +2,21 @@
     @include breakpoint(large down) { 
         font: 300 3.125rem/80% Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     }
+    @include breakpoint(small down) { 
+        font: 300 2.225rem/80% Century Gothic,CenturyGothic,AppleGothic,sans-serif
+    }
 }
 
 
-#social li{
+#social{
+    @include breakpoint(small down) { 
+        right: 3rem;
+    }
+li{
     @include breakpoint(large down) { 
         font: 500 0.7rem/100% Avenir,sans-serif;
         padding: 0 .1rem;
     }
+}
+
 }

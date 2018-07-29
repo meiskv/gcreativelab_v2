@@ -135,7 +135,7 @@ gulp.task('styles', function() {
 		    cascade: false
 		}))
 		.pipe(plugin.cssnano())
-		// .pipe(plugin.sourcemaps.write('.'))    // ETO
+	    // .pipe(plugin.sourcemaps.write('.'))    // ETO
 		.pipe(gulp.dest(ASSETS.styles))
 		.pipe(browserSync.reload({
           stream: true

@@ -5,40 +5,79 @@
 // OPTIONAL - waits til next tick render to run code (prevents running in the middle of render tick)
 window.requestAnimationFrame(function() {
 
+      function onImagesLoaded(container, event) {
+        var images = container.getElementsByTagName("img");
+        var loaded = images.length;
+        for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+                loaded--;
+            }
+            else {
+                images[i].addEventListener("load", function() {
+                    loaded--;
+                    if (loaded == 0) {
+                        event();
+                    }
+                });
+            }
+            if (loaded == 0) {
+                event();
+            }
+        }
+    }
+
+    var container = document.getElementById("barba-wrapper");
+
+   
+
+    
+
     var Homepage = Barba.BaseView.extend({
       namespace: 'homepage',
       onEnter: function() {
           // The new Container is ready and attached to the DOM.
+          var svgLoadedHolder = document.querySelector('#logo__holder');
+          var svgLoadedHolderLoaded = "<div id='logo__holder_loaded'></div>";
+
+          
+
+          if (svgLoadedHolder.getElementsByTagName('div').length) {
+            console.log('div already added.');
+          }else{
+            $(svgLoadedHolder).append(svgLoadedHolderLoaded);            
+          }
+          
+          
+          
       },
       onEnterCompleted: function() {
           // The Transition has just finished.
 
+          
           var logoLoaded = {
             container: document.getElementById('logo__holder_loaded'),
             renderer: 'svg',
             loop: false,
             // yoyo: true,
             autoplay: true,
-            // path: 'http://localhost:8888/DEV/gcreative/wp-content/themes/gcreativelab/assets/images/bodymovin/logo_loaded.json'
             path: 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v2/assets/images/bodymovin/logo_loaded.json'
           };
-          var animLogoLoaded;
           
-          animLogoLoaded = bodymovin.loadAnimation(logoLoaded);
+          // http://localhost:8888/DEV/gcreative/wp-content/themes/gcreativelab/assets/images/bodymovin/logo_loaded.json
 
-          var logoLoading = {
-            container: document.getElementById('logo__holder_loading'),
-            renderer: 'svg',
-            loop: false,
-            // yoyo: true,
-            autoplay: true,
-            path: 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v2/assets/images/bodymovin/logo_loading.json'
-          };
-          var animLogoLoading;
-          
-          animLogoLoading = bodymovin.loadAnimation(logoLoading);
+          var xspan = document.getElementById("logo__holder_loaded");
+
+          if (xspan.getElementsByTagName('svg').length) {
+            console.log('svg already added.');
+          }else{
+            var animLogoLoaded;
+            animLogoLoaded = bodymovin.loadAnimation(logoLoaded);
+          }
+
 
           
+
+        
 
 
 
@@ -173,7 +212,7 @@ window.requestAnimationFrame(function() {
                 let transEndSlider = this;
 
                 let $wwCh = window.innerWidth;
-                console.log(transEndSlider);
+                // console.log(transEndSlider);
                 
                   
                 if(transEndSlider.getTranslate()-50>=finalSliderMove){
@@ -308,6 +347,28 @@ window.requestAnimationFrame(function() {
        * this.newContainerLoading is a Promise for the loading of the new container
        * (Barba.js also comes with an handy Promise polyfill!)
        */
+
+      console.log('transitionStarts');
+
+      $('#logo__holder').find('#logo__holder_loaded > svg').remove();
+
+      var logoLoaded = {
+        container: document.getElementById('logo__holder_loaded'),
+        renderer: 'svg',
+        loop: true,
+        // yoyo: true,
+        autoplay: true,
+        path: 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v2/assets/images/bodymovin/logo_loading.json'
+      };
+      
+      var xspan = document.getElementById("logo__holder_loaded");
+      
+      if (xspan.getElementsByTagName('svg').length) {
+        console.log('svg already added.');
+      }else{
+        var animLogoLoaded;
+        animLogoLoaded = bodymovin.loadAnimation(logoLoaded);
+      }
   
       // As soon the loading is finished and the old page is faded out, let's fade the new page
       Promise
@@ -319,7 +380,7 @@ window.requestAnimationFrame(function() {
       /**
        * this.oldContainer is the HTMLElement of the old Container
        */
-  
+      console.log('transitionFadeOut');
       return $(this.oldContainer).animate({ opacity: 0 }).promise();
     },
   
@@ -329,6 +390,8 @@ window.requestAnimationFrame(function() {
        * At this stage newContainer is on the DOM (inside our #barba-container and with visibility: hidden)
        * Please note, newContainer is available just after newContainerLoading is resolved!
        */
+
+      console.log('transitionFadeIn');
   
       var _this = this;
       var $el = $(this.newContainer);
@@ -340,44 +403,51 @@ window.requestAnimationFrame(function() {
         opacity : 0
       });
 
-      document.getElementById("logo__holder_loaded").setAttribute("id","logo__holder_loading");
-      
-      function onImagesLoaded(container, event) {
-        var images = container.getElementsByTagName("img");
-        var loaded = images.length;
-        for (var i = 0; i < images.length; i++) {
-            if (images[i].complete) {
-                loaded--;
-            }
-            else {
-                images[i].addEventListener("load", function() {
-                    loaded--;
-                    if (loaded == 0) {
-                        event();
-                    }
-                });
-            }
-            if (loaded == 0) {
-                event();
-            }
-        }
-    }
     
-    var container = document.getElementById("barba-wrapper");
+      onImagesLoaded(container, function() {
+        
+                    console.log("All the images have loaded");
+                    
+
+                    $el.animate({ opacity: 1 }, 400, function() {
+                      /**
+                       * Do not forget to call .done() as soon your transition is finished!
+                       * .done() will automatically remove from the DOM the old Container
+                       */
+                      console.log('done');
+                      
+
+                      $('#logo__holder').find('#logo__holder_loaded > svg').remove();
+                      
+                            var logoLoaded = {
+                              container: document.getElementById('logo__holder_loaded'),
+                              renderer: 'svg',
+                              loop: false,
+                              // yoyo: true,
+                              autoplay: true,
+                              path: 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v2/assets/images/bodymovin/logo_loaded.json'
+                            };
+                            
+                            var xspan = document.getElementById("logo__holder_loaded");
+                            
+                            if (xspan.getElementsByTagName('svg').length) {
+                              console.log('svg already added.');
+                            }else{
+                              var animLogoLoaded;
+                              animLogoLoaded = bodymovin.loadAnimation(logoLoaded);
+                            }
+
+                
+                      _this.done();
+                    });
+                    
+                    
+        
+      });
+
     
-    onImagesLoaded(container, function() {
-        console.log("All the images have loaded");
-        $el.animate({ opacity: 1 }, 400, function() {
-          /**
-           * Do not forget to call .done() as soon your transition is finished!
-           * .done() will automatically remove from the DOM the old Container
-           */
-          console.log('done');
-          document.getElementById("logo__holder_loading").setAttribute("id","logo__holder_loaded");
     
-          _this.done();
-        });
-    });
+    
   
       
     }

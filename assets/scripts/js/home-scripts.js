@@ -55,6 +55,7 @@ window.requestAnimationFrame(function() {
             };
             
             // http://localhost:8888/DEV/gcreative/wp-content/themes/gcreativelab/assets/images/bodymovin/logo_loaded.json
+            // pogiko
   
             var xspan = document.getElementById("logo__holder_loaded");
   

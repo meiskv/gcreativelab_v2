@@ -9,6 +9,35 @@
           namespace: 'srvcpage',
           onEnter: function() {
               // The new Container is ready and attached to the DOM.
+              var svgLoadedHolder = document.querySelector('#logo__holder');
+              var svgLoadedHolderLoaded = "<div id='logo__holder_loaded'></div>";
+    
+              
+    
+              if (svgLoadedHolder.getElementsByTagName('div').length) {
+                console.log('div already added.');
+              }else{
+                $(svgLoadedHolder).append(svgLoadedHolderLoaded);        
+                var logoLoaded = {
+                  container: document.getElementById('logo__holder_loaded'),
+                  renderer: 'svg',
+                  loop: false,
+                  // yoyo: true,
+                  autoplay: true,
+                  path: 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v2/assets/images/bodymovin/logo_loaded.json'
+                };
+                
+                // http://localhost:8888/DEV/gcreative/wp-content/themes/gcreativelab/assets/images/bodymovin/logo_loaded.json
+      
+                var xspan = document.getElementById("logo__holder_loaded");
+      
+                if (xspan.getElementsByTagName('svg').length) {
+                  console.log('svg already added.');
+                }else{
+                  var animLogoLoaded;
+                  animLogoLoaded = bodymovin.loadAnimation(logoLoaded);
+                }    
+              }
           },
           onEnterCompleted: function() {
               // The Transition has just finished.

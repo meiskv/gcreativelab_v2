@@ -44,7 +44,26 @@ window.requestAnimationFrame(function() {
           if (svgLoadedHolder.getElementsByTagName('div').length) {
             console.log('div already added.');
           }else{
-            $(svgLoadedHolder).append(svgLoadedHolderLoaded);            
+            $(svgLoadedHolder).append(svgLoadedHolderLoaded);        
+            var logoLoaded = {
+              container: document.getElementById('logo__holder_loaded'),
+              renderer: 'svg',
+              loop: false,
+              // yoyo: true,
+              autoplay: true,
+              path: 'http://localhost:8888/DEV/gcreative/wp-content/themes/gcreativelab/assets/images/bodymovin/logo_loaded.json'
+            };
+            
+            // http://localhost:8888/DEV/gcreative/wp-content/themes/gcreativelab/assets/images/bodymovin/logo_loaded.json
+  
+            var xspan = document.getElementById("logo__holder_loaded");
+  
+            if (xspan.getElementsByTagName('svg').length) {
+              console.log('svg already added.');
+            }else{
+              var animLogoLoaded;
+              animLogoLoaded = bodymovin.loadAnimation(logoLoaded);
+            }    
           }
           
           
@@ -54,25 +73,7 @@ window.requestAnimationFrame(function() {
           // The Transition has just finished.
 
           
-          var logoLoaded = {
-            container: document.getElementById('logo__holder_loaded'),
-            renderer: 'svg',
-            loop: false,
-            // yoyo: true,
-            autoplay: true,
-            path: 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v2/assets/images/bodymovin/logo_loaded.json'
-          };
           
-          // http://localhost:8888/DEV/gcreative/wp-content/themes/gcreativelab/assets/images/bodymovin/logo_loaded.json
-
-          var xspan = document.getElementById("logo__holder_loaded");
-
-          if (xspan.getElementsByTagName('svg').length) {
-            console.log('svg already added.');
-          }else{
-            var animLogoLoaded;
-            animLogoLoaded = bodymovin.loadAnimation(logoLoaded);
-          }
 
 
           
@@ -358,9 +359,11 @@ window.requestAnimationFrame(function() {
         loop: true,
         // yoyo: true,
         autoplay: true,
-        path: 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v2/assets/images/bodymovin/logo_loading.json'
+        path: 'http://localhost:8888/DEV/gcreative/wp-content/themes/gcreativelab/assets/images/bodymovin/logo_loading.json'
       };
       
+      // http://www.gcreativelab.com/wp-content/themes/gcreativelab_v2/assets/images/bodymovin/logo_loading.json
+
       var xspan = document.getElementById("logo__holder_loaded");
       
       if (xspan.getElementsByTagName('svg').length) {
@@ -425,7 +428,7 @@ window.requestAnimationFrame(function() {
                               loop: false,
                               // yoyo: true,
                               autoplay: true,
-                              path: 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v2/assets/images/bodymovin/logo_loaded.json'
+                              path: 'http://localhost:8888/DEV/gcreative/wp-content/themes/gcreativelab/assets/images/bodymovin/logo_loaded.json'
                             };
                             
                             var xspan = document.getElementById("logo__holder_loaded");

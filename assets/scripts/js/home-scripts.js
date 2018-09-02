@@ -51,7 +51,7 @@ window.requestAnimationFrame(function() {
               loop: false,
               // yoyo: true,
               autoplay: true,
-              path: 'http://localhost:8888/DEV/gcreative/wp-content/themes/gcreativelab/assets/images/bodymovin/logo_loaded.json'
+              path: 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v2/assets/images/bodymovin/logo_loaded.json'
             };
             
             // http://localhost:8888/DEV/gcreative/wp-content/themes/gcreativelab/assets/images/bodymovin/logo_loaded.json
@@ -359,7 +359,7 @@ window.requestAnimationFrame(function() {
         loop: true,
         // yoyo: true,
         autoplay: true,
-        path: 'http://localhost:8888/DEV/gcreative/wp-content/themes/gcreativelab/assets/images/bodymovin/logo_loading.json'
+        path: 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v2/assets/images/bodymovin/logo_loading.json'
       };
       
       // http://www.gcreativelab.com/wp-content/themes/gcreativelab_v2/assets/images/bodymovin/logo_loading.json
@@ -428,7 +428,7 @@ window.requestAnimationFrame(function() {
                               loop: false,
                               // yoyo: true,
                               autoplay: true,
-                              path: 'http://localhost:8888/DEV/gcreative/wp-content/themes/gcreativelab/assets/images/bodymovin/logo_loaded.json'
+                              path: 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v2/assets/images/bodymovin/logo_loaded.json'
                             };
                             
                             var xspan = document.getElementById("logo__holder_loaded");

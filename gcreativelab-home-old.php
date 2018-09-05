@@ -30,7 +30,9 @@ get_header(); ?>
 						</div>
 						
 						<ul id="social">
-							<li>FACEBOOK</li>
+							<li>
+								<a href="#">FACEBOOK</a>
+							</li>
 							<li>.</li>
 							<li>INSTAGRAM</li>
 							<li>.</li>

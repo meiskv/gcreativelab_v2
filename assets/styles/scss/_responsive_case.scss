@@ -1,18 +1,18 @@
 .case-study-slide-container .case__holder .case__left .case__description p{
     @include breakpoint(large down) { 
-        font: 0.8rem/150% Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+        font: 0.8rem/150% "futura-pt", AppleGothic, sans-serif;
     }
 }
 
 .case-study-slide-container .case__holder .case__left .case__deliverables h4{
     @include breakpoint(large down) { 
-        font: normal 1rem/150% Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+        font: normal 1rem/150% "futura-pt", AppleGothic, sans-serif;
     }
 }
 
 .case-study-slide-container .case__holder .case__left .case__title h1{
     @include breakpoint(large down) { 
-        font: 700 1.5rem/100% Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+        font: 700 1.5rem/100% "futura-pt", AppleGothic, sans-serif;
     }
 }
 
@@ -66,7 +66,7 @@
 
 .case-inner-slide-container .case__pagination .case__next__title span{
     @include breakpoint(large down) {
-        font: 700 2rem/100% Century Gothic,CenturyGothic,sans-serif;
+        font: 700 2rem/100% "futura-pt", AppleGothic, sans-serif;
         color: #d92360;
         transition: .3s;
     }

@@ -22,7 +22,7 @@ get_header(); ?>
 							<h5>Contact:</h5>
 							<div class="three__column__address">
 								<div>OFFICE 214, BUILDING 4, DUBAI MEDIA CITY, PO BOX 24554, DUBAI, UAE</div>
-								<div><a href="mailto:info@grayling.com">info@grayling.com</a>+971 02 XXX XXXX</div>
+								<div><a href="mailto:info@grayling.com">info@grayling.com</a>+971 4 375 8950</div>
 								<div>For job and Intern inquiries please write <a href="mailto:positions@grayling.com">positions@grayling.com</a></div>
 							</div>
 						</div>

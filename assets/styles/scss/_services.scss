@@ -97,7 +97,7 @@
         .content__header, .content__subheader{
             font: 900 3.3375rem/100% "Avenir","Century Gothic", CenturyGothic, AppleGothic, sans-serif;
             @include breakpoint(small down) {
-                font: 900 2.2rem/100% "Avenir","Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+                font: 900 2.2rem/100% "futura-pt", AppleGothic, sans-serif;
             }
         }
         .content__header{
@@ -117,7 +117,7 @@
             padding-right: 5rem;
             max-width: 600px;
             @include breakpoint(small down) {
-                font: 0.9rem/100% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+                font: 0.9rem/100% "futura-pt", AppleGothic, sans-serif;
                 padding-right: 2rem;
             }
         }
@@ -173,7 +173,7 @@
                 font: 2.625rem/150% "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
                 color: #5D5D5D;
                 @include breakpoint(small down) {
-                    font: 2rem/150% "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+                    font: 2rem/150% "futura-pt", AppleGothic, sans-serif;
                 }
                 
             }
@@ -183,7 +183,7 @@
                 margin: 1.5rem 0;
                 text-align: left;
                 @include breakpoint(small down) {
-                    font: 0.9rem/150% "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+                    font: 0.9rem/150% "futura-pt", AppleGothic, sans-serif;
                 }
                 
             }

@@ -3,7 +3,10 @@
         font: 300 3.125rem/80% Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     }
     @include breakpoint(small down) { 
-        font: 300 2.225rem/80% Century Gothic,CenturyGothic,AppleGothic,sans-serif
+        font: 300 2.225rem/80% Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    }
+    @include breakpoint(small down) {
+        font: 300 2.225rem/80% "futura-pt", AppleGothic, sans-serif;
     }
 }
 

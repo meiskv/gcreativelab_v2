@@ -20,6 +20,9 @@
     @include breakpoint(large down) {
         font: 0.9rem/100% Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     }
+    @include breakpoint(small down) {
+        font: 0.9rem/100% "futura-pt", AppleGothic, sans-serif;
+    }
 }
 
 .wrapper .left .content__holder .content__btn{

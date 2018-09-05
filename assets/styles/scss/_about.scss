@@ -77,6 +77,9 @@
             z-index: 0;
             align-self: center;
             left: -30vh;
+            @include breakpoint(small down) {
+                font: 900 80vh/100% "futura-pt", AppleGothic, sans-serif;
+            }
         }
         .left .content__holder{
             padding-left: 6rem;
@@ -132,7 +135,7 @@
                 padding-right: 5rem;
                 max-width: 600px;
                 @include breakpoint(small down) { 
-                    font: 0.9rem/100% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+                    font: 0.9rem/100% "futura-pt", AppleGothic, sans-serif;
                     max-width: 100%;
                     padding-right: 0;
                     width: 68vw;
@@ -217,7 +220,7 @@
         color: #5D5D5D;
         margin: 1.5rem 0;
         @include breakpoint(small down) { 
-            font: 0.9rem/150% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+            font: 0.9rem/150% "futura-pt", AppleGothic, sans-serif;
         }
     }
     .about__content__subheader{

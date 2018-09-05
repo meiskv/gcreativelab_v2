@@ -89,8 +89,11 @@ body{
                 max-width: 100%;
                 padding-right: 0;
                 width: 68vw;
+                font: 1rem/100% "futura-pt", AppleGothic, sans-serif;
             }
         }
+
+        // "futura-pt", AppleGothic, sans-serif;
         .content__description div{
             line-height: 1.6;
         }
@@ -114,6 +117,9 @@ body{
         z-index: 0;
         align-self: center;
         left: -30vh;
+        @include breakpoint(small down) {
+            font: 900 80vh/100% "futura-pt", AppleGothic, sans-serif; 
+        }
     }
     // Left Styles Ends
 
@@ -187,11 +193,17 @@ $pink: #D81C5C;
     }
     .case__home__category h4{
         font: 700 1rem/100% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        @include breakpoint(small down) {
+            font: 700 1rem/100% "futura-pt", AppleGothic, sans-serif; 
+        }
     }
     .case__home__category p{
         opacity: 0;
         font: 300 0.8rem/150% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-        transform: translateY(20px)
+        transform: translateY(20px);
+        @include breakpoint(small down) {
+            font: 300 0.8rem/150% "futura-pt", AppleGothic, sans-serif; 
+        }
     }
     .case__home__btn{
         position: absolute;
@@ -218,6 +230,9 @@ $pink: #D81C5C;
         .case__home__date h4{
             font: 500 1rem/100% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
             color: $pink;
+            @include breakpoint(small down) {
+                font: 500 1rem/100% "futura-pt", AppleGothic, sans-serif; 
+            }
         }
         .case__home__title{
             // margin-bottom: 3rem;
@@ -236,6 +251,9 @@ $pink: #D81C5C;
         right:-3rem;
         margin: 0;
         padding: 0;
+        @include breakpoint(small down) {
+            font: 700 14.8125rem/80% "futura-pt", AppleGothic, sans-serif;
+        }
     }
 }
 
@@ -371,6 +389,9 @@ $pink: #D81C5C;
         font: 300 3.125rem/80% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
         transition: 0.3s;
         padding: 0.5rem 0;
+        @include breakpoint(small down) {
+            font: 300 3.125rem/80% "futura-pt", AppleGothic, sans-serif;
+        }
     }
     li a:hover{
         color: $pink;
@@ -646,7 +667,7 @@ $pink: #D81C5C;
                 font: 700 2rem/150% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
             }
             @include breakpoint(small down) {
-                font: 700 1.3rem/150% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+                font: 700 1.3rem/150% "futura-pt", AppleGothic, sans-serif;
                 padding-left: 2rem;
                 padding-bottom: 1rem;
             }

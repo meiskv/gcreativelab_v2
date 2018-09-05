@@ -152,11 +152,17 @@
                     font: bold 1.75rem/80% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
                     color: $pink;
                     padding: 1rem 0;
+                    @include breakpoint(small down) {
+                        font: bold 1.75rem/80% "futura-pt", AppleGothic, sans-serif;
+                    }
                 } 
             }// Case Title Ends
             .case__deliverables{
                 h4{
                     font: normal 1.4375rem/80% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+                    @include breakpoint(small down) {
+                        font: normal 1.4375rem/80% "futura-pt", AppleGothic, sans-serif;
+                    }
                 }
             } // Case Deliverables Ends
             .case__description{
@@ -164,6 +170,9 @@
                     font: 1rem/150% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
                     color: #0F294B;
                     margin: 1.5rem 0;
+                    @include breakpoint(small down) {
+                        font: 1rem/150% "futura-pt", AppleGothic, sans-serif;
+                    }
                 }
             } // Case Description Ends
             .case__button a{
@@ -278,15 +287,24 @@
                 font: 700 1.75rem/100% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
                 color: $pink;
                 // margin: 0;padding: 0;
+                @include breakpoint(small down) {
+                    font: 700 1.75rem/100% "futura-pt", AppleGothic, sans-serif;
+                }
             }
             .case__inner__slide__subtitle h4{
                 font: 500 1.4375rem/100% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
                 color: $blue;
+                @include breakpoint(small down) {
+                    font: 500 1.4375rem/100% "futura-pt", AppleGothic, sans-serif;
+                }
             }
             .case__inner__slide__description{
                 font: 500 1rem/100% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
                 color: #5D5D5D;
                 margin: 2rem;
+                @include breakpoint(small down) {
+                    font: 500 1rem/100% "futura-pt", AppleGothic, sans-serif;
+                }
             }
         }
     }
@@ -375,10 +393,9 @@
             color: #D92360;
             transition: .3s;
             @include breakpoint(small down) {
-                font: 700 2rem/100% "Century Gothic", CenturyGothic, sans-serif;
+                font: 700 2rem/100% "futura-pt", AppleGothic, sans-serif;
             }
         }
-        
         
     }
 }

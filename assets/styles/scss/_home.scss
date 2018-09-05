@@ -20,7 +20,7 @@ body{
     background: #D81C5C;
   }
 
-.wrapper, .about-wrapper{
+.wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -67,6 +67,7 @@ body{
         }
         .content__header, .content__subheader{
             font: 900 3.3375rem/100% "Avenir","Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+            
         }
         .content__header{
             font-weight: normal;
@@ -275,26 +276,25 @@ $pink: #D81C5C;
     font-size: 1.5rem;
 }
 
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    height: 100vh;
-    background: #fff;
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
+.home-slide-container{
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        height: 100vh;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
+
+
 .menu {
+    height: 100vh;
     min-width: 100px;
     width: 100%;
     max-width: 70vw;
@@ -616,6 +616,11 @@ $pink: #D81C5C;
     display: grid;
     grid-template-columns: 1;
     grid-template-rows: 2;
+
+    @include breakpoint(small down) {
+        max-width: 90vw;
+    }
+
     a{
         // background: #DDDDDD;
         height: 100%;
@@ -624,6 +629,10 @@ $pink: #D81C5C;
         align-items: flex-end;
         margin: 0; padding: 0;
         position: relative;
+
+        @include breakpoint(small down) {
+            width: 90vw;
+        }
         span{
             color: #D92360;
             font: 700 2.5625rem/150% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
@@ -636,6 +645,11 @@ $pink: #D81C5C;
             @include breakpoint(xlarge down) {
                 font: 700 2rem/150% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
             }
+            @include breakpoint(small down) {
+                font: 700 1.3rem/150% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+                padding-left: 2rem;
+                padding-bottom: 1rem;
+            }
             
         }
         img{
@@ -643,7 +657,10 @@ $pink: #D81C5C;
             bottom: 2rem;
             right: 2rem;
             padding: 0;
-            
+            @include breakpoint(small down) {
+                bottom: 1.5rem;
+                right: 1.5rem;
+            }
         }
         .bg__arrow{
             position: absolute;

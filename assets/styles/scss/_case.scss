@@ -38,14 +38,21 @@
         justify-content: center;
         align-items: center;
         width: 20vw;
+        height:100vh;
     }
     .main-slide{
         width: 50vw;
         background: #ffffff;
+        @include breakpoint(small down) {
+            width: 100vw;
+        }
         
     }
     .case-slide{
         width: 100vw;
+        @include breakpoint(small down) {
+            width: 90vw;
+        }
     }
 
     .case__study__holder{
@@ -78,6 +85,9 @@
         }
         .content__header, .content__subheader{
             font: 900 3.3375rem/100% "Avenir","Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+            @include breakpoint(small down) {
+                font: 900 2.2rem/100% "Avenir","Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+            }
         }
         .content__header{
             font-weight: normal;
@@ -95,6 +105,9 @@
             margin-right: 0;
             padding-right: 5rem;
             max-width: 600px;
+            @include breakpoint(small down) {
+                font: 0.9rem/100% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+            }
         }
         .content__description div{
             line-height: 1.6;
@@ -117,10 +130,23 @@
         grid-template-columns: 30vw 70vw;
         grid-template-rows: 1fr;
         height: 100%;
+        @include breakpoint(small down) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+            "t"
+            "b";
+        }
+
+
         .case__left{
             align-self: center;
             text-align: left;
             padding: 0 5rem;
+            @include breakpoint(small down) {
+                grid-area: b;
+                padding: 0 2rem;
+            }
             .case__title{
                 h1{
                     font: bold 1.75rem/80% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
@@ -151,6 +177,9 @@
         .case__right{
             width: 100%;
             background: #598059;
+            @include breakpoint(small down) {
+                grid-area: t;
+            }
             img{
                 height: auto;
                 width: 100%;
@@ -169,22 +198,46 @@
 }
 
 .case-inner-slide-container{
+
+    
+
     .main-slide{
         background: rgb(255, 255, 255);
         width: 50vw;
         text-align: left;
+        height:100vh;
+        @include breakpoint(small down) {
+            width: 100%;
+            
+        }
 
     .case__inner__holder{
-        width: 100%;
         padding: 0 7rem;
         padding-bottom: 2rem;
-        align-self: flex-end;
+        justify-content: flex-end;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        
+        @include breakpoint(small down) {
+            padding-right: 0rem;
+            padding-left: 5.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
         .case__inner__description{
             margin: 2.5rem 0;
+            @include breakpoint(small down) {
+                width: 300px;
+            }
         }
         .case__inner__description p{
             font: normal 1rem/150% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
             color: #5d5d5d;
+            @include breakpoint(small down) {
+                font: normal 0.9rem/150% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+            }
         }
         .case__deliverables div:first-child{
             padding-left: 0;
@@ -241,6 +294,18 @@
         // width: auto;
         width: 100%;
         max-width: 30vw;
+        
+        display: flex;
+        text-align: center;
+        font-size: 18px;
+        height: 100vh;
+        background: #fff;
+        justify-content: center;
+        align-items: center;
+        @include breakpoint(small down) {
+            max-width: 88vw;
+        }
+
         .case__inner__pagination__holder{
             display: grid;
             grid-template-columns: 1fr;
@@ -300,11 +365,18 @@
             position: absolute;
             bottom: 3rem;
             left: 3rem;
+            @include breakpoint(small down) {
+                bottom: 1rem;
+                left: 1.3rem;
+            }
         }
         .case__prev__title span, .case__next__title span{
             font: 700 2.5625rem/100% "Century Gothic", CenturyGothic, sans-serif;
             color: #D92360;
             transition: .3s;
+            @include breakpoint(small down) {
+                font: 700 2rem/100% "Century Gothic", CenturyGothic, sans-serif;
+            }
         }
         
         
@@ -346,4 +418,8 @@
 
 .address-case{
     font: .875rem/125% Avenir,sans-serif;
+    margin-bottom: 2.5rem;
+    @include breakpoint(small down) {
+        margin-bottom: 1.5rem;
+    }
 }

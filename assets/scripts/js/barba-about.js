@@ -97,6 +97,7 @@ onEnterCompleted: function() {
               $('.menu-icn').attr('src', menuIcon);
             }
           },
+          
         resize: function(){
             window.location.href = window.location.href;
         },
@@ -135,7 +136,59 @@ onEnterCompleted: function() {
         mousewheelSensitivity: 0.02,
         freeModeFluid: true,
         freeModeMomentumVelocityRatio: 0.5,
-        
+        on:{
+            slideChangeTransitionEnd: function (){
+                let transEndSlider = this;
+    
+                let $wwCh = window.innerWidth;
+
+                if($wwCh>=768){
+                    console.log(transEndSlider.getTranslate());
+                    if(transEndSlider.getTranslate()<=(-300)){
+                        TweenLite.to('#logo__holder_loaded',1,{
+                          top: 0,
+                          left: 2.5,
+                          width: '50px',
+                          height: '65px',
+                          ease: Expo.easeInOut, 
+                        });
+                    }else{
+                      TweenLite.to('#logo__holder_loaded',1,{
+                        top: 32,
+                            left: 80,
+                            width: '103px',
+                            height: '115px',
+                            ease: Expo.easeInOut, 
+                      });
+                      
+                    }
+                  }
+    
+                if($wwCh<=415){
+    
+                  if(transEndSlider.getTranslate()<=(-300)){
+                      TweenLite.to('#logo__holder_loaded',1,{
+                        top: 0,
+                        left: 2.5,
+                        width: '50px',
+                        height: '65px',
+                        ease: Expo.easeInOut, 
+                      });
+                  }else{
+                    TweenLite.to('#logo__holder_loaded',1,{
+                      top: 32,
+                          left: 80,
+                          width: '103px',
+                          height: '115px',
+                          ease: Expo.easeInOut, 
+                    });
+                    
+                  }
+                }
+    
+    
+              }
+        }
         });
         
 },

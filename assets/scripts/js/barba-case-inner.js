@@ -29,6 +29,7 @@
                 };
                 
                 // http://localhost:8888/DEV/gcreative/wp-content/themes/gcreativelab/assets/images/bodymovin/logo_loaded.json
+                // http://www.gcreativelab.com/wp-content/themes/gcreativelab_v2/assets/images/bodymovin/logo_loaded.json
       
                 var xspan = document.getElementById("logo__holder_loaded");
       
@@ -106,7 +107,85 @@
                 freeModeFluid: true,
                 parallax: true,
                 freeModeMomentumVelocityRatio: 0.5,
-               
+               on:{
+                slideChangeTransitionEnd: function (){
+                  let transEndSlider = this;
+  
+                  let $wwCh = window.innerWidth;
+
+                  if($wwCh>=768){
+                    console.log(transEndSlider.getTranslate());
+                    if(transEndSlider.getTranslate()<=(-300)){
+                        TweenLite.to('#logo__holder_loaded',1,{
+                          top: 0,
+                          left: 2.5,
+                          width: '50px',
+                          height: '65px',
+                          ease: Expo.easeInOut, 
+                        });
+                    }else{
+                      TweenLite.to('#logo__holder_loaded',1,{
+                        top: 32,
+                            left: 80,
+                            width: '103px',
+                            height: '115px',
+                            ease: Expo.easeInOut, 
+                      });
+                      
+                    }
+                  }
+  
+                  if($wwCh<=415){
+                    if(transEndSlider.getTranslate()<=500){
+                        TweenLite.to('#logo__holder_loaded',1,{
+                          top: 0,
+                          left: 2.5,
+                          width: '50px',
+                          height: '65px',
+                          ease: Expo.easeInOut, 
+                        });
+                    }else{
+                      TweenLite.to('#logo__holder_loaded',1,{
+                        top: 32,
+                            left: 80,
+                            width: '103px',
+                            height: '115px',
+                            ease: Expo.easeInOut, 
+                      });
+                      
+                    }
+                  }
+  
+                  if($wwCh<=376){
+                    if(transEndSlider.getTranslate()<=500){
+                        TweenLite.to('#logo__holder_loaded',1,{
+                          top: 0,
+                          left: 1,
+                          width: '50px',
+                          height: '65px',
+                          ease: Expo.easeInOut, 
+                        });
+                    }else{
+                      TweenLite.to('#logo__holder_loaded',1,{
+                        top: 32,
+                            left: 80,
+                            width: '103px',
+                            height: '115px',
+                            ease: Expo.easeInOut, 
+                      });
+                      
+                    }
+                  }
+                  
+                    
+                  // if(transEndSlider.getTranslate()-50>=finalSliderMove){
+                  //    TweenLite.to(slideWrapper, 1.5,{force3D:true,x: finalSliderMove,ease:Back.easeInOut})
+                  //    transEndSlider.slideTo(1);
+                  // }
+                
+  
+                }
+               }
             });
             
             // let caseWrapper = document.querySelector('.case-inner-slide-container');

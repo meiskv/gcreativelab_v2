@@ -22,6 +22,9 @@
         position: relative;
         bottom: 2rem;
     }
+    @include breakpoint(small down) { 
+        align-self: center;
+    }
 }
 
 
@@ -49,7 +52,15 @@
     @include breakpoint(large down) {
         position: absolute;
         bottom: 1rem;
-        left: 1rem;
+        left: 2rem;
+    }
+}
+
+.case-inner-slide-container .case__pagination .case__prev__title{
+    @include breakpoint(large down) {
+        position: absolute;
+        bottom: 1rem;
+        left: 2rem;
     }
 }
 
@@ -72,5 +83,8 @@
 .case-inner-slide-container .second-slide{
     @include breakpoint(large down) {
         width: 100%;
+    }
+    @include breakpoint(small down) {
+        width: auto;
     }
 }

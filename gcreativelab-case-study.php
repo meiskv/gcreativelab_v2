@@ -118,7 +118,7 @@ get_header(); ?>
                                                             <p><?php the_field('description_excerpt'); ?></p>
                                                             </div>
                                                             <div class="case__button">
-                                                                <a href="<?php echo get_permalink(); ?>">LEARN MORE</a>
+                                                                <a href="<?php echo get_permalink(); ?>">HOW WE DID IT</a>
                                                             </div>
 
                                                         </div>

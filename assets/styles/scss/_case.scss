@@ -133,9 +133,7 @@
         @include breakpoint(small down) {
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr;
-            grid-template-areas: 
-            "t"
-            "b";
+          
         }
 
 
@@ -144,7 +142,7 @@
             text-align: left;
             padding: 0 5rem;
             @include breakpoint(small down) {
-                grid-area: b;
+
                 padding: 0 2rem;
             }
             .case__title{
@@ -187,7 +185,7 @@
             width: 100%;
             background: #598059;
             @include breakpoint(small down) {
-                grid-area: t;
+
             }
             img{
                 height: auto;

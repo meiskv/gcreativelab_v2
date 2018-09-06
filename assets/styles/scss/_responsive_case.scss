@@ -30,10 +30,13 @@
     @include breakpoint(large down) { 
         align-self: flex-end;
         position: relative;
-        bottom: 2rem;
     }
     @include breakpoint(small down) { 
         align-self: flex-end;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 

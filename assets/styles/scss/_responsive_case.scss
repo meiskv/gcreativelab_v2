@@ -33,7 +33,7 @@
         bottom: 2rem;
     }
     @include breakpoint(small down) { 
-        align-self: center;
+        align-self: flex-end;
     }
 }
 

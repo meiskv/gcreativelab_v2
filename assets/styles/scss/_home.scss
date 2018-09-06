@@ -11,7 +11,12 @@ html{
 
 body{
     // overflow-y: hidden;
-    overflow-x: hidden;
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
 }
 
 // Highlight

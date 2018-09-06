@@ -223,7 +223,7 @@
         padding: 0 7rem;
         padding-bottom: 2rem;
         justify-content: flex-end;
-        height: 100%;
+        height: calc(100% - 60px);
         display: flex;
         flex-direction: column;
         
@@ -271,7 +271,7 @@
     .case__slide{
         background: #ffffff00;
         width: auto;
-        height: 100vh;
+        height: calc(100% - 60px);
         text-align: left;
         
         .case__inner__slide__holder{
@@ -404,7 +404,7 @@
 }
 
 .swiper-slide .case__slide img{
-    height: 100%;
+    height: calc(100% - 60px);
     width: auto;
 }
 

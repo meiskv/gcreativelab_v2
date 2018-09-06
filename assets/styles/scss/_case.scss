@@ -219,11 +219,15 @@
             
         }
 
+    _::-webkit-full-page-media, _:future, :root.case__inner__holder{
+        height: calc(100% - 60px);
+    }
+
     .case__inner__holder{
         padding: 0 7rem;
         padding-bottom: 2rem;
         justify-content: flex-end;
-        height: calc(100% - 60px);
+        height: 100%;
         display: flex;
         flex-direction: column;
         
@@ -404,7 +408,7 @@
 }
 
 .swiper-slide .case__slide img{
-    height: calc(100% - 60px);
+    height: 100%;
     width: auto;
 }
 

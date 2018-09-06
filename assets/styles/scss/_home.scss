@@ -5,6 +5,10 @@
     // transition: 0.3s;
 }
 
+html{
+    overflow: hidden;
+}
+
 body{
     // overflow-y: hidden;
     overflow-x: hidden;
@@ -333,6 +337,7 @@ $pink: #D81C5C;
 
 .content {
     width: 100%;
+    overflow: hidden;
 }
 
 .menu-button {

@@ -12,6 +12,10 @@
               var svgLoadedHolder = document.querySelector('#logo__holder');
               var svgLoadedHolderLoaded = "<div id='logo__holder_loaded'></div>";
     
+              var servicesHeight = $('.services__container .swiper-slide');
+              let $wwCh = window.innerHeight;
+    
+              TweenMax.set(servicesHeight,{height: $wwCh});
               
     
               if (svgLoadedHolder.getElementsByTagName('div').length) {

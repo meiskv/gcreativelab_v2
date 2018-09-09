@@ -140,7 +140,7 @@
                   }
   
                   if($wwCh<=415){
-                    if(transEndSlider.getTranslate()<=500){
+                    if(transEndSlider.getTranslate()<=400){
                         TweenLite.to('#logo__holder_loaded',1,{
                           top: 0,
                           left: 2.5,

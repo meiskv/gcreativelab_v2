@@ -10,6 +10,11 @@ namespace: 'aboutpage',
 onEnter: function() {
     // The new Container is ready and attached to the DOM.
 
+    var aboutHeight = $('.about-container .swiper-slide');
+    let $wwCh = window.innerHeight;
+
+    TweenMax.set(aboutHeight,{height: $wwCh});
+
     const xasd = new TimelineMax({onComplete: completeX});
     
     

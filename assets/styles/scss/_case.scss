@@ -262,6 +262,7 @@
             margin: 2.5rem 0;
             @include breakpoint(small down) {
                 width: 250px;
+                margin: 0rem 0;
             }
         }
         .case__inner__description p{

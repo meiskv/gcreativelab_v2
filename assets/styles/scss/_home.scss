@@ -52,6 +52,7 @@ body{
         z-index: 1;
         @include breakpoint(small down) { 
             padding-left: 0;
+            align-self: flex-end;
         }
         @include breakpoint(large only) {
             padding-left: 3rem;

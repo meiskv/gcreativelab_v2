@@ -64,9 +64,7 @@ get_header(); ?>
 													
 												<?php endwhile; endif; ?>	
                                             </div>
-                                            <div class="home__content__btn">
-												
-                                            </div>
+                                            
                                             
                                         </div>
 										<!-- <div class="address">©2018<i style="color: #D81C5C;">.</i> GCREATIVELAB<i style="color: #D81C5C;">.</i> LEGAL</div>

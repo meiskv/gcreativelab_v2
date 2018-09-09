@@ -53,6 +53,7 @@
         background: #fff;
         justify-content: center;
         align-items: center;
+        
     }
     .wrapper{
         grid-template-columns: 1fr;
@@ -72,6 +73,9 @@
         text-align: left;
         position: relative;
         z-index: 1;
+        @include breakpoint(small down) {
+            align-self: flex-end;
+        }
         @include breakpoint(large only) {
             padding-left: 6.5rem;
         }

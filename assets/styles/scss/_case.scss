@@ -209,7 +209,7 @@
 
 @media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) { @supports (font-kerning:auto) { 
         .case__inner__holder { 
-            // justify-content: flex-end;
+            height: 100% !important;
         }
     } 
 }

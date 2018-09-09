@@ -13,7 +13,12 @@
               var svgLoadedHolderLoaded = "<div id='logo__holder_loaded'></div>";
 
               var menuHeight = $('.menu');
+
               TweenMax.set(menuHeight,{height: $wwCh});
+
+              var caseStudyHeight = $('.case-study-slide-container .swiper-slide');
+              let $wwCh = window.innerHeight;
+              TweenMax.set(caseStudyHeight,{height: $wwCh});
     
               
     

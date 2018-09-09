@@ -17,6 +17,9 @@ onEnter: function() {
     var menuHeight = $('.menu');
     TweenMax.set(menuHeight,{height: $wwCh});
     
+
+    var pagePagination = $('.page__pagination');
+    TweenMax.set(pagePagination,{height: $wwCh});
     // var aboutHeight = $('#exactMapSvg');
 
 

@@ -72,7 +72,7 @@
 .case-inner-slide-container .case__pagination .case__prev__title{
     @include breakpoint(large down) {
         position: absolute;
-        bottom: 1rem;
+        bottom: 1.3rem;
         left: 2rem;
     }
 }

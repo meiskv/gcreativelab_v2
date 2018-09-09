@@ -401,7 +401,12 @@
         img{
             position: absolute;
             bottom: 3rem;
-            right: 3rem;   
+            right: 3rem;
+            @include breakpoint(small down) {                
+                bottom: 1.5rem;
+                right: 1.5rem;
+                max-width: 56px;
+            }
         }
         .case__prev, .case__next{
         }

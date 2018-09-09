@@ -200,22 +200,25 @@
 
 // CASE INNER
 // ==================================
+@media not all and (min-resolution:.001dpcm) { @supports (-webkit-appearance:none) and (stroke-color:transparent) { 
+        .case__inner__holder { 
+            justify-content: center;
+         }
+    } 
+}
 
-@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)
-{ @media {
-    /*
-      Define here the CSS styles applied only to Safari browsers
-      (any version and any device)
-     */
-
-     .case__inner__holder{
-         justify-content: center;
-     }
-
-}}
+@media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) { @supports (font-kerning:auto) { 
+        .case__inner__holder { 
+            justify-content: flex-end;
+        }
+    } 
+}
 
 
- 
+
+
+
+
 
 .case-inner-container{
     height: 100vh;
@@ -240,7 +243,6 @@
     .case__inner__holder{
         padding: 0 7rem;
         padding-bottom: 2rem;
-        justify-content: flex-end;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -250,7 +252,6 @@
             padding-left: 5.5rem;
             display: flex;
             flex-direction: column;
-            justify-content: flex-end;
             
         }
         .case__inner__description{

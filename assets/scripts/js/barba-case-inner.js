@@ -15,8 +15,10 @@
 
               var caseHeight = $('.case-inner-slide-container .swiper-slide');
               let $wwCh = window.innerHeight;
-    
               TweenMax.set(caseHeight,{height: $wwCh});
+
+              var menuHeight = $('.menu');
+              TweenMax.set(menuHeight,{height: $wwCh});
               
     
               if (svgLoadedHolder.getElementsByTagName('div').length) {

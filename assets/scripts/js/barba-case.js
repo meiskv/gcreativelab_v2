@@ -11,6 +11,9 @@
               // The new Container is ready and attached to the DOM.
               var svgLoadedHolder = document.querySelector('#logo__holder');
               var svgLoadedHolderLoaded = "<div id='logo__holder_loaded'></div>";
+
+              var menuHeight = $('.menu');
+              TweenMax.set(menuHeight,{height: $wwCh});
     
               
     

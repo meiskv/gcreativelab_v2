@@ -12,8 +12,14 @@ onEnter: function() {
 
     var aboutHeight = $('.about-container .swiper-slide');
     let $wwCh = window.innerHeight;
-
     TweenMax.set(aboutHeight,{height: $wwCh});
+
+    var menuHeight = $('.menu');
+    TweenMax.set(menuHeight,{height: $wwCh});
+    
+    // var aboutHeight = $('#exactMapSvg');
+
+
 
     const xasd = new TimelineMax({onComplete: completeX});
     

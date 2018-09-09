@@ -40,9 +40,12 @@ window.requestAnimationFrame(function() {
           var svgLoadedHolderLoaded = "<div id='logo__holder_loaded'></div>";
 
           var homeHeight = $('.home-slide-container .swiper-slide');
+          var menuHeight = $('.menu');
+
           let $wwCh = window.innerHeight;
 
           TweenMax.set(homeHeight,{height: $wwCh});
+          TweenMax.set(menuHeight,{height: $wwCh});
           
 
           if (svgLoadedHolder.getElementsByTagName('div').length) {

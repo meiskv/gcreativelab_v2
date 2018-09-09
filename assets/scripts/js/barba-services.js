@@ -14,8 +14,10 @@
     
               var servicesHeight = $('.services__container .swiper-slide');
               let $wwCh = window.innerHeight;
-    
               TweenMax.set(servicesHeight,{height: $wwCh});
+
+              var menuHeight = $('.menu');
+              TweenMax.set(menuHeight,{height: $wwCh});
               
     
               if (svgLoadedHolder.getElementsByTagName('div').length) {

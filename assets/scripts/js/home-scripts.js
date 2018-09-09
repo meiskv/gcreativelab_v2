@@ -41,11 +41,11 @@ window.requestAnimationFrame(function() {
 
           var homeHeight = $('.home-slide-container .swiper-slide');
           var menuHeight = $('.menu');
+          TweenMax.set(menuHeight,{height: $wwCh});
 
           let $wwCh = window.innerHeight;
 
           TweenMax.set(homeHeight,{height: $wwCh});
-          TweenMax.set(menuHeight,{height: $wwCh});
           
 
           if (svgLoadedHolder.getElementsByTagName('div').length) {
@@ -477,6 +477,7 @@ window.requestAnimationFrame(function() {
        * this.newContainerLoading is a Promise for the loading of the new container
        * (Barba.js also comes with an handy Promise polyfill!)
        */
+      
 
       $('#logo__holder').find('#logo__holder_loaded > svg').remove();
 

@@ -15,7 +15,7 @@ get_header(); ?>
 				<!-- Swiper -->
 				<div class="swiper-container">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide menu">
+						<div class="swiper-slide menu work-menu">
                         <?php glab_menu(); ?>
 
 						<div class="home__address">

@@ -152,7 +152,7 @@
         text-align: center;
         justify-content: flex-start;
         position: relative;
-        // top: 10vh;
+
         .services__holder{
             position: relative;
             padding: 0 2rem;
@@ -164,6 +164,8 @@
             justify-content: flex-start;
             @include breakpoint(small down) {
                 padding: 0 3rem;
+                height: auto;
+                margin: 5rem 0;
             }
             .center-srvc{
                 position: relative;

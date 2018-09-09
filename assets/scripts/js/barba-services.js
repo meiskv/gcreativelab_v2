@@ -18,6 +18,9 @@
 
               var menuHeight = $('.menu');
               TweenMax.set(menuHeight,{height: $wwCh});
+
+              var pagePagination = $('.page__pagination');
+              TweenMax.set(pagePagination,{height: $wwCh});
               
     
               if (svgLoadedHolder.getElementsByTagName('div').length) {
@@ -81,6 +84,29 @@
                       $('.menu-icn').attr('src', menuIcon);
     
                       TweenMax.staggerFromTo('#menu li a', 0.1,{x: '-140',autoAlpha:0},{x: '0',autoAlpha:1, ease:Power4.easeInOut}, 0.1);
+
+                      if($wwCh<=415){
+                        
+                            TweenLite.to('#logo__holder_loaded',1,{
+                              top: 0,
+                              left: 2.5,
+                              width: '50px',
+                              height: '65px',
+                              ease: Expo.easeInOut, 
+                            });
+                      }
+      
+                      if($wwCh<=376){
+                        
+                            TweenLite.to('#logo__holder_loaded',1,{
+                              top: 0,
+                              left: 1,
+                              width: '50px',
+                              height: '65px',
+                              ease: Expo.easeInOut, 
+                            });
+                          
+                      }
     
                     } else {
                       menuButton.classList.remove('cross');
@@ -89,6 +115,28 @@
     
                       let menuIcon = 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v2/assets/images/menu-lines.svg';
                       $('.menu-icn').attr('src', menuIcon);
+
+                      if($wwCh<=415){
+                        TweenLite.to('#logo__holder_loaded',1,{
+                          top: 32,
+                              left: 80,
+                              width: '103px',
+                              height: '115px',
+                              ease: Expo.easeInOut, 
+                        });
+                      }
+    
+                      if($wwCh<=376){
+                        
+                          TweenLite.to('#logo__holder_loaded',1,{
+                            top: 32,
+                                left: 80,
+                                width: '103px',
+                                height: '115px',
+                                ease: Expo.easeInOut, 
+                          });
+                          
+                      }
                     }
                   },
                   resize: function(){

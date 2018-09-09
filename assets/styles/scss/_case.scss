@@ -110,6 +110,7 @@
             max-width: 600px;
             @include breakpoint(small down) {
                 font: 0.9rem/100% "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+                margin-bottom: 2rem;
             }
         }
         .content__description div{

@@ -123,6 +123,10 @@
             @include breakpoint(small down) {
                 font: 0.9rem/100% "futura-pt", AppleGothic, sans-serif;
                 padding-right: 2rem;
+                margin-bottom: 2rem;
+            }
+            p{
+                margin-bottom: 0rem;
             }
         }
         .content__description div{

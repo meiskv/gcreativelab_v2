@@ -201,6 +201,39 @@
 // CASE INNER
 // ==================================
 
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) {
+
+    .case__inner__holder{ 
+
+        color:#0000FF; 
+        background-color:#CCCCCC; 
+
+    }
+}}
+
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+
+    .case__inner__holder{ 
+        
+                color:#0000FF; 
+                background-color:#CCCCCC; 
+        
+            }
+}}
+
+_::-webkit-full-page-media, _:future, :root .safari_only {
+    .case__inner__holder{ 
+        
+                color:#0000FF; 
+                background-color:#CCCCCC; 
+        
+            }
+}
+
+    
+
 .case-inner-container{
     height: 100vh;
 }
@@ -219,9 +252,7 @@
             
         }
 
-    _::-webkit-full-page-media, _:future, :root.case__inner__holder{
-        height: calc(100% - 60px);
-    }
+
 
     .case__inner__holder{
         padding: 0 7rem;

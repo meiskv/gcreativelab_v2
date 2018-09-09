@@ -339,9 +339,20 @@ window.requestAnimationFrame(function() {
                 }
                 
                   
-                if(transEndSlider.getTranslate()-50>=finalSliderMove){
-                   TweenLite.to(slideWrapper, 1.5,{force3D:true,x: finalSliderMove,ease:Back.easeInOut})
-                   transEndSlider.slideTo(1);
+                
+
+                if($wwCh<=414){
+                  console.log(transEndSlider.getTranslate());
+                  console.log(finalSliderMove);
+                  if(transEndSlider.getTranslate()-50>=finalSliderMove){
+                    TweenLite.to(slideWrapper, 1.5,{force3D:true,x: finalSliderMove,ease:Back.easeInOut})
+
+                  }
+                }else{
+                  if(transEndSlider.getTranslate()-50>=finalSliderMove){
+                    TweenLite.to(slideWrapper, 1.5,{force3D:true,x: finalSliderMove,ease:Back.easeInOut})
+                    transEndSlider.slideTo(1);
+                  }
                 }
               
 

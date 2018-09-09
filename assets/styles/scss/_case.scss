@@ -413,7 +413,11 @@
             }
         }
         .case__prev, .case__next{
+            @include breakpoint(small down) {
+                font-size: 0.9rem;
+            }
         }
+        
         .case__prev__title, .case__next__title{
             position: absolute;
             bottom: 3rem;
@@ -428,7 +432,8 @@
             color: #D92360;
             transition: .3s;
             @include breakpoint(small down) {
-                font: 700 2rem/100% "futura-pt", AppleGothic, sans-serif;
+                font: 700 1.4rem/100% "futura-pt", AppleGothic, sans-serif;
+                color: #ffffff;
             }
         }
         

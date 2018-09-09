@@ -39,13 +39,17 @@ window.requestAnimationFrame(function() {
           var svgLoadedHolder = document.querySelector('#logo__holder');
           var svgLoadedHolderLoaded = "<div id='logo__holder_loaded'></div>";
 
+          let $wwCh = window.innerHeight;
+
           var homeHeight = $('.home-slide-container .swiper-slide');
           var menuHeight = $('.menu');
           TweenMax.set(menuHeight,{height: $wwCh});
 
-          let $wwCh = window.innerHeight;
+          
 
           TweenMax.set(homeHeight,{height: $wwCh});
+
+          
           
 
           if (svgLoadedHolder.getElementsByTagName('div').length) {

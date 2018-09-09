@@ -75,6 +75,7 @@
                   },
                   slideChange: function () {
                     var slider = this;
+                    let $wwCh = window.innerWidth;
                     if (slider.activeIndex === 0) {
                       menuButton.classList.add('cross');
                       let src = 'http://www.gcreativelab.com/wp-content/themes/gcreativelab_v2/assets/images/gcreative_logo_white.svg';

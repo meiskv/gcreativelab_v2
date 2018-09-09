@@ -12,7 +12,11 @@
               
               var svgLoadedHolder = document.querySelector('#logo__holder');
               var svgLoadedHolderLoaded = "<div id='logo__holder_loaded'></div>";
+
+              var caseHeight = $('.case-inner-slide-container .swiper-slide');
+              let $wwCh = window.innerHeight;
     
+              TweenMax.set(caseHeight,{height: $wwCh});
               
     
               if (svgLoadedHolder.getElementsByTagName('div').length) {

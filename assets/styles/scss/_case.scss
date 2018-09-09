@@ -234,7 +234,8 @@
         background: rgb(255, 255, 255);
         width: 50vw;
         text-align: left;
-        height:100vh;
+        // height:100vh;
+        height: 100%;
         @include breakpoint(small down) {
             width: 100%;
             
@@ -294,7 +295,8 @@
     .case__slide{
         background: #ffffff00;
         width: auto;
-        height: 100vh;
+        // height: 100vh;
+        height: 100%;
         text-align: left;
         
         .case__inner__slide__holder{
@@ -338,7 +340,8 @@
         display: flex;
         text-align: center;
         font-size: 18px;
-        height: 100vh;
+        // height: 100vh;
+        height: 100%;
         background: #fff;
         justify-content: center;
         align-items: center;

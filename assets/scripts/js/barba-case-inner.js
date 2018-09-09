@@ -139,8 +139,7 @@
                     }
                   }
   
-                  if($wwCh<=415){
-                    if(transEndSlider.getTranslate()<=400){
+                  if($wwCh<=414){
                         TweenLite.to('#logo__holder_loaded',1,{
                           top: 0,
                           left: 2.5,
@@ -148,20 +147,9 @@
                           height: '65px',
                           ease: Expo.easeInOut, 
                         });
-                    }else{
-                      TweenLite.to('#logo__holder_loaded',1,{
-                        top: 32,
-                            left: 80,
-                            width: '103px',
-                            height: '115px',
-                            ease: Expo.easeInOut, 
-                      });
-                      
-                    }
                   }
   
                   if($wwCh<=376){
-                    if(transEndSlider.getTranslate()<=500){
                         TweenLite.to('#logo__holder_loaded',1,{
                           top: 0,
                           left: 1,
@@ -169,16 +157,6 @@
                           height: '65px',
                           ease: Expo.easeInOut, 
                         });
-                    }else{
-                      TweenLite.to('#logo__holder_loaded',1,{
-                        top: 32,
-                            left: 80,
-                            width: '103px',
-                            height: '115px',
-                            ease: Expo.easeInOut, 
-                      });
-                      
-                    }
                   }
                   
                     
